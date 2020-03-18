@@ -14,8 +14,8 @@
 </template>
 
 <script>
-import SongCard from "./components/SongCard.vue";
-import SONGDATA from "./data/songs.json";
+import SongCard from "~/components/SongCard.vue";
+import SONGDATA from "~/data/songs.json";
 
 export default {
   components: {
