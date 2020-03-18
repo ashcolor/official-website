@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import SingerBtn from "~/components/singerBtn";
+import SingerBtn from "./components/singerBtn";
 
 export default {
   components: {
