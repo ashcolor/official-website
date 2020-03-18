@@ -1,0 +1,12 @@
+steps:
+    # Build the container image
+    - name: 'gcr.io/cloud-builders/docker'
+      args: ['build', '-t', 'gcr.io/official-website-271208/official-website-img', '.']
+    # Push the image to Container Registry
+    - name: 'gcr.io/cloud-builders/docker'
+      args: ['push', 'gcr.io/official-website-img']
+    # Deploy image to Cloud Run
+    - name: 'gcr.io/cloud-builders/gcloud'
+      args: ['beta', 'run', 'deploy', 'ashcolor-official-website', '--image', 'gcr.io/official-website-271208/official-website-img', '--region', 'asia-northeast1', '--platform', 'managed', '--allow-unauthenticated']
+    images:
+    - gcr.io/official-website-271208/official-website-img
