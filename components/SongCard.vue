@@ -20,11 +20,11 @@
 </template>
 
 <script>
-import singerBtn from "~/components/singerBtn";
+import SingerBtn from "~/components/singerBtn";
 
 export default {
   components: {
-    singerBtn
+    SingerBtn
   },
   filters: {
     thumbnailUrl: function(value) {

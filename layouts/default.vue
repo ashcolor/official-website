@@ -5,7 +5,7 @@
       <v-toolbar-title>ashcolor official website</v-toolbar-title>
       <v-spacer></v-spacer>アカウント
       <template v-slot:extension>
-        <v-tabs v-model="model" centered slider-color="yellow">
+        <v-tabs centered slider-color="yellow">
           <v-tab v-for="menu in menus" :key="menu" :href="`/producer/${menu}`">{{ menu }}</v-tab>
         </v-tabs>
       </template>
