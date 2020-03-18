@@ -58,8 +58,22 @@ module.exports = {
           info: colors.teal.lighten1,
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,
-          success: colors.green.accent3
+          success: colors.green.accent3,
+        },
+        light: {
+          primary: "#c9c4ca",
+          accent: colors.grey.darken3,
+          secondary: colors.amber.darken3,
+          info: colors.teal.lighten1,
+          warning: colors.amber.base,
+          error: colors.deepOrange.accent4,
+          success: colors.green.accent3,
+          miku: "#86cecb",
+          luka: "#c89697"
         }
+      },
+      options: {
+        customProperties: true
       }
     }
   },

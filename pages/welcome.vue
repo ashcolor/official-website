@@ -10,6 +10,8 @@
             <a href="/engineer">Engineer</a>
             /
             <a href="/">Producer</a>
+            /
+            <a href="/gamer">Gamer</a>
           </h2>
         </v-col>
       </v-row>

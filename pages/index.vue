@@ -1,92 +1,42 @@
 <template>
-  <v-layout
-    column
-    justify-center
-    align-center
-  >
-    <v-flex
-      xs12
-      sm8
-      md6
-    >
-      <div class="text-center">
-        <logo />
-        <vuetify-logo />
-      </div>
-      <v-card>
-        <v-card-title class="headline">
-          Welcome to the Vuetify + Nuxt.js template
-        </v-card-title>
-        <v-card-text>
-          <p>Vuetify is a progressive Material Design component framework for Vue.js. It was designed to empower developers to create amazing applications.</p>
-          <p>
-            For more information on Vuetify, check out the <a
-              href="https://vuetifyjs.com"
-              target="_blank"
-            >
-              documentation
-            </a>.
-          </p>
-          <p>
-            If you have questions, please join the official <a
-              href="https://chat.vuetifyjs.com/"
-              target="_blank"
-              title="chat"
-            >
-              discord
-            </a>.
-          </p>
-          <p>
-            Find a bug? Report it on the github <a
-              href="https://github.com/vuetifyjs/vuetify/issues"
-              target="_blank"
-              title="contribute"
-            >
-              issue board
-            </a>.
-          </p>
-          <p>Thank you for developing with Vuetify and I look forward to bringing more exciting features in the future.</p>
-          <div class="text-xs-right">
-            <em><small>&mdash; John Leider</small></em>
-          </div>
-          <hr class="my-3">
-          <a
-            href="https://nuxtjs.org/"
-            target="_blank"
-          >
-            Nuxt Documentation
-          </a>
-          <br>
-          <a
-            href="https://github.com/nuxt/nuxt.js"
-            target="_blank"
-          >
-            Nuxt GitHub
-          </a>
-        </v-card-text>
-        <v-card-actions>
-          <v-spacer />
-          <v-btn
-            color="primary"
-            nuxt
-            to="/inspire"
-          >
-            Continue
-          </v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-flex>
+  <v-layout column justify-center align-center>
+    <h2 class="display-1 font-weight-light mb-4">music</h2>
+    <v-card class="pa-2" style="border:none" outlined>
+      <v-btn v-on:click="filter('singer','miku')" color="miku" :outlined="!actives.isMiku" dark>MIKU</v-btn>
+      <v-btn color="luka" :outlined="!actives.isMiku" dark>LUKA</v-btn>
+      <v-btn color="accent" :outlined="!actives.first" dark>ガラクタ概論</v-btn>
+      <v-btn color="accent" :outlined="!actives.second" dark>はじまりの歌</v-btn>
+    </v-card>
+    <v-card class="d-flex justify-center flex-wrap" style="border:none" outlined>
+      <song-card :song="song" v-for="song in songs" :key="song.id"></song-card>
+    </v-card>
   </v-layout>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-import VuetifyLogo from '~/components/VuetifyLogo.vue'
+import SongCard from "~/components/SongCard.vue";
+import SONGDATA from "~/data/songs.json";
 
 export default {
   components: {
-    Logo,
-    VuetifyLogo
+    SongCard
+  },
+  data() {
+    return {
+      actives: {
+        miku: false,
+        luka: false,
+        first: false,
+        second: false
+      },
+      songs: []
+    };
+  },
+  created: function() {
+    this.songs = SONGDATA;
+  },
+  methods: {
+    filter: function(key, value) {}
   }
-}
+};
 </script>

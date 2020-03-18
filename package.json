@@ -13,10 +13,10 @@
   "dependencies": {
     "cross-env": "^5.2.0",
     "express": "^4.16.4",
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.0.0",
+    "@nuxtjs/vuetify": "^1.11.0"
   },
   "devDependencies": {
-    "@nuxtjs/vuetify": "^1.11.0",
     "nodemon": "^1.18.9"
   }
 }
