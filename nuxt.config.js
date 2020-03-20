@@ -61,7 +61,7 @@ module.exports = {
           success: colors.green.accent3,
         },
         light: {
-          primary: "#c9c4ca",
+          primary: "#9E9E9E",
           accent: colors.grey.darken3,
           secondary: colors.amber.darken3,
           info: colors.teal.lighten1,
@@ -69,7 +69,8 @@ module.exports = {
           error: colors.deepOrange.accent4,
           success: colors.green.accent3,
           miku: "#86cecb",
-          luka: "#c89697"
+          luka: "#c89697",
+          ashcolor: "#c9c4ca",
         }
       },
       options: {
