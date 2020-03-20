@@ -3,35 +3,49 @@
     <!-- <v-app-bar :clipped-left="clipped" fixed app> -->
     <v-toolbar color="primary" dark flat>
       <v-toolbar-title>ashcolor official website</v-toolbar-title>
-      <v-spacer></v-spacer>アカウント
+      <v-spacer></v-spacer>
+      <v-tooltip bottom>
+        <template v-slot:activator="{ on }">
+          <a href="mailto:ashcolor27@gmail.com">
+            <v-btn icon v-on="on">
+              <v-icon>fas fa-envelope</v-icon>
+            </v-btn>
+          </a>
+        </template>
+        <span>Mial</span>
+      </v-tooltip>
+      <v-tooltip v-for="account in accounts" v-bind:key="account.id" bottom>
+        <template v-slot:activator="{ on }">
+          <a :href="account.url" target="_blank">
+            <v-btn icon v-on="on">
+              <v-icon>{{account.icon}}</v-icon>
+            </v-btn>
+          </a>
+        </template>
+        <span>{{account.name}}</span>
+      </v-tooltip>
+
       <template v-slot:extension>
         <v-tabs centered slider-color="yellow">
-          <v-tab v-for="menu in menus" :key="menu" :href="`/producer/${menu}`">{{ menu }}</v-tab>
+          <v-tab v-for="menu in menus" :key="menu.title" :to="menu.to">{{ menu.title }}</v-tab>
         </v-tabs>
       </template>
     </v-toolbar>
-    <v-content>
+    <v-content style="height: 100%;">
       <v-container>
         <nuxt />
       </v-container>
     </v-content>
-    <v-navigation-drawer v-model="rightDrawer" :right="right" temporary fixed>
-      <v-list>
-        <v-list-item @click.native="right = !right">
-          <v-list-item-action>
-            <v-icon light>mdi-repeat</v-icon>
-          </v-list-item-action>
-          <v-list-item-title>Switch drawer (click me)</v-list-item-title>
-        </v-list-item>
-      </v-list>
-    </v-navigation-drawer>
     <v-footer :fixed="fixed" app>
-      <span>&copy; {{ new Date().getFullYear() }} ashcolor</span>
+      <span class="font-weight-light">&copy; {{ new Date().getFullYear() }} ashcolor</span>
     </v-footer>
   </v-app>
 </template>
 
 <script>
+import "@fortawesome/fontawesome-free/css/all.css";
+import ACCOUNTDATA from "~/data/accounts.json";
+
 export default {
   data() {
     return {
@@ -54,9 +68,18 @@ export default {
       right: true,
       rightDrawer: false,
       title: "Vuetify.js",
-      menus: ["home", "profile", "music", "diiscography"]
+      menus: [
+        { title: "home", to: "/" },
+        { title: "profile", to: "/producer/profile" },
+        { title: "music", to: "/producer/music" },
+        { title: "diiscography", to: "/producer/diiscography" }
+      ]
     };
   },
-  computed: {}
+  computed: {
+    accounts: function() {
+      return ACCOUNTDATA.filter(account => account["type"] === "producer");
+    }
+  }
 };
 </script>

@@ -9,10 +9,10 @@
       <singer-btn :singer="song.singer"></singer-btn>
     </v-card-text>
     <v-footer>
-      <a v-if="song.youtube" :href="song.youtube" class="mr-2">
+      <a v-if="song.youtube" :href="song.youtube" class="mr-2" target="_blank">
         <img src="/img/icon/youtube.png" alt="YouTube" class="icon" />
       </a>
-      <a v-if="song.niconico" :href="song.youtube">
+      <a v-if="song.niconico" :href="song.youtube" target="_blank">
         <img src="/img/icon/nicovideo.png" alt="niconico" class="icon" />
       </a>
     </v-footer>
