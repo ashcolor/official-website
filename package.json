@@ -11,11 +11,12 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.1",
+    "@mdi/font": "^5.0.45",
     "@nuxtjs/vuetify": "^1.11.0",
     "cross-env": "^5.2.0",
     "express": "^4.16.4",
-    "nuxt": "^2.0.0",
-    "@fortawesome/fontawesome-free": "^5.12.1"
+    "nuxt": "^2.0.0"
   },
   "devDependencies": {
     "nodemon": "^1.18.9"
