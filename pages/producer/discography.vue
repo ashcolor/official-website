@@ -16,7 +16,7 @@
       <v-text class="caption d-block">その他の配信サイトでもストリーミング・ダウンロード配信中</v-text>
     </div>
     <h3 class="mb-4">album</h3>
-    <v-card v-for="album in albums" :key="album.id" class="mb-8" min-width="750px" outlined>
+    <v-card v-for="album in albums" :key="album.id" class="mb-8" min-width="720px" outlined>
       <v-card-subtitle class="pb-0">{{album.description}}</v-card-subtitle>
       <v-card-title class="pt-0">{{album.name}}</v-card-title>
       <v-card-subtitle class="pb-0">{{album.published | dateFormat}}</v-card-subtitle>
@@ -41,21 +41,21 @@
           </v-col>
         </v-row>
         <v-row justify="space-between">
-          <v-col cols="auto" class="mx-auto">
+          <v-col cols="auto" class="mx-auto text-center">
             <h4>downloads</h4>
             <v-tooltip bottom>
               <template v-slot:activator="{ on }">
-                <v-btn v-if="album.lyric" :href="album.lyric" v-on="on" class="pr-2" icon large>
-                  <v-icon>mdi-text-box</v-icon>
-                </v-btn>
+                <a v-if="album.lyric" :href="album.lyric" v-on="on" class="pr-2" icon>
+                  <v-icon large>mdi-text-box</v-icon>
+                </a>
               </template>
               <span>歌詞</span>
             </v-tooltip>
             <v-tooltip bottom>
               <template v-slot:activator="{ on }">
-                <v-btn v-if="album.inst" :href="album.inst" v-on="on" class="pr-2" icon large>
-                  <v-icon>mdi-microphone-variant</v-icon>
-                </v-btn>
+                <a v-if="album.inst" :href="album.inst" v-on="on" icon>
+                  <v-icon large>mdi-microphone-variant</v-icon>
+                </a>
               </template>
               <span>カラオケ</span>
             </v-tooltip>
