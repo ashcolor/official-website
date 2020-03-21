@@ -7,15 +7,15 @@
         <v-btn color="luka" value="luka" outlined>LUKA</v-btn>
       </v-btn-toggle>
       <v-btn-toggle v-model="albumToggle" dense multiple>
-        <v-btn color="primary" value="1" outlined>ガラクタ概論</v-btn>
-        <v-btn color="primary" value="2" outlined>はじまりの歌</v-btn>
+        <v-btn color="primary" value="an_introduction_to_odds_and_ends" outlined>ガラクタ概論</v-btn>
+        <v-btn color="primary" value="song_of_the_beginning" outlined>はじまりの歌</v-btn>
       </v-btn-toggle>
-      <v-btn v-on:click="isUpToggle" color="info" fab :outlined="!isUp" small depressed>
+      <v-btn v-on:click="isUpToggle" color="info" fab :outlined="!isUp" x-small depressed>
         <v-icon>fas fa-sort-numeric-down</v-icon>
       </v-btn>
     </v-card>
     <v-card class="d-flex justify-center flex-wrap" style="border:none" outlined>
-      <song-card :song="song" v-for="song in songs" :key="song.key"></song-card>
+      <song-card :song="song" v-for="song in songs" :key="song.id"></song-card>
     </v-card>
   </v-layout>
 </template>
@@ -41,16 +41,12 @@ export default {
       let tmpSong = SONGDATA;
 
       this.singerToggle.forEach(singer => {
-        tmpSong = tmpSong.filter(
-          song => song["singer"].split(",").indexOf(singer) >= 0
-        );
+        tmpSong = tmpSong.filter(song => song["singers"].indexOf(singer) >= 0);
       });
 
       this.albumToggle.forEach(album => {
-        tmpSong = tmpSong.filter(song => song["album"] == album);
+        tmpSong = tmpSong.filter(song => song["albums"].indexOf(album) >= 0);
       });
-
-      console.log("SONGDATA", tmpSong);
 
       tmpSong.sort((a, b) => a["id"] - b["id"]);
       return this.isUp ? tmpSong : tmpSong.reverse();
