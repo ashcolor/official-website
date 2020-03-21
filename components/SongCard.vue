@@ -22,39 +22,32 @@
     <v-footer class="px-2">
       <v-tooltip bottom>
         <template v-slot:activator="{ on }">
-          <v-btn
-            v-if="song.youtube"
-            :href="song.youtube"
-            target="_blank"
-            v-on="on"
-            class="pr-2"
-            icon
-          >
+          <a v-if="song.youtube" :href="song.youtube" target="_blank" v-on="on" class="pr-2" icon>
             <v-icon>mdi-youtube</v-icon>
-          </v-btn>
+          </a>
         </template>
         <span>YouTube</span>
       </v-tooltip>
       <v-tooltip bottom>
         <template v-slot:activator="{ on }">
-          <v-btn
-            v-if="song.niconico"
-            :href="song.niconico"
-            target="_blank"
-            v-on="on"
-            class="pr-2"
-            icon
-          >
+          <a v-if="song.niconico" :href="song.niconico" target="_blank" v-on="on" class="pr-2" icon>
             <v-icon>mdi-television-classic</v-icon>
-          </v-btn>
+          </a>
         </template>
         <span>niconico</span>
       </v-tooltip>
       <v-tooltip bottom>
         <template v-slot:activator="{ on }">
-          <v-btn v-if="song.lyric" :href="song.lyric" target="_blank" v-on="on" class="pr-2" icon>
+          <a
+            v-if="song.lyric"
+            :href="lyricBaseurl + song.lyric"
+            target="_blank"
+            v-on="on"
+            class="pr-2"
+            icon
+          >
             <v-icon>mdi-text-box</v-icon>
-          </v-btn>
+          </a>
         </template>
         <span>歌詞</span>
       </v-tooltip>
