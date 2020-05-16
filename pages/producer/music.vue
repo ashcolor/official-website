@@ -1,20 +1,35 @@
 <template>
   <v-layout column justify-center align-center>
-    <h2 class="display-1 font-weight-light mb-4">music</h2>
+    <h2 class="display-1 font-weight-light mb-4">Music</h2>
     <v-card class="pa-2" style="border:none" outlined>
       <v-btn-toggle v-model="singerToggle" dense multiple>
         <v-btn color="miku" value="miku" outlined>MIKU</v-btn>
         <v-btn color="luka" value="luka" outlined>LUKA</v-btn>
       </v-btn-toggle>
       <v-btn-toggle v-model="albumToggle" dense multiple>
-        <v-btn color="primary" value="an_introduction_to_odds_and_ends" outlined>ガラクタ概論</v-btn>
-        <v-btn color="primary" value="song_of_the_beginning" outlined>はじまりの歌</v-btn>
+        <v-btn color="primary" value="an_introduction_to_odds_and_ends" outlined
+          >ガラクタ概論</v-btn
+        >
+        <v-btn color="primary" value="song_of_the_beginning" outlined
+          >はじまりの歌</v-btn
+        >
       </v-btn-toggle>
-      <v-btn v-on:click="isUpToggle" color="info" fab :outlined="!isUp" x-small depressed>
+      <v-btn
+        v-on:click="isUpToggle"
+        color="info"
+        fab
+        :outlined="!isUp"
+        x-small
+        depressed
+      >
         <v-icon>fas fa-sort-numeric-down</v-icon>
       </v-btn>
     </v-card>
-    <v-card class="d-flex justify-center flex-wrap" style="border:none" outlined>
+    <v-card
+      class="d-flex justify-center flex-wrap"
+      style="border:none"
+      outlined
+    >
       <song-card :song="song" v-for="song in songs" :key="song.id"></song-card>
     </v-card>
   </v-layout>
@@ -22,10 +37,11 @@
 
 <script>
 import "@fortawesome/fontawesome-free/css/all.css";
-import SongCard from "~/components/SongCard.vue";
+import SongCard from "~/components/producer/SongCard.vue";
 import SONGDATA from "~/data/songs.json";
 
 export default {
+  layout: "producer",
   components: {
     SongCard
   },
@@ -61,10 +77,7 @@ export default {
 };
 </script>
 
-
-
-<style scoped>
-</style>
+<style scoped></style>
 
 <style>
 .theme--light.v-btn-toggle:not(.v-btn-toggle--group) .v-btn.v-btn {
