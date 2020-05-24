@@ -1,0 +1,58 @@
+[
+  {
+    "name": "言って",
+    "artist": "ヨルシカ",
+    "genre": "J-POP",
+    "modified": "2019/11/14",
+    "url": "https://storage.googleapis.com/gamer-bbp/itte.mp3"
+  },
+  {
+    "name": "lemon",
+    "artist": "米津玄師",
+    "genre": "J-POP",
+    "modified": "2019/11/10",
+    "url": "https://storage.googleapis.com/gamer-bbp/lemon.mp3"
+  },
+  {
+    "name": "Yuri on Ice",
+    "artist": "ユーリ!!! on ICE BGM",
+    "genre": "アニメ",
+    "modified": "2017/01/19",
+    "url": "https://storage.googleapis.com/gamer-bbp/yuri.mp3"
+  },
+  {
+    "name": "世界五分前仮説",
+    "artist": "有形ランペイジ",
+    "genre": "J-POP",
+    "modified": "2017/01/05",
+    "url": "https://storage.googleapis.com/gamer-bbp/sekai.mp3"
+  },
+  {
+    "name": "よっこらせ（笑）",
+    "artist": "アゴアニキ",
+    "genre": "VOCALOID",
+    "modified": "2016/01/17",
+    "url": "https://storage.googleapis.com/gamer-bbp/yokkorase.mp3"
+  },
+  {
+    "name": "トマト倉庫BGM",
+    "artist": "大合奏！バンドブラザーズP",
+    "genre": "ゲーム",
+    "modified": "2015/01/31",
+    "url": "https://storage.googleapis.com/gamer-bbp/tomato.mp3"
+  },
+  {
+    "name": "September",
+    "artist": "Earth Wind&Fire",
+    "genre": "洋楽",
+    "modified": "2014/09/21",
+    "url": "https://storage.googleapis.com/gamer-bbp/september.mp3"
+  },
+  {
+    "name": "エレクトリカル・パレード",
+    "artist": "",
+    "genre": "ディズニー",
+    "modified": "2014/04/13",
+    "url": "https://storage.googleapis.com/gamer-bbp/electrical_parade.mp3"
+  }
+]

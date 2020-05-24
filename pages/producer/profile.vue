@@ -1,19 +1,25 @@
 <template>
   <v-layout column justify-center align-center>
-    <h2 class="display-1 font-weight-light mb-4">profile</h2>
-    <h3 class="mb-4">history</h3>
+    <h2 class="display-1 font-weight-light mb-4">Profile</h2>
+    <h3 class="mb-4">History</h3>
     <v-card class="mx-auto" tile>
       <template v-for="history in histories">
         <v-list-item two-line :key="history.content">
           <v-list-item-content>
-            <v-list-item-subtitle>{{history.date}}</v-list-item-subtitle>
+            <v-list-item-subtitle>{{ history.date }}</v-list-item-subtitle>
             <v-container class="pa-0">
               <v-row>
                 <v-col cols="auto">
-                  <v-list-item-title>{{history.content}}</v-list-item-title>
+                  <v-list-item-title>{{ history.content }}</v-list-item-title>
                 </v-col>
                 <v-col cols="auto">
-                  <v-btn v-if="history.url !== ''" :href="history.url" target="_blank" icon x-small>
+                  <v-btn
+                    v-if="history.url !== ''"
+                    :href="history.url"
+                    target="_blank"
+                    icon
+                    x-small
+                  >
                     <v-icon>fas fa-external-link-alt</v-icon>
                   </v-btn>
                 </v-col>
@@ -27,13 +33,23 @@
     <v-card class="mx-auto" tile>
       <v-container class="pa-0">
         <v-row>
-          <v-col cols="auto" v-for="equipment in equipments" :key="equipment.type">
+          <v-col
+            cols="auto"
+            v-for="equipment in equipments"
+            :key="equipment.type"
+          >
             <v-list subheader>
-              <v-subheader>{{equipment.type}}</v-subheader>
-              <v-list-item v-for="material in equipment.materials" :key="material.type" three-line>
+              <v-subheader>{{ equipment.type }}</v-subheader>
+              <v-list-item
+                v-for="material in equipment.materials"
+                :key="material.type"
+                three-line
+              >
                 <v-list-item-content>
-                  <v-list-item-subtitle>{{material.type}}</v-list-item-subtitle>
-                  <v-list-item-title>{{material.name}}</v-list-item-title>
+                  <v-list-item-subtitle>{{
+                    material.type
+                  }}</v-list-item-subtitle>
+                  <v-list-item-title>{{ material.name }}</v-list-item-title>
                 </v-list-item-content>
               </v-list-item>
             </v-list>
@@ -48,6 +64,7 @@
 import "@fortawesome/fontawesome-free/css/all.css";
 
 export default {
+  layout: "producer",
   data() {
     return {
       histories: [

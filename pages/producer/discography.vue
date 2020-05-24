@@ -1,6 +1,6 @@
 <template>
   <v-layout column justify-center align-center>
-    <h2 class="display-1 font-weight-light mb-4">discography</h2>
+    <h2 class="display-1 font-weight-light mb-4">Discography</h2>
     <h3>Streaming & Download</h3>
     <div class="mb-4 text-center">
       <v-btn
@@ -11,15 +11,25 @@
         class="mx-4 my-2"
         icon
       >
-        <v-icon large>{{download.icon}}</v-icon>
+        <v-icon large>{{ download.icon }}</v-icon>
       </v-btn>
-      <v-text class="caption d-block">その他の配信サイトでもストリーミング・ダウンロード配信中</v-text>
+      <v-text class="caption d-block"
+        >その他の配信サイトでもストリーミング・ダウンロード配信中</v-text
+      >
     </div>
-    <h3 class="mb-4">album</h3>
-    <v-card v-for="album in albums" :key="album.id" class="mb-8" min-width="720px" outlined>
-      <v-card-subtitle class="pb-0">{{album.description}}</v-card-subtitle>
-      <v-card-title class="pt-0">{{album.name}}</v-card-title>
-      <v-card-subtitle class="pb-0">{{album.published | dateFormat}}</v-card-subtitle>
+    <h3 class="mb-4">Album</h3>
+    <v-card
+      v-for="album in albums"
+      :key="album.id"
+      class="mb-8"
+      min-width="720px"
+      outlined
+    >
+      <v-card-subtitle class="pb-0">{{ album.description }}</v-card-subtitle>
+      <v-card-title class="pt-0">{{ album.name }}</v-card-title>
+      <v-card-subtitle class="pb-0">{{
+        album.published | dateFormat
+      }}</v-card-subtitle>
       <v-container>
         <v-row justify="space-arround">
           <v-col cols="8" class="py-0 my-auto">
@@ -30,22 +40,35 @@
           <v-col cols="4" class="pl-0 my-auto">
             <v-list-item v-for="(song, index) in album.songs" :key="song" dense>
               <v-list-item-content>
-                <v-list-item-title>{{index+1}}.{{song}}</v-list-item-title>
+                <v-list-item-title
+                  >{{ index + 1 }}.{{ song }}</v-list-item-title
+                >
               </v-list-item-content>
             </v-list-item>
           </v-col>
         </v-row>
         <v-row justify="space-between">
           <v-col cols="auto" class="mx-auto">
-            <iframe scrolling="no" frameborder="no" :src="album.crossfade" class="mx-auto"></iframe>
+            <iframe
+              scrolling="no"
+              frameborder="no"
+              :src="album.crossfade"
+              class="mx-auto"
+            ></iframe>
           </v-col>
         </v-row>
         <v-row justify="space-between">
           <v-col cols="auto" class="mx-auto text-center">
-            <h4>downloads</h4>
+            <h4>Downloads</h4>
             <v-tooltip bottom>
               <template v-slot:activator="{ on }">
-                <a v-if="album.lyric" :href="album.lyric" v-on="on" class="pr-2" icon>
+                <a
+                  v-if="album.lyric"
+                  :href="album.lyric"
+                  v-on="on"
+                  class="pr-2"
+                  icon
+                >
                   <v-icon large>mdi-text-box</v-icon>
                 </a>
               </template>
@@ -71,6 +94,7 @@ import "@fortawesome/fontawesome-free/css/all.css";
 import ALBUMDATA from "~/data/albums.json";
 
 export default {
+  layout: "producer",
   data() {
     return {
       downloads: [
@@ -80,11 +104,16 @@ export default {
           url: "https://itunes.apple.com/jp/artist/ashcolor/807046372"
         },
         {
+          name: "soptify",
+          icon: "fab fa-spotify",
+          url:
+            "https://open.spotify.com/artist/530ZxZmJuJ7sAcI84QJwJA?si=54xDsAeoQFyC7f-BxCoqiQ"
+        },
+        {
           name: "LINE MUSIC",
           icon: "fab fa-line",
           url: "https://music.line.me/artist/mi000000000014298c"
         },
-
         {
           name: "amazon music",
           icon: "fab fa-amazon",
