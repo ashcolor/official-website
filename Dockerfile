@@ -7,11 +7,11 @@ ENV HOST 0.0.0.0
 
 COPY package*.json ./
 
-RUN npm install --only=production
+RUN yarn install --only=production
 
 # Nuxtプロジェクトのコードをコンテナにコピー
 COPY . .
 
 # prodビルト、サーバ起動
-RUN npm run build
-CMD npm start
+RUN yarn run build
+CMD yarn start

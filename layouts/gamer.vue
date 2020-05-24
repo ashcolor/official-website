@@ -40,16 +40,14 @@ export default {
     return {
       fixed: false,
       menus: [
-        { title: "home", to: "/" },
-        { title: "profile", to: "/producer/profile" },
-        { title: "music", to: "/producer/music" },
-        { title: "diiscography", to: "/producer/discography" }
+        { title: "home", to: "/gamer" },
+        { title: "大合奏！バンドブラザーズP", to: "/gamer/bbp" }
       ]
     };
   },
   computed: {
     accounts: function() {
-      return ACCOUNTDATA.filter(account => account["type"] === "producer");
+      return ACCOUNTDATA.filter(account => account["type"] === "gamer");
     }
   }
 };

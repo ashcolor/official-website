@@ -47,5 +47,12 @@
     "name": "Piapro",
     "icon": "",
     "url": "https://piapro.jp/ss0627"
+  },
+  {
+    "id": 8,
+    "type": "gamer",
+    "name": "Twitter",
+    "icon": "fab fa-twitter",
+    "url": "https://twitter.com/ashcolor27"
   }
 ]

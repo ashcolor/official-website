@@ -1,7 +1,7 @@
 <template>
   <v-card class="d-flex align-content-start flex-wrap" height="100%">
     <v-row>
-      <v-card class="flex-grow-1  flex-shrink-1" style="max-width: 500px">
+      <v-card class="flex-grow-1  flex-shrink-1">
         <profile></profile>
         <v-fab-transition>
           <v-btn

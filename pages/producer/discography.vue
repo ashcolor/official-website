@@ -104,11 +104,16 @@ export default {
           url: "https://itunes.apple.com/jp/artist/ashcolor/807046372"
         },
         {
+          name: "soptify",
+          icon: "fab fa-spotify",
+          url:
+            "https://open.spotify.com/artist/530ZxZmJuJ7sAcI84QJwJA?si=54xDsAeoQFyC7f-BxCoqiQ"
+        },
+        {
           name: "LINE MUSIC",
           icon: "fab fa-line",
           url: "https://music.line.me/artist/mi000000000014298c"
         },
-
         {
           name: "amazon music",
           icon: "fab fa-amazon",
