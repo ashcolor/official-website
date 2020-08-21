@@ -16,10 +16,10 @@
     </a>
 
     <h2 class="mt-12 overline">Frontend</h2>
-    <p>JavaScript/Vue</p>
+    <p>JavaScript/Vue/Nuxt</p>
 
     <h2 class="mt-8 overline">Backend</h2>
-    <p>PHP/CakePHP</p>
+    <p>PHP/CakePHP/MySQL</p>
 
     <h2 class="mt-12 overline">Certification</h2>
     <p class="my-0">FE(2011/9)</p>

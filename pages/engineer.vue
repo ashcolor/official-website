@@ -1,17 +1,10 @@
 <template>
   <v-card class="d-flex align-content-start flex-wrap" height="100%">
     <v-row>
-      <v-card class="flex-grow-1  flex-shrink-1">
+      <v-card class="flex-grow-1 flex-shrink-1">
         <profile></profile>
         <v-fab-transition>
-          <v-btn
-            class="v-btn__back ma-8"
-            color="white"
-            to="/welcome"
-            fab
-            bottom
-            left
-          >
+          <v-btn class="v-btn__back ma-8" color="white" to="/welcome" fab bottom left>
             <v-icon color="primary">fa-arrow-left</v-icon>
           </v-btn>
         </v-fab-transition>
@@ -29,19 +22,16 @@
                   {{ repo.stargazers_count }}
                 </v-list-item-icon>
                 <v-list-item-content>
-                  <v-chip v-for="topic in repo.topics" :key="topic" x-small>{{
+                  <v-chip v-for="topic in repo.topics" :key="topic" x-small>
+                    {{
                     topic
-                  }}</v-chip>
+                    }}
+                  </v-chip>
                   <v-list-item-title v-text="repo.name"></v-list-item-title>
-                  <v-list-item-subtitle
-                    v-text="repo.description"
-                  ></v-list-item-subtitle>
+                  <v-list-item-subtitle v-text="repo.description"></v-list-item-subtitle>
                 </v-list-item-content>
               </v-list-item>
-              <v-divider
-                :key="repo.title"
-                v-if="index !== githubRepos.length - 1"
-              ></v-divider>
+              <v-divider :key="repo.title" v-if="index !== githubRepos.length - 1"></v-divider>
             </template>
           </v-list>
           <v-toolbar color="#55C500" dense dark>
@@ -55,16 +45,15 @@
                   {{ item.likes_count }}
                 </v-list-item-icon>
                 <v-list-item-content>
-                  <v-chip v-for="tag in item.tags" :key="tag.name" x-small>{{
+                  <v-chip v-for="tag in item.tags" :key="tag.name" x-small>
+                    {{
                     tag.name
-                  }}</v-chip>
+                    }}
+                  </v-chip>
                   <v-list-item-title v-text="item.title"></v-list-item-title>
                 </v-list-item-content>
               </v-list-item>
-              <v-divider
-                :key="item.title"
-                v-if="index !== qiitaItems.length - 1"
-              ></v-divider>
+              <v-divider :key="item.title" v-if="index !== qiitaItems.length - 1"></v-divider>
             </template>
           </v-list>
         </v-card>
@@ -101,6 +90,7 @@ export default {
       this.githubRepos = response.data.sort(
         (a, b) => b["stargazers_count"] - a["stargazers_count"]
       );
+      this.githubRepos = this.githubRepos.filter(repo => repo.fork === false);
     },
     getQiita: async function() {
       const response = await axios.get(
