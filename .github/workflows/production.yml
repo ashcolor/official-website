@@ -9,7 +9,7 @@ on:
 env:
   GCP_PROJECT: ${{ secrets.GCP_PROJECT }}
   GCP_REGION: ${{ secrets.GCP_REGION }}
-  IMAGE: asia.gcr.io/${{ secrets.GCP_PROJECT }}/foobar:${{ github.sha }}
+  IMAGE: asia.gcr.io/${{ secrets.GCP_PROJECT }}/ashcolor-official-website:${{ github.sha }}
 
 jobs:
   delivery:
@@ -37,7 +37,7 @@ jobs:
 
       - name: Deploy to Cloud Run
         run: |
-          gcloud run deploy foobar \
+          gcloud run deploy ashcolor-official-website \
             --image $IMAGE \
             --project $GCP_PROJECT \
             --region $GCP_REGION \
