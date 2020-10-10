@@ -1,5 +1,5 @@
 # @https://qiita.com/szk3/items/38a3dba7fdfed189f4c9
-name: Delivery
+name: Develop Deploy
 
 on:
   push:
