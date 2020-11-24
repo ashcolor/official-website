@@ -41,12 +41,12 @@
         v-for="original in originals"
         v-bind:key="original.url"
         class="d-inline-block ma-8"
-        height="270"
+        height="180"
         tile
       >
         <iframe
-          width="480"
-          height="270"
+          width="320"
+          height="180"
           :src="original.url"
           frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
