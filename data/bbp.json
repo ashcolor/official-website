@@ -2,57 +2,441 @@
   {
     "name": "言って",
     "artist": "ヨルシカ",
-    "genre": "J-POP",
+    "published": "-",
     "modified": "2019/11/14",
-    "url": "https://storage.googleapis.com/gamer-bbp/itte.mp3"
+    "url": "https://storage.googleapis.com/gamer-bbp/itte.mp3",
+    "genre": "J-POP"
   },
   {
     "name": "lemon",
     "artist": "米津玄師",
-    "genre": "J-POP",
+    "published": "-",
     "modified": "2019/11/10",
-    "url": "https://storage.googleapis.com/gamer-bbp/lemon.mp3"
+    "url": "https://storage.googleapis.com/gamer-bbp/lemon.mp3",
+    "genre": "J-POP"
   },
   {
     "name": "Yuri on Ice",
     "artist": "ユーリ!!! on ICE BGM",
-    "genre": "アニメ",
+    "published": "-",
     "modified": "2017/01/19",
-    "url": "https://storage.googleapis.com/gamer-bbp/yuri.mp3"
+    "url": "https://storage.googleapis.com/gamer-bbp/yuri.mp3",
+    "genre": "アニメ"
   },
   {
     "name": "世界五分前仮説",
     "artist": "有形ランペイジ",
-    "genre": "J-POP",
+    "published": "-",
     "modified": "2017/01/05",
-    "url": "https://storage.googleapis.com/gamer-bbp/sekai.mp3"
+    "url": "https://storage.googleapis.com/gamer-bbp/sekai.mp3",
+    "genre": "J-POP"
   },
   {
     "name": "よっこらせ（笑）",
     "artist": "アゴアニキ",
-    "genre": "VOCALOID",
+    "published": "-",
     "modified": "2016/01/17",
-    "url": "https://storage.googleapis.com/gamer-bbp/yokkorase.mp3"
+    "url": "https://storage.googleapis.com/gamer-bbp/yokkorase.mp3",
+    "genre": "VOCALOID"
   },
   {
     "name": "トマト倉庫BGM",
     "artist": "大合奏！バンドブラザーズP",
-    "genre": "ゲーム",
+    "published": "-",
     "modified": "2015/01/31",
-    "url": "https://storage.googleapis.com/gamer-bbp/tomato.mp3"
+    "url": "https://storage.googleapis.com/gamer-bbp/tomato.mp3",
+    "genre": "ゲーム"
   },
   {
     "name": "September",
     "artist": "Earth Wind&Fire",
-    "genre": "洋楽",
+    "published": "-",
     "modified": "2014/09/21",
-    "url": "https://storage.googleapis.com/gamer-bbp/september.mp3"
+    "url": "https://storage.googleapis.com/gamer-bbp/september.mp3",
+    "genre": "洋楽"
   },
   {
     "name": "エレクトリカル・パレード",
-    "artist": "",
-    "genre": "ディズニー",
+    "artist": "-",
+    "published": "-",
     "modified": "2014/04/13",
-    "url": "https://storage.googleapis.com/gamer-bbp/electrical_parade.mp3"
+    "url": "https://storage.googleapis.com/gamer-bbp/electrical_parade.mp3",
+    "genre": "ディズニー"
+  },
+  {
+    "name": "ＷＡになっておどろう",
+    "artist": "V6",
+    "published": "2017/01/19 12:01:04",
+    "modified": "-",
+    "url": "https://storage.googleapis.com/gamer-bbp/ＷＡになっておどろう.aac",
+    "genre": "idol"
+  },
+  {
+    "name": "再教育",
+    "artist": "Neru",
+    "published": "2016/06/23 17:01:07",
+    "modified": "-",
+    "url": "https://storage.googleapis.com/gamer-bbp/再教育.aac",
+    "genre": "vocalo"
+  },
+  {
+    "name": "ＲＯＬＬ",
+    "artist": "ポルノグラフィティ",
+    "published": "2016/03/17 9:41:13",
+    "modified": "-",
+    "url": "https://storage.googleapis.com/gamer-bbp/ＲＯＬＬ.aac",
+    "genre": "dorama"
+  },
+  {
+    "name": "ＳＨＩＮＥ！！",
+    "artist": "CINDERELLA PROJECT",
+    "published": "2016/02/08 16:03:02",
+    "modified": "-",
+    "url": "https://storage.googleapis.com/gamer-bbp/ＳＨＩＮＥ！！.aac",
+    "genre": "anison"
+  },
+  {
+    "name": "シルエット",
+    "artist": "KANA-BOON",
+    "published": "2015/11/28 15:01:03",
+    "modified": "-",
+    "url": "https://storage.googleapis.com/gamer-bbp/シルエット.aac",
+    "genre": "anison"
+  },
+  {
+    "name": "サンドリヨン",
+    "artist": "Dios/シグナルP",
+    "published": "2015/11/11 1:11:09",
+    "modified": "-",
+    "url": "https://storage.googleapis.com/gamer-bbp/サンドリヨン.aac",
+    "genre": "vocalo"
+  },
+  {
+    "name": "炉心融解",
+    "artist": "iroha",
+    "published": "2015/08/23 9:38:09",
+    "modified": "-",
+    "url": "https://storage.googleapis.com/gamer-bbp/炉心融解.aac",
+    "genre": "vocalo"
+  },
+  {
+    "name": "きょうもハレバレ",
+    "artist": "ふわりP",
+    "published": "2015/05/10 9:55:10",
+    "modified": "-",
+    "url": "https://storage.googleapis.com/gamer-bbp/きょうもハレバレ.aac",
+    "genre": "vocalo"
+  },
+  {
+    "name": "ＫＩＳＳして",
+    "artist": "KOH+",
+    "published": "2015/04/25 9:05:14",
+    "modified": "-",
+    "url": "https://storage.googleapis.com/gamer-bbp/ＫＩＳＳして.aac",
+    "genre": "dorama"
+  },
+  {
+    "name": "ギー太に首ったけ",
+    "artist": "平沢唯(豊崎愛生)",
+    "published": "2015/03/05 9:08:03",
+    "modified": "-",
+    "url": "https://storage.googleapis.com/gamer-bbp/ギー太に首ったけ.aac",
+    "genre": "anison"
+  },
+  {
+    "name": "ＦＩＳＨ",
+    "artist": "back number",
+    "published": "2015/03/01 11:04:08",
+    "modified": "-",
+    "url": "https://storage.googleapis.com/gamer-bbp/ＦＩＳＨ.aac",
+    "genre": "jpop"
+  },
+  {
+    "name": "ＳＴＯＲＹ",
+    "artist": "AI",
+    "published": "2015/02/28 18:14:09",
+    "modified": "-",
+    "url": "https://storage.googleapis.com/gamer-bbp/ＳＴＯＲＹ.aac",
+    "genre": "dorama"
+  },
+  {
+    "name": "サリシノハラ",
+    "artist": "みきとP",
+    "published": "2015/01/28 9:39:03",
+    "modified": "-",
+    "url": "https://storage.googleapis.com/gamer-bbp/サリシノハラ.aac",
+    "genre": "jpop"
+  },
+  {
+    "name": "リンク",
+    "artist": "ポルノグラフィティ",
+    "published": "2015/01/12 9:23:09",
+    "modified": "-",
+    "url": "https://storage.googleapis.com/gamer-bbp/リンク.aac",
+    "genre": "dorama"
+  },
+  {
+    "name": "丸の内サディスティック",
+    "artist": "椎名林檎",
+    "published": "2014/12/06 13:16:06",
+    "modified": "-",
+    "url": "https://storage.googleapis.com/gamer-bbp/丸の内サディスティック.aac",
+    "genre": "rock"
+  },
+  {
+    "name": "＊～アスタリスク～",
+    "artist": "ORANGE RANGE",
+    "published": "2014/11/09 17:57:03",
+    "modified": "-",
+    "url": "https://storage.googleapis.com/gamer-bbp/＊～アスタリスク～.aac",
+    "genre": "anison"
+  },
+  {
+    "name": "いろんなうんち",
+    "artist": "デP",
+    "published": "2014/11/08 12:24:14",
+    "modified": "-",
+    "url": "https://storage.googleapis.com/gamer-bbp/いろんなうんち.aac",
+    "genre": "vocalo"
+  },
+  {
+    "name": "黄昏ロマンス",
+    "artist": "ポルノグラフィティ",
+    "published": "2014/10/14 15:32:03",
+    "modified": "-",
+    "url": "https://storage.googleapis.com/gamer-bbp/黄昏ロマンス.aac",
+    "genre": "dorama"
+  },
+  {
+    "name": "from Y to Y",
+    "artist": "ジミーサムP",
+    "published": "2014/09/01 17:32:03",
+    "modified": "-",
+    "url": "https://storage.googleapis.com/gamer-bbp/from Y to Y.aac",
+    "genre": "vocalo"
+  },
+  {
+    "name": "ミュージック・アワー",
+    "artist": "ポルノグラフィティ",
+    "published": "2014/07/16 13:58:03",
+    "modified": "-",
+    "url": "https://storage.googleapis.com/gamer-bbp/ミュージック・アワー.aac",
+    "genre": "dorama"
+  },
+  {
+    "name": "サウダージ",
+    "artist": "ポルノグラフィティ",
+    "published": "2014/07/13 11:32:03",
+    "modified": "-",
+    "url": "https://storage.googleapis.com/gamer-bbp/サウダージ.aac",
+    "genre": "jpop"
+  },
+  {
+    "name": "ヒカリへ",
+    "artist": "ザ・ベイビースターズ",
+    "published": "2014/05/26 14:32:03",
+    "modified": "-",
+    "url": "https://storage.googleapis.com/gamer-bbp/ヒカリへ.aac",
+    "genre": "anison"
+  },
+  {
+    "name": "ちいさなはじまりのうた",
+    "artist": "あっしゅからー",
+    "published": "2014/04/26 17:03:04",
+    "modified": "-",
+    "url": "https://storage.googleapis.com/gamer-bbp/ちいさなはじまりのうた.aac",
+    "genre": "vocalo"
+  },
+  {
+    "name": "ヒトリノ夜",
+    "artist": "ポルノグラフィティ",
+    "published": "2014/04/18 9:13:03",
+    "modified": "-",
+    "url": "https://storage.googleapis.com/gamer-bbp/ヒトリノ夜.aac",
+    "genre": "jpop"
+  },
+  {
+    "name": "ＬＥＧＡＬ－ＨＩＧＨ",
+    "artist": "林ゆうき",
+    "published": "2014/04/02 11:45:03",
+    "modified": "-",
+    "url": "https://storage.googleapis.com/gamer-bbp/ＬＥＧＡＬ－ＨＩＧＨ.aac",
+    "genre": "dorama"
+  },
+  {
+    "name": "朝焼け、君の唄。",
+    "artist": "ほえほえP",
+    "published": "2014/03/20 16:45:03",
+    "modified": "-",
+    "url": "https://storage.googleapis.com/gamer-bbp/朝焼け、君の唄。.aac",
+    "genre": "jpop"
+  },
+  {
+    "name": "何度でも",
+    "artist": "DREAMS COME TRUE",
+    "published": "2014/03/07 9:42:03",
+    "modified": "-",
+    "url": "https://storage.googleapis.com/gamer-bbp/何度でも.aac",
+    "genre": "jpop"
+  },
+  {
+    "name": "ハネウマライダー",
+    "artist": "ポルノグラフィティ",
+    "published": "2014/02/27 12:03:02",
+    "modified": "-",
+    "url": "https://storage.googleapis.com/gamer-bbp/ハネウマライダー.aac",
+    "genre": "dorama"
+  },
+  {
+    "name": "ネオメロドラマティック",
+    "artist": "ポルノグラフィティ",
+    "published": "2014/02/26 19:09:03",
+    "modified": "-",
+    "url": "https://storage.googleapis.com/gamer-bbp/ネオメロドラマティック.aac",
+    "genre": "jpop"
+  },
+  {
+    "name": "ＣＡＬＣ．",
+    "artist": "ジミーサムP",
+    "published": "2014/02/25 18:35:04",
+    "modified": "-",
+    "url": "https://storage.googleapis.com/gamer-bbp/ＣＡＬＣ．.aac",
+    "genre": "vocalo"
+  },
+  {
+    "name": "アンハッピーリフレイン",
+    "artist": "wowaka",
+    "published": "2014/02/21 14:29:03",
+    "modified": "-",
+    "url": "https://storage.googleapis.com/gamer-bbp/アンハッピーリフレイン.aac",
+    "genre": "vocalo"
+  },
+  {
+    "name": "愛迷エレジー",
+    "artist": "DECO*27",
+    "published": "2014/02/08 12:38:03",
+    "modified": "-",
+    "url": "https://storage.googleapis.com/gamer-bbp/愛迷エレジー.aac",
+    "genre": "vocalo"
+  },
+  {
+    "name": "弱虫モンブラン",
+    "artist": "DECO*27",
+    "published": "2014/01/31 9:54:03",
+    "modified": "-",
+    "url": "https://storage.googleapis.com/gamer-bbp/弱虫モンブラン.aac",
+    "genre": "jpop"
+  },
+  {
+    "name": "小さな生き物",
+    "artist": "スピッツ",
+    "published": "2014/01/25 9:19:04",
+    "modified": "-",
+    "url": "https://storage.googleapis.com/gamer-bbp/小さな生き物.aac",
+    "genre": "jpop"
+  },
+  {
+    "name": "ＷＥＥＥＥＫ",
+    "artist": "NEWS",
+    "published": "2014/01/24 15:34:04",
+    "modified": "-",
+    "url": "https://storage.googleapis.com/gamer-bbp/ＷＥＥＥＥＫ.aac",
+    "genre": "dorama"
+  },
+  {
+    "name": "青い栞",
+    "artist": "Galileo Galilei",
+    "published": "2014/01/22 12:14:04",
+    "modified": "-",
+    "url": "https://storage.googleapis.com/gamer-bbp/青い栞.aac",
+    "genre": "anison"
+  },
+  {
+    "name": "ローリンガール",
+    "artist": "wowaka",
+    "published": "2014/01/20 15:48:04",
+    "modified": "-",
+    "url": "https://storage.googleapis.com/gamer-bbp/ローリンガール.aac",
+    "genre": "vocalo"
+  },
+  {
+    "name": "風になる",
+    "artist": "つじあやの",
+    "published": "2014/01/15 14:09:04",
+    "modified": "-",
+    "url": "https://storage.googleapis.com/gamer-bbp/風になる.aac",
+    "genre": "anison"
+  },
+  {
+    "name": "アポロ",
+    "artist": "ポルノグラフィティ",
+    "published": "2014/01/14 12:45:03",
+    "modified": "-",
+    "url": "https://storage.googleapis.com/gamer-bbp/アポロ.aac",
+    "genre": "dorama"
+  },
+  {
+    "name": "ドレミファロンド",
+    "artist": "40mP",
+    "published": "2014/01/03 12:37:03",
+    "modified": "-",
+    "url": "https://storage.googleapis.com/gamer-bbp/ドレミファロンド.aac",
+    "genre": "vocalo"
+  },
+  {
+    "name": "ＭＵＧＥＮ",
+    "artist": "ポルノグラフィティ",
+    "published": "2013/12/19 11:22:03",
+    "modified": "-",
+    "url": "https://storage.googleapis.com/gamer-bbp/ＭＵＧＥＮ.aac",
+    "genre": "dorama"
+  },
+  {
+    "name": "ＨＡＲＤ　ＤＡＹＳ，ＨＯＬＹ　ＮＩＧＨＴ",
+    "artist": "ポルノグラフィティ",
+    "published": "2013/12/11 11:49:04",
+    "modified": "-",
+    "url": "https://storage.googleapis.com/gamer-bbp/ＨＡＲＤ　ＤＡＹＳ，ＨＯＬＹ　ＮＩＧＨＴ.aac",
+    "genre": "rock"
+  },
+  {
+    "name": "透明人間",
+    "artist": "東京事変",
+    "published": "2013/12/08 17:14:04",
+    "modified": "-",
+    "url": "https://storage.googleapis.com/gamer-bbp/透明人間.aac",
+    "genre": "jpop"
+  },
+  {
+    "name": "メリッサ",
+    "artist": "ポルノグラフィティ",
+    "published": "2013/11/29 10:10:03",
+    "modified": "-",
+    "url": "https://storage.googleapis.com/gamer-bbp/メリッサ.aac",
+    "genre": "dorama"
+  },
+  {
+    "name": "Just Be Friends",
+    "artist": "Dixie Flatline",
+    "published": "2013/11/27 16:32:03",
+    "modified": "-",
+    "url": "https://storage.googleapis.com/gamer-bbp/Just Be Friends.aac",
+    "genre": "vocalo"
+  },
+  {
+    "name": "からくりピエロ",
+    "artist": "40mP",
+    "published": "2013/11/25 15:13:08",
+    "modified": "-",
+    "url": "https://storage.googleapis.com/gamer-bbp/からくりピエロ.aac",
+    "genre": "vocalo"
+  },
+  {
+    "name": "アゲハ蝶",
+    "artist": "ポルノグラフィティ",
+    "published": "2013/11/19 11:28:04",
+    "modified": "-",
+    "url": "https://storage.googleapis.com/gamer-bbp/アゲハ蝶.aac",
+    "genre": "jpop"
   }
 ]
