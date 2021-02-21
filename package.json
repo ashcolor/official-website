@@ -11,13 +11,13 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.12.1",
-    "@mdi/font": "^5.0.45",
-    "@nuxtjs/vuetify": "^1.11.0",
+    "@fortawesome/fontawesome-free": "^5.15.2",
+    "@mdi/font": "^5.9.55",
+    "@nuxtjs/vuetify": "^1.11.3",
     "axios": "^0.21.1",
     "cross-env": "^5.2.0",
     "express": "^4.16.4",
-    "nuxt": "^2.0.0",
+    "nuxt": "^2.15.1",
     "vue-audio": "^0.0.12"
   },
   "devDependencies": {

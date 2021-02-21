@@ -1,21 +1,35 @@
 <template>
-  <v-card
+  <v-layout
     class="d-flex d-flex-row flex-sm-nowrap flex-wrap align-content-start"
-    height="100%"
   >
-    <v-card
-      id="left-container"
-      class="flex-sm-grow-0 flex-grow-1 flex-shrink-0"
-    >
-      <profile></profile>
-    </v-card>
+    <v-flex id="left-flex" class="flex-sm-grow-0 flex-grow-1 flex-shrink-0">
+      <profile :tags="tags"></profile>
+    </v-flex>
 
-    <v-card class="mx-auto pa-12 flex-grow-1 flex-shrink-1" flat>
-      <v-card height="90%">
-        <v-toolbar color="#211F1F" dense dark>
+    <v-flex class=" pa-12 flex-grow-1 flex-shrink-1" flat>
+      <v-card>
+        <v-toolbar color="primary" dense dark>
+          <span class="title">System</span>
+        </v-toolbar>
+        <v-card
+          class="d-flex justify-center flex-wrap"
+          style="border:none"
+          outlined
+        >
+          <system-card
+            class="d-inline-block ma-6"
+            style="position: relative"
+            v-for="system in systems"
+            :key="system.id"
+            :system="system"
+          />
+        </v-card>
+      </v-card>
+
+      <v-card>
+        <v-toolbar color="github" dense dark>
           <span class="title">Github</span>
         </v-toolbar>
-
         <v-list>
           <template v-for="(repo, index) in githubRepos">
             <tech-list
@@ -25,7 +39,6 @@
               :name="repo.name"
               :description="repo.description"
               :href="repo.html_url"
-              target="_blank"
             />
             <v-divider
               :key="repo.title"
@@ -33,10 +46,13 @@
             ></v-divider>
           </template>
         </v-list>
-        <v-toolbar color="#55C500" dense dark>
+      </v-card>
+
+      <v-card>
+        <v-toolbar color="qiita" dense dark>
           <span class="title">Qiita</span>
         </v-toolbar>
-        <v-list>
+        <v-list outlined>
           <template v-for="(item, index) in qiitaItems">
             <tech-list
               :key="item.id"
@@ -44,7 +60,6 @@
               :tags="item.tags"
               :name="item.title"
               :href="item.url"
-              target="_blank"
             />
             <v-divider
               :key="item.title"
@@ -53,26 +68,27 @@
           </template>
         </v-list>
       </v-card>
-      <v-footer color="grey lighten-4">
-        <tech-tag :tag="tag" v-for="tag in tags" :key="tag.name" />
-      </v-footer>
-    </v-card>
-  </v-card>
+    </v-flex>
+  </v-layout>
 </template>
 
 <script>
 import axios from "axios";
 import "@fortawesome/fontawesome-free/css/all.css";
 import Profile from "~/components/engineer/Profile.vue";
+import SystemCard from "../components/engineer/SystemCard.vue";
 import TechList from "../components/engineer/TechList.vue";
 import TechTag from "../components/engineer/TechTag.vue";
+import SYSTEMDATA from "~/data/systems.json";
 
 export default {
   layout: "engineer",
   components: {
     Profile,
+    SystemCard,
     TechTag,
-    TechList
+    TechList,
+    SystemCard
   },
   data() {
     return {
@@ -81,6 +97,9 @@ export default {
     };
   },
   computed: {
+    systems: function() {
+      return SYSTEMDATA;
+    },
     tags: function() {
       let tags = [];
       this.githubRepos.forEach(repo => {
@@ -88,6 +107,12 @@ export default {
       });
       this.qiitaItems.forEach(item => {
         tags = tags.concat(item.tags);
+      });
+
+      this.systems.forEach(system => {
+        ["frontend", "backend", "infrastructure"].forEach(type => {
+          tags = tags.concat(system[type]);
+        });
       });
 
       let uniqTags = Array.from(new Set(tags));
@@ -140,22 +165,13 @@ export default {
 </script>
 
 <style scoped>
-.layout {
-  height: 100%;
-}
-.v-toolbar .v-image {
-  width: 100%;
-  height: 40px;
+@media only screen and (min-width: 600px) {
+  #left-flex {
+    max-width: 400px;
+  }
 }
 .v-list {
-  height: 240px;
+  height: 300px;
   overflow-y: scroll;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-.v-btn__back {
-  bottom: 0;
-  position: absolute;
-  margin: 0 0 16px 16px;
 }
 </style>

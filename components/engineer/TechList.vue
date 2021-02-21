@@ -1,11 +1,11 @@
 <template>
-  <v-list-item :href="href">
+  <v-list-item :href="href" target="_blank">
     <v-list-item-icon>
-      <v-icon>mdi-star</v-icon>
+      <v-icon color="yellow">mdi-star</v-icon>
       {{ count }}
     </v-list-item-icon>
     <v-list-item-content>
-      <v-chip v-for="tag in tags" :key="tag" x-small>
+      <v-chip v-for="tag in tags" :key="tag" outlined small>
         {{ tag }}
       </v-chip>
       <v-list-item-title v-text="name"></v-list-item-title>

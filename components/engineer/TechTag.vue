@@ -1,5 +1,10 @@
 <template>
-  <v-chip class="ma-1" :[getSizeClass(tag.count)]="true">
+  <v-chip
+    color="white"
+    outlined
+    class="mr-2 mb-2"
+    :[getSizeClass(tag.count)]="true"
+  >
     {{ tag.name }}
   </v-chip>
 </template>
@@ -12,11 +17,11 @@ export default {
   methods: {
     getSizeClass(count) {
       if (count >= 3) {
-        return "large";
-      } else if (count >= 2) {
         return "default";
-      } else {
+      } else if (count >= 2) {
         return "small";
+      } else {
+        return "x-small";
       }
     }
   }
