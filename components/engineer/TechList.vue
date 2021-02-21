@@ -1,5 +1,5 @@
 <template>
-  <v-list-item>
+  <v-list-item :href="href">
     <v-list-item-icon>
       <v-icon>mdi-star</v-icon>
       {{ count }}
@@ -17,6 +17,7 @@
 <script>
 export default {
   props: {
+    href: String,
     count: Number,
     tags: Array,
     name: String,

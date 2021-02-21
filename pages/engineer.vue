@@ -43,7 +43,7 @@
               :count="item.likes_count"
               :tags="item.tags"
               :name="item.title"
-              :href="item.html_url"
+              :href="item.url"
               target="_blank"
             />
             <v-divider
@@ -119,7 +119,6 @@ export default {
         (a, b) => b["stargazers_count"] - a["stargazers_count"]
       );
       repos = repos.filter(repo => repo.fork === false);
-      console.log(repos);
       this.githubRepos = repos;
     },
     getQiita: async function() {
