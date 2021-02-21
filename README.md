@@ -5,7 +5,7 @@
 - [Welcome](https://ashcolor.work/welcome)
 - [Engineer](https://ashcolor.work/engineer)
 - [Producer](https://ashcolor.work)
-- Gamer
+- [Gamer](https://ashcolor.work/gamer)
 
 ## Build Setup
 

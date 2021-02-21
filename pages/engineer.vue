@@ -3,20 +3,8 @@
     class="d-flex d-flex-row flex-sm-nowrap flex-wrap align-content-start"
     height="100%"
   >
-    <v-card id="left-container" class="flex-grow-1 flex-shrink-0">
+    <v-card id="left-container" class="flex-grow-0 flex-shrink-0">
       <profile></profile>
-      <v-fab-transition>
-        <v-btn
-          class="v-btn__back ma-8"
-          color="white"
-          to="/welcome"
-          fab
-          bottom
-          left
-        >
-          <v-icon color="primary">fa-arrow-left</v-icon>
-        </v-btn>
-      </v-fab-transition>
     </v-card>
 
     <v-card class="mx-auto pa-12 flex-grow-1 flex-shrink-1" flat>
@@ -62,7 +50,7 @@
           </template>
         </v-list>
       </v-card>
-      <v-footer>
+      <v-footer color="grey lighten-4">
         <tech-tag :tag="tag" v-for="tag in tags" :key="tag.name" />
       </v-footer>
     </v-card>
@@ -139,7 +127,6 @@ export default {
         (a, b) => b["likes_count"] - a["likes_count"]
       );
       items = items.map(item => {
-        console.log(item);
         item.tags = item.tags.map(tag => tag.name);
         return item;
       });
