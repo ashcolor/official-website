@@ -3,7 +3,10 @@
     class="d-flex d-flex-row flex-sm-nowrap flex-wrap align-content-start"
     height="100%"
   >
-    <v-card id="left-container" class="flex-grow-0 flex-shrink-0">
+    <v-card
+      id="left-container"
+      class="flex-sm-grow-0 flex-grow-1 flex-shrink-0"
+    >
       <profile></profile>
     </v-card>
 
@@ -116,6 +119,7 @@ export default {
         (a, b) => b["stargazers_count"] - a["stargazers_count"]
       );
       repos = repos.filter(repo => repo.fork === false);
+      console.log(repos);
       this.githubRepos = repos;
     },
     getQiita: async function() {
