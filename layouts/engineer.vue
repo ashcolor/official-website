@@ -1,8 +1,8 @@
 <template>
   <v-app dark>
-    <v-content class="ma-0">
+    <v-main class="ma-0">
       <nuxt />
-    </v-content>
+    </v-main>
     <my-footer />
   </v-app>
 </template>

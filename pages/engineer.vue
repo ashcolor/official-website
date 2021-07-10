@@ -88,7 +88,6 @@ export default {
     SystemCard,
     TechTag,
     TechList,
-    SystemCard
   },
   data() {
     return {
@@ -97,10 +96,10 @@ export default {
     };
   },
   computed: {
-    systems: function() {
+    systems: function () {
       return SYSTEMDATA;
     },
-    tags: function() {
+    tags: function () {
       let tags = [];
       this.githubRepos.forEach(repo => {
         tags = tags.concat(repo.topics);
@@ -121,7 +120,7 @@ export default {
         tagCounts.push({
           name: value,
           count: tags.filter(tag => {
-            return tag == value;
+            return tag === value;
           }).length
         });
       });
@@ -131,11 +130,12 @@ export default {
       return tagCounts;
     }
   },
-  created: function() {
-    this.getGithub(), this.getQiita();
+  created: function () {
+    this.getGithub();
+    this.getQiita();
   },
   methods: {
-    getGithub: async function() {
+    getGithub: async function () {
       const response = await axios.get(
         "https://asia-northeast1-official-website-271208.cloudfunctions.net/github-repos"
       );
@@ -146,7 +146,7 @@ export default {
       repos = repos.filter(repo => repo.fork === false);
       this.githubRepos = repos;
     },
-    getQiita: async function() {
+    getQiita: async function () {
       const response = await axios.get(
         "https://asia-northeast1-official-website-271208.cloudfunctions.net/qiita-items"
       );
@@ -170,6 +170,7 @@ export default {
     max-width: 400px;
   }
 }
+
 .v-list {
   height: 300px;
   overflow-y: scroll;
