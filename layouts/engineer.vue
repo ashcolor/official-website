@@ -28,4 +28,9 @@ a {
 a {
   text-decoration: none;
 }
+.container {
+  width: 100% !important;
+  height: 100%;
+  max-width: unset !important;
+}
 </style>
