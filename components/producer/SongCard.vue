@@ -20,34 +20,25 @@
       <div>{{song.name}}</div>
     </v-card-text>
     <v-footer class="px-2">
-      <v-tooltip bottom>
+      <v-tooltip v-if="song.youtube" bottom>
         <template v-slot:activator="{ on }">
-          <a v-if="song.youtube" :href="song.youtube" target="_blank" v-on="on" class="pr-2" icon>
+          <a :href="song.youtube" target="_blank" v-on="on" class="pr-2">
             <v-icon>mdi-youtube</v-icon>
           </a>
         </template>
         <span>YouTube</span>
       </v-tooltip>
       <v-tooltip bottom>
-        <template v-slot:activator="{ on }">
-          <a v-if="song.niconico" :href="song.niconico" target="_blank" v-on="on" class="pr-2" icon>
+        <template v-if="song.niconico" v-slot:activator="{ on }">
+          <a :href="song.niconico" target="_blank" v-on="on" class="pr-2">
             <v-icon>mdi-television-classic</v-icon>
           </a>
         </template>
         <span>niconico</span>
       </v-tooltip>
-      <v-tooltip bottom>
+      <v-tooltip v-if="song.lyric" bottom>
         <template v-slot:activator="{ on }">
-          <a
-            v-if="song.lyric"
-            :href="lyricBaseurl + song.lyric"
-            target="_blank"
-            v-on="on"
-            class="pr-2"
-            icon
-          >
-            <v-icon>mdi-text-box</v-icon>
-          </a>
+            <lyric-button :title="song.name" :fileUrl="lyricBaseurl + song.lyric"></lyric-button>
         </template>
         <span>歌詞</span>
       </v-tooltip>
@@ -57,8 +48,12 @@
 
 <script>
 import "@mdi/font/css/materialdesignicons.css";
+import LyricButton from "./LyricButton";
 
 export default {
+  components: {
+    LyricButton
+  },
   filters: {
     dateFormat: function(value) {
       const date = new Date(value);
