@@ -1,8 +1,8 @@
 <template>
   <v-app dark>
-    <v-content class="ma-0">
+    <v-main class="ma-0">
       <nuxt />
-    </v-content>
+    </v-main>
     <my-footer />
   </v-app>
 </template>
@@ -27,10 +27,5 @@ a {
 
 a {
   text-decoration: none;
-}
-.container {
-  width: 100% !important;
-  height: 100%;
-  max-width: unset !important;
 }
 </style>
