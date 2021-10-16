@@ -1,6 +1,4 @@
-# official-website
-
-> ashcolor official website
+# ashcolor official website
 
 - [Welcome](https://ashcolor.work/welcome)
 - [Engineer](https://ashcolor.work/engineer)
@@ -20,5 +18,3 @@ $ yarn dev
 $ yarn build
 $ yarn start
 ```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
