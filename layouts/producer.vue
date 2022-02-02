@@ -54,7 +54,7 @@ export default {
         { title: "home", to: "/" },
         { title: "profile", to: "/producer/profile" },
         { title: "music", to: "/producer/music" },
-        { title: "diiscography", to: "/producer/discography" }
+        { title: "discography", to: "/producer/discography" }
       ]
     };
   },
