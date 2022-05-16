@@ -1,9 +1,7 @@
 <template>
   <v-app>
     <v-main>
-      <v-container>
-        <nuxt />
-      </v-container>
+      <nuxt />
     </v-main>
     <v-footer :fixed="fixed" app>
       <span class="font-weight-light"
