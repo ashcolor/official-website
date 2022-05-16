@@ -1,6 +1,6 @@
 <template>
   <v-app color="primary">
-    <v-container class="fill-height" fluid>
+    <v-container class="fill-height overflow-hidden;" fluid>
       <v-row align="center" justify="center">
         <v-col class="text-center" cols="12">
           <header>
@@ -26,6 +26,12 @@ export default {
   layout: "default"
 };
 </script>
+
+<style>
+html {
+  overflow: hidden;
+}
+</style>
 
 <style scoped>
 a {
