@@ -1,7 +1,6 @@
 # ashcolor official website
 
 - [Welcome](https://ashcolor.work/welcome)
-- [Engineer](https://ashcolor.work/engineer)
 - [Producer](https://ashcolor.work)
 - [Gamer](https://ashcolor.work/gamer)
 

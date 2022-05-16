@@ -1,26 +1,5 @@
 [
   {
-    "id": 1,
-    "type": "engineer",
-    "name": "GitHub",
-    "icon": "fab fa-github",
-    "url": "https://github.com/ashcolor"
-  },
-  {
-    "id": 2,
-    "type": "engineer",
-    "name": "Twitter",
-    "icon": "fab fa-twitter",
-    "url": "https://twitter.com/ashcolor06"
-  },
-  {
-    "id": 3,
-    "type": "engineer",
-    "name": "Qiita",
-    "icon": "",
-    "url": "https://qiita.com/ashcolor"
-  },
-  {
     "id": 4,
     "type": "producer",
     "name": "Twitter",
