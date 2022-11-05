@@ -1,6 +1,8 @@
-# Nuxt 3 Minimal Starter
+# ashcolor official website
 
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+- [Welcome](https://ashcolor.work/welcome)
+- [Producer](https://ashcolor.work)
+- [Gamer](https://ashcolor.work/gamer)
 
 ## Setup
 
@@ -9,13 +11,6 @@ Make sure to install the dependencies:
 ```bash
 # yarn
 yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install --shamefully-hoist
-```
 
 ## Development Server
 
@@ -38,5 +33,3 @@ Locally preview production build:
 ```bash
 npm run preview
 ```
-
-Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
