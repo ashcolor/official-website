@@ -1,4 +1,3 @@
-touch .prettierrc.js
 /**
  * Prettier Configuration
  */
