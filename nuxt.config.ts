@@ -12,5 +12,8 @@ export default defineNuxtConfig({
       },
     },
   },
-  buildModules: ["@pinia/nuxt"],
+    buildModules: ["@pinia/nuxt"],
+    components: {
+        dirs: ['~/components/pages','~/components/parts']
+    },
 });
