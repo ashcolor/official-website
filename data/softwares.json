@@ -1,0 +1,41 @@
+[
+    {
+        "type": "VOCALOID",
+        "icon": "bi:mic-fill",
+        "items": [
+            "CRYPTON 初音ミク(V2･append･V3)",
+            "CRYPTON 巡音ルカ",
+            "1stPLACE IA ROCKS",
+            "YAMAHA ken"
+        ]
+    },
+    {
+        "type": "ギター",
+        "icon": "fa-solid:guitar",
+        "items": ["MUSIC LAB Real Guitar4", "Ample Sound Ample Guitar LP III"]
+    },
+    {
+        "type": "ベース",
+        "icon": "fa-solid:guitar",
+        "items": ["SPECTRASONICS Trillian", "IK Multimedia MODO BASS"]
+    },
+    {
+        "type": "ドラム",
+        "icon": "fa-solid:drum",
+
+        "items": [
+            "XLN Audio Addictive Drums(Retro･Indie･Black velvet)",
+            "FXpansion BFD3",
+            "Native Instruments Battery 4"
+        ]
+    },
+    {
+        "type": "その他",
+        "icon": "fa6-solid:wave-square",
+        "items": [
+            "Native Instruments KOMPLETE7 ELEMENTS",
+            "XLN Audio Addictive Keys",
+            "A.O.M. Factory Invisible Limiter"
+        ]
+    }
+]

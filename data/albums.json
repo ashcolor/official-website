@@ -1,0 +1,44 @@
+[
+    {
+        "id": 2,
+        "key": "song_of_the_beginning",
+        "description": "配信限定 mini album",
+        "name": "はじまりの歌",
+        "name_english": "song of the beginning",
+        "published": "2018-10-30T15:00:00.000Z",
+        "thumbnail": "https://storage.googleapis.com/ashcolor-resource/thumbnail/song_of_the_beginning.jpg",
+        "songs": [
+            "last words",
+            "at liberty",
+            "world's beginning(piano ver.)",
+            "小さなはじまりの歌",
+            "thanksgiving song"
+        ],
+        "crossfade": "2O-Vrpsu8RA",
+        "lyric": "",
+        "inst": ""
+    },
+    {
+        "id": 1,
+        "key": "an_introduction_to_odds_and_ends",
+        "description": "1st album",
+        "name": "ガラクタ概論",
+        "name_english": "an introduction to odds and ends",
+        "published": "2013-07-06T15:00:00.000Z",
+        "thumbnail": "https://storage.googleapis.com/ashcolor-resource/thumbnail/an_introduction_to_odds_and_ends.jpg",
+        "songs": [
+            "ガラクタ概論",
+            "アルクガラクタ",
+            "little dreamer",
+            "between the lines",
+            "live on",
+            "voice by voice",
+            "Re:Re:",
+            "僕が僕であるために",
+            "セツナダクト(Bonus Track)"
+        ],
+        "crossfade": "bAigyv-eU_c",
+        "lyric": "https://storage.googleapis.com/ashcolor-resource/zip/an_introduction_to_odds_and_ends/lyric.zip",
+        "inst": "https://storage.googleapis.com/ashcolor-resource/zip/an_introduction_to_odds_and_ends/inst.zip"
+    }
+]
