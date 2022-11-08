@@ -8,6 +8,14 @@ module.exports = {
         "./nuxt.config.{js,ts}",
     ],
     plugins: [require("@tailwindcss/typography"), require("daisyui")],
+    theme: {
+        extend: {
+            colors: {
+                miku: "#86cecb",
+                luka: "#c89697",
+            },
+        },
+    },
     daisyui: {
         themes: [
             {
