@@ -1,0 +1,5 @@
+package.json
+package-lock.json
+
+.nuxt/auto-imports.d.ts
+.nuxt/components.d.ts

@@ -1,5 +1,24 @@
 [
     {
+        "id": 2,
+        "key": "song_of_the_beginning",
+        "description": "配信限定 mini album",
+        "name": "はじまりの歌",
+        "name_english": "song of the beginning",
+        "published": "2018-10-30T15:00:00.000Z",
+        "thumbnail": "https://storage.googleapis.com/ashcolor-resource/thumbnail/song_of_the_beginning.jpg",
+        "songs": [
+            "last words",
+            "at liberty",
+            "world's beginning(piano ver.)",
+            "小さなはじまりの歌",
+            "thanksgiving song"
+        ],
+        "crossfade": "2O-Vrpsu8RA",
+        "lyric": "",
+        "inst": ""
+    },
+    {
         "id": 1,
         "key": "an_introduction_to_odds_and_ends",
         "description": "1st album",
@@ -18,27 +37,8 @@
             "僕が僕であるために",
             "セツナダクト(Bonus Track)"
         ],
-        "crossfade": "https://www.youtube.com/embed/bAigyv-eU_c",
+        "crossfade": "bAigyv-eU_c",
         "lyric": "https://storage.googleapis.com/ashcolor-resource/zip/an_introduction_to_odds_and_ends/lyric.zip",
         "inst": "https://storage.googleapis.com/ashcolor-resource/zip/an_introduction_to_odds_and_ends/inst.zip"
-    },
-    {
-        "id": 2,
-        "key": "song_of_the_beginning",
-        "description": "配信限定 mini album",
-        "name": "はじまりの歌",
-        "name_english": "song of the beginning",
-        "published": "2018-10-30T15:00:00.000Z",
-        "thumbnail": "https://storage.googleapis.com/ashcolor-resource/thumbnail/song_of_the_beginning.jpg",
-        "songs": [
-            "last words",
-            "at liberty",
-            "world's beginning(piano ver.)",
-            "小さなはじまりの歌",
-            "thanksgiving song"
-        ],
-        "crossfade": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/520644207&color=%23bcbcbc&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
-        "lyric": "",
-        "inst": ""
     }
 ]
