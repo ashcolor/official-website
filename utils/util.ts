@@ -15,4 +15,6 @@ export namespace util {
         format = format.replace(/SSS/g, ("00" + date.getMilliseconds().toString()).slice(-3));
         return format;
     };
+    export const range = (start: number = 1, stop: number, step: number = 1) =>
+        Array.from({ length: (stop - start) / step + 1 }, (_, i) => start + i * step);
 }
