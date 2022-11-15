@@ -44,20 +44,29 @@ const toggle = (arr, item, getValue = (item) => item) => {
         <CommonH1>Music</CommonH1>
         <CommonH2>Songs</CommonH2>
         <div class="flex gap-2 my-8">
-            <button
-                class="btn btn-sm btn-primary"
-                :class="{ 'btn-outline': !activeSingers.includes('miku') }"
+            <!-- just in time 対策 -->
+            <div
+                class="hidden bg-miku text-miku border-miku hover:bg-miku hover:text-miku hover:border-miku"
+            ></div>
+            <div
+                class="hidden bg-luka text-luka border-luka hover:bg-luka hover:text-luka hover:border-luka"
+            ></div>
+            <CustomButton
+                class="btn-sm"
+                baseColor="miku"
+                :isActive="activeSingers.includes('miku')"
                 @click="onSingerToggleButtonClick('miku')"
             >
                 初音ミク
-            </button>
-            <button
-                class="btn btn-sm btn-primary"
-                :class="{ 'btn-outline': !activeSingers.includes('luka') }"
+            </CustomButton>
+            <CustomButton
+                class="btn-sm"
+                baseColor="luka"
+                :isActive="activeSingers.includes('luka')"
                 @click="onSingerToggleButtonClick('luka')"
             >
                 巡音ルカ
-            </button>
+            </CustomButton>
             <button
                 class="btn btn-sm btn-primary"
                 :class="{
