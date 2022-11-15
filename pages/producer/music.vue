@@ -1,109 +1,84 @@
-<template>
-  <v-layout column justify-center align-center>
-    <h2 class="display-1 font-weight-light mb-4">Music</h2>
-    <v-card class="pa-2" style="border:none" outlined>
-      <v-btn-toggle v-model="singerToggle" dense multiple>
-        <v-btn color="miku" value="miku" outlined>MIKU</v-btn>
-        <v-btn color="luka" value="luka" outlined>LUKA</v-btn>
-      </v-btn-toggle>
-      <v-btn-toggle v-model="albumToggle" dense multiple>
-        <v-btn color="primary" value="an_introduction_to_odds_and_ends" outlined
-          >ガラクタ概論</v-btn
-        >
-        <v-btn color="primary" value="song_of_the_beginning" outlined
-          >はじまりの歌</v-btn
-        >
-      </v-btn-toggle>
-      <v-btn
-        v-on:click="isUpToggle"
-        color="info"
-        fab
-        :outlined="!isUp"
-        x-small
-        depressed
-      >
-        <v-icon>fas fa-sort-numeric-down</v-icon>
-      </v-btn>
-    </v-card>
-    <v-card
-      class="d-flex justify-center flex-wrap"
-      style="border:none"
-      outlined
-    >
-      <song-card :song="song" v-for="song in songs" :key="song.id"></song-card>
-    </v-card>
-  </v-layout>
-</template>
+<script setup lang="ts">
+import srcSongs from "~/data/songs.json";
 
-<script>
-import "@fortawesome/fontawesome-free/css/all.css";
-import SongCard from "~/components/producer/SongCard.vue";
-import SONGDATA from "~/data/songs.json";
+const activeSingers = ref([]);
+const activeAlbums = ref([]);
 
-export default {
-  layout: "producer",
-  components: {
-    SongCard
-  },
-  data() {
-    return {
-      singerToggle: [],
-      albumToggle: [],
-      isUp: false
-    };
-  },
-  computed: {
-    songs: function() {
-      let tmpSong = SONGDATA;
+const songs = computed(() => {
+    let tmpSong = srcSongs;
 
-      this.singerToggle.forEach(singer => {
-        tmpSong = tmpSong.filter(song => song["singers"].indexOf(singer) >= 0);
-      });
+    activeSingers.value.forEach((singer) => {
+        tmpSong = tmpSong.filter((song) => song["singers"].indexOf(singer) >= 0);
+    });
 
-      this.albumToggle.forEach(album => {
-        tmpSong = tmpSong.filter(song => song["albums"].indexOf(album) >= 0);
-      });
+    activeAlbums.value.forEach((album) => {
+        tmpSong = tmpSong.filter((song) => song["albums"].indexOf(album) >= 0);
+    });
 
-      tmpSong.sort((a, b) => a["id"] - b["id"]);
-      return this.isUp ? tmpSong : tmpSong.reverse();
-    }
-  },
-  created: function() {},
-  methods: {
-    isUpToggle: function() {
-      this.isUp = !this.isUp;
-    }
-  }
+    return tmpSong.sort((a, b) => b["id"] - a["id"]);
+});
+
+const onSingerToggleButtonClick = (value: string) => {
+    activeSingers.value = toggle(activeSingers.value, value);
+};
+
+const onAlbumToggleButtonClick = (value: string) => {
+    activeAlbums.value = toggle(activeAlbums.value, value);
+};
+
+const removeAtIndex = (arr, index) => {
+    const copy = [...arr];
+    copy.splice(index, 1);
+    return copy;
+};
+
+const toggle = (arr, item, getValue = (item) => item) => {
+    const index = arr.findIndex((i) => getValue(i) === getValue(item));
+    if (index === -1) return [...arr, item];
+    return removeAtIndex(arr, index);
 };
 </script>
 
-<style scoped></style>
-
-<style>
-.theme--light.v-btn-toggle:not(.v-btn-toggle--group) .v-btn.v-btn {
-  border-color: initial !important;
-  margin: 0 4px;
-}
-.v-btn-toggle > .v-btn.v-btn:not(:first-child) {
-  border-left-width: thin !important;
-}
-/* .v-btn-toggle > .v-btn.v-btn {
-  border-width: thin;
-} */
-.v-btn-toggle > .v-btn.v-btn {
-  border-radius: inherit !important;
-}
-.theme--light.v-btn-toggle:not(.v-btn-toggle--group) .v-btn.v-btn {
-  border-color: initial;
-}
-.v-btn-toggle > .v-btn.v-btn {
-  opacity: 1;
-}
-.theme--light.v-btn--active:hover::before,
-.theme--light.v-btn--active::before {
-  opacity: 1;
-}
-.v-btn-toggle > .v-btn.v-btn--active > span {
-  color: white;
-}
-</style>
+<template>
+    <NuxtLayout name="producer">
+        <CommonH1>Music</CommonH1>
+        <CommonH2>Songs</CommonH2>
+        <div class="flex gap-2 my-8">
+            <button
+                class="btn btn-sm btn-primary"
+                :class="{ 'btn-outline': !activeSingers.includes('miku') }"
+                @click="onSingerToggleButtonClick('miku')"
+            >
+                初音ミク
+            </button>
+            <button
+                class="btn btn-sm btn-primary"
+                :class="{ 'btn-outline': !activeSingers.includes('luka') }"
+                @click="onSingerToggleButtonClick('luka')"
+            >
+                巡音ルカ
+            </button>
+            <button
+                class="btn btn-sm btn-primary"
+                :class="{
+                    'btn-outline': !activeAlbums.includes('an_introduction_to_odds_and_ends'),
+                }"
+                @click="onAlbumToggleButtonClick('an_introduction_to_odds_and_ends')"
+            >
+                ガラクタ概論
+            </button>
+            <button
+                class="btn btn-sm btn-primary"
+                :class="{
+                    'btn-outline': !activeAlbums.includes('song_of_the_beginning'),
+                }"
+                @click="onAlbumToggleButtonClick('song_of_the_beginning')"
+            >
+                はじまりの歌
+            </button>
+        </div>
+        <div class="flex flex-wrap justify-around gap-12 mt-8">
+            <ProducerMusicSongCard v-for="song in songs" :song="song"></ProducerMusicSongCard>
+        </div>
+    </NuxtLayout>
+</template>

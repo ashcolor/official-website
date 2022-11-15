@@ -1,0 +1,22 @@
+[
+    {
+        "type": "スピーカー",
+        "icon": "bi:speaker-fill",
+        "items": ["YAMAHA MSP5"]
+    },
+    {
+        "type": "ヘッドホン",
+        "icon": "bi:headphones",
+        "items": ["AKG K702"]
+    },
+    {
+        "type": "オーディオインターフェイス",
+        "icon": "mdi:cable-data",
+        "items": ["Steinberg UR44"]
+    },
+    {
+        "type": "キーボード",
+        "icon": "fluent:midi-20-filled",
+        "items": ["Alesis Q49"]
+    }
+]

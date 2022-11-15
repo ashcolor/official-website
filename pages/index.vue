@@ -1,34 +1,17 @@
-<template>
-  <v-layout column justify-center align-center>
-    <h2 class="display-1 font-weight-light mb-4">New song</h2>
-    <iframe
-      width="560"
-      height="315"
-      src="https://www.youtube.com/embed/dxICvB8WqKo?controls=0"
-      frameborder="0"
-      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
-    ></iframe>
-    <nuxt-link to="/producer/music" class="font-weight-light"
-      >and more</nuxt-link
-    >
-    <h2 class="display-1 font-weight-light mt-4 mb-4">New album</h2>
-    <iframe
-      width="560"
-      height="315"
-      src="https://www.youtube.com/embed/2O-Vrpsu8RA?controls=0"
-      frameborder="0"
-      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
-    ></iframe>
-    <nuxt-link to="/producer/discography" class="font-weight-light"
-      >and more</nuxt-link
-    >
-  </v-layout>
-</template>
+<script setup lang="ts"></script>
 
-<script>
-export default {
-  layout: "producer"
-};
-</script>
+<template>
+    <NuxtLayout name="producer">
+        <CommonH1>ashcolor official website</CommonH1>
+        <CommonH2>New Song</CommonH2>
+        <div class="flex flex-col gap-2 place-items-center">
+            <YouTubeIframe :width="560" :height="315" :videoId="'dxICvB8WqKo'" />
+            <NuxtLink to="/producer/music" class="link">and more</NuxtLink>
+        </div>
+        <CommonH2>New Album</CommonH2>
+        <div class="flex flex-col gap-2 place-items-center">
+            <YouTubeIframe :width="560" :height="315" :videoId="'2O-Vrpsu8RA'" />
+            <NuxtLink to="/producer/discography" class="link">and more</NuxtLink>
+        </div>
+    </NuxtLayout>
+</template>
