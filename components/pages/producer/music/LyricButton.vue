@@ -49,7 +49,7 @@ const getFileFromStorage = async () => {
                 <h3 class="text-lg font-bold">
                     {{ title }}
                 </h3>
-                <p :v-html="content" class="py-4"></p>
+                <p v-html="content" class="py-4"></p>
             </div>
         </div>
     </Teleport>
