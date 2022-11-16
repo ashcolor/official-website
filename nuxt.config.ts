@@ -2,17 +2,8 @@
 export default defineNuxtConfig({
     ssr: false,
     css: ["@/assets/css/tailwind.css"],
-    build: {
-        postcss: {
-            postcssOptions: {
-                plugins: {
-                    tailwindcss: {},
-                    autoprefixer: {},
-                },
-            },
-        },
-    },
-    buildModules: ["@pinia/nuxt", "@nuxtjs/tailwindcss"],
+    build: {},
+    modules: ["@nuxtjs/tailwindcss", "@pinia/nuxt"],
     components: {
         dirs: ["~/components/pages", "~/components/parts"],
     },
