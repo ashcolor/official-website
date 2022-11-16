@@ -36,11 +36,10 @@ const getFileFromStorage = async () => {
         <slot> </slot>
     </div>
     <Teleport to="body">
-        <input type="checkbox" id="my-modal-3" class="modal-toggle" />
         <div class="modal" :class="{ 'modal-open': isShow }">
             <div class="modal-box relative">
                 <label
-                    for="my-modal-3"
+                    for="my-modal"
                     class="btn btn-sm btn-circle absolute right-2 top-2"
                     @click="isShow = false"
                 >
