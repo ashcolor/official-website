@@ -33,10 +33,10 @@ import { util } from "~/utils/util";
                         </div>
                         <CommonH3>Cross Fade</CommonH3>
                         <div>
-                            <YouTubeIframe :video-id="album.crossfade" :width="480" :height="270" />
+                            <YouTubeIframe :video-id="album.crossfade" />
                         </div>
                         <CommonH3>Downloads</CommonH3>
-                        <div class="flex justify-center gap-4">
+                        <div class="flex flex-wrap justify-center gap-4">
                             <a v-if="album.inst" :href="album.inst" class="inline">
                                 <button class="btn gap-2">
                                     Inst Download

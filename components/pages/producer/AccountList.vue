@@ -31,12 +31,16 @@ const accounts = [
 </script>
 
 <template>
-    <NuxtLink v-for="account in accounts" :to="account.url" target="_blank">
-        <template v-if="account.icon">
-            <Icon :icon="account.icon" width="24" />
-        </template>
-        <template v-else>
-            {{ account.name }}
-        </template>
-    </NuxtLink>
+    <div class="flex flex-row gap-2 sm:gap-4">
+        <NuxtLink v-for="account in accounts" :to="account.url" target="_blank">
+            <template v-if="account.icon">
+                <Icon :icon="account.icon" width="24" />
+            </template>
+            <template v-else>
+                <p>
+                    {{ account.name }}
+                </p>
+            </template>
+        </NuxtLink>
+    </div>
 </template>
