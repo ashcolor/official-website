@@ -74,7 +74,7 @@ const pageClick = (page: number) => {
             />
         </div>
         <CommonH2>オリジナル曲</CommonH2>
-        <div class="flex flex-wrap justify-around items-start gap-12 mt-8">
+        <div class="flex flex-wrap justify-around items-start gap-4 mt-8">
             <div v-for="original in ORIGINAL_SONGS" class="card w-96 bg-base-100 shadow-xl">
                 <div class="card-body">
                     <p class="text-primary">
@@ -83,7 +83,7 @@ const pageClick = (page: number) => {
                     <p class="card-title font-normal">
                         {{ original.title }}
                     </p>
-                    <YouTubeIframe :width="320" :height="180" :videoId="original.url" />
+                    <YouTubeIframe class="aspect-video" :videoId="original.url" />
                 </div>
             </div>
         </div>

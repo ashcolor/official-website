@@ -26,7 +26,7 @@ const downloads = [
 </script>
 
 <template>
-    <div class="flex gap-6">
+    <div class="flex flex-wrap gap-6">
         <a v-for="download in downloads" :href="download.url" target="_blank" class="flex gap-1">
             <Icon :icon="download.icon" width="24" class="inline" />
             <span>{{ download.name }}</span>

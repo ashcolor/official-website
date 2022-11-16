@@ -10,7 +10,7 @@ const route = useRoute();
 </script>
 
 <template>
-    <div class="navbar bg-primary text-primary-content">
+    <div class="navbar bg-primary text-primary-content min-w-[320px]">
         <div class="navbar-start">
             <div class="dropdown">
                 <MenuButton />
@@ -25,7 +25,10 @@ const route = useRoute();
                     </li>
                 </ul>
             </div>
-            <a class="btn btn-ghost normal-case text-xl"> ashcolor official website </a>
+            <a class="btn btn-ghost normal-case text-xl px-2 sm:px-4">
+                <span>ashcolor</span>
+                <span class="hidden sm:inline">&nbsp;official website</span>
+            </a>
         </div>
         <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal p-0">
@@ -36,7 +39,7 @@ const route = useRoute();
                 </li>
             </ul>
         </div>
-        <div class="navbar-end gap-4">
+        <div class="navbar-end">
             <ProducerAccountList />
         </div>
     </div>

@@ -12,9 +12,6 @@ const props = withDefaults(defineProps<Props>(), {
 </script>
 
 <template>
-    <!-- just in time 対策 -->
-    <div class="hidden bg-miku"></div>
-    <div class="hidden bg-luka"></div>
     <div class="card w-fit shadow-md">
         <div class="inline-block relative border">
             <figure>
