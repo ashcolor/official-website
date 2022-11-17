@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import axios from "axios";
-import { util } from "~/utils/util";
 
 interface Props {
     title: string;
@@ -26,7 +25,7 @@ onMounted(async () => {
 const getFileFromStorage = async () => {
     const response = await axios.get(props.fileUrl);
     if (response.status !== 200) return;
-    content.value = util.nl2br(response.data);
+    content.value = Util.nl2br(response.data);
     return;
 };
 </script>
