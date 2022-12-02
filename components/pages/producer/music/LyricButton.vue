@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import axios from "axios";
+import { vOnClickOutside } from "@vueuse/components";
 
 interface Props {
     title: string;
@@ -22,6 +23,10 @@ onMounted(async () => {
     await getFileFromStorage();
 });
 
+const closeModal = () => {
+    isShow.value = false;
+};
+
 const getFileFromStorage = async () => {
     const response = await axios.get(props.fileUrl);
     if (response.status !== 200) return;
@@ -36,11 +41,11 @@ const getFileFromStorage = async () => {
     </div>
     <Teleport to="body">
         <div class="modal" :class="{ 'modal-open': isShow }">
-            <div class="modal-box relative">
+            <div class="modal-box relative" v-on-click-outside="closeModal">
                 <label
-                    for="my-modal"
+                    for="modal"
                     class="btn btn-sm btn-circle absolute right-2 top-2"
-                    @click="isShow = false"
+                    @click="closeModal()"
                 >
                     ✕
                 </label>
