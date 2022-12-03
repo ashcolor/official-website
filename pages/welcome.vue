@@ -1,3 +1,9 @@
+<script setup lang="ts">
+useHead({
+    title: "",
+});
+</script>
+
 <template>
     <div class="w-screen h-screen flex flex-col">
         <div class="grid w-full h-full">

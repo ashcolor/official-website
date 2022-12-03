@@ -1,6 +1,10 @@
 <script setup lang="ts">
 import { Icon } from "@iconify/vue";
 import albums from "~/data/albums.json";
+
+useHead({
+    title: "Discography",
+});
 </script>
 
 <template>
