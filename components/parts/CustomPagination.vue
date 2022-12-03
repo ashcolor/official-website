@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { util } from "~/utils/util";
-
 interface Props {
     currentPage: number;
     pageCount: number;
@@ -28,7 +26,7 @@ const isActiveNextPage = computed(() => props.currentPage !== props.pageCount);
         </div>
 
         <div
-            v-for="page in util.range(1, pageCount)"
+            v-for="page in Util.range(1, pageCount)"
             class="btn btn-sm btn-outline"
             :class="{ 'btn-active': page === currentPage }"
             @click="$emit('pageClick', page)"

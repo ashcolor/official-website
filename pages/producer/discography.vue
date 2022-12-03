@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { Icon } from "@iconify/vue";
 import albums from "~/data/albums.json";
-import { util } from "~/utils/util";
 </script>
 
 <template>
@@ -21,7 +20,7 @@ import { util } from "~/utils/util";
                     </div>
                     <div class="card-body">
                         <p class="text-sm text-primary">
-                            {{ util.dateStringFormat(album.published, "yyyy/MM/dd") }}
+                            {{ Util.dateStringFormat(album.published, "yyyy/MM/dd") }}
                         </p>
                         <p>{{ album.description }}</p>
                         <p class="card-title text-2xl">{{ album.name }}</p>
