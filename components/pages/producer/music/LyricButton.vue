@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import axios from "axios";
 import { vOnClickOutside } from "@vueuse/components";
+import { Icon } from "@iconify/vue";
 
 interface Props {
     title: string;
@@ -50,7 +51,7 @@ const getFileFromStorage = async () => {
                         {{ title }}
                     </h3>
                     <button class="btn btn-primary btn-sm btn-square" @click="closeModal()">
-                        <Icon icon="carbon:close" />
+                        <Icon icon="carbon:close" width="32" />
                     </button>
                 </div>
                 <div class="p-2 overflow-y-auto">
