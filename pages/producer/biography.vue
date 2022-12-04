@@ -3,6 +3,10 @@ import { Icon } from "@iconify/vue";
 import histories from "~/data/histories.json";
 import hardwares from "~/data/hardwares.json";
 import softwares from "~/data/softwares.json";
+
+useHead({
+    title: "Biography",
+});
 </script>
 
 <template>

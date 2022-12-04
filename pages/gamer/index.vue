@@ -2,6 +2,10 @@
 import COPY_SONGS from "~~/data/bbp_copies.json";
 import ORIGINAL_SONGS from "~~/data/bbp_originals.json";
 
+useHead({
+    title: "大合奏！バンドブラザーズP",
+});
+
 const currentPage = ref(1);
 const headers = ref([
     {

@@ -1,6 +1,10 @@
 <script setup lang="ts">
 import srcSongs from "~/data/songs.json";
 
+useHead({
+    title: "Music",
+});
+
 const activeSingers = ref([]);
 const activeAlbums = ref([]);
 
