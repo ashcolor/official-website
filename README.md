@@ -2,7 +2,6 @@
 
 -   [Welcome](https://ashcolor.work/welcome)
 -   [Producer](https://ashcolor.work)
--   [Gamer](https://ashcolor.work/gamer)
 
 ## ドキュメント
 
@@ -15,28 +14,28 @@
 
 Make sure to install the dependencies:
 
-````bash
-# yarn
+```bash
 yarn install
+```
 
 ## Development Server
 
 Start the development server on http://localhost:3000
 
 ```bash
-npm run dev
-````
+yarn dev
+```
 
 ## Production
 
 Build the application for production:
 
 ```bash
-npm run build
+yarn build
 ```
 
 Locally preview production build:
 
 ```bash
-npm run preview
+yarn preview
 ```

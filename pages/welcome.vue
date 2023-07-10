@@ -16,8 +16,6 @@ useHead({
                         </NuxtLink>
                         /
                         <NuxtLink to="/" target="_blank">Producer</NuxtLink>
-                        /
-                        <NuxtLink to="/gamer" target="_blank">Gamer</NuxtLink>
                     </h2>
                 </div>
             </div>
