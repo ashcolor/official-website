@@ -9,7 +9,7 @@ const activeSingers = ref([]);
 const activeAlbums = ref([]);
 
 const songs = computed(() => {
-    let tmpSong = srcSongs;
+    let tmpSong = JSON.parse(JSON.stringify(srcSongs));
 
     activeSingers.value.forEach((singer) => {
         tmpSong = tmpSong.filter((song) => song["singers"].indexOf(singer) >= 0);
