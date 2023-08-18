@@ -5,7 +5,7 @@ useHead({
 </script>
 
 <template>
-    <div class="w-screen h-screen flex flex-col">
+    <div class="w-screen flex flex-col h-[100dvh]">
         <div class="grid w-full h-full">
             <div class="col-start-1 col-end-2 row-start-1 row-end-2">
                 <div class="h-full flex flex-col justify-center place-items-center">

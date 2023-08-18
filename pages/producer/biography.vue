@@ -24,17 +24,18 @@ useHead({
         </div>
         <CommonH2>History</CommonH2>
         <ul class="divide-y bg-base-100 w-100 border">
-            <li v-for="history in histories" class="p-2">
-                <p class="text-xs">{{ history.date }}</p>
-                <p>
-                    {{ history.content }}
-                    <span class="px-1">
-                        <a v-if="history.url !== ''" :href="history.url" target="_blank">
-                            <Icon icon="fa-solid:external-link-alt" class="inline text-primary" />
-                        </a>
-                    </span>
-                </p>
-            </li>
+            <ul class="steps steps-vertical">
+                <li v-for="history in histories" class="step p-2" ta-content="">
+                    <div class="flex flex-row gap-4 items-center">
+                        <div class="align-middle text-sm text-slate-500">
+                            {{ history.date }}
+                        </div>
+                        <span class="text-left">
+                            <span v-html="history.content" class="text-left"></span>
+                        </span>
+                    </div>
+                </li>
+            </ul>
         </ul>
         <CommonH2>Equipments</CommonH2>
         <CommonH3>Hardware</CommonH3>
@@ -67,3 +68,9 @@ useHead({
         </div>
     </NuxtLayout>
 </template>
+
+<style scoped>
+.steps .step:after {
+    content: "";
+}
+</style>
