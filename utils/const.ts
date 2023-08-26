@@ -1,5 +1,5 @@
-export const THUMBNAIL_BASE_URL = "https://storage.googleapis.com/ashcolor-resource/thumbnail/";
-export const LYRIC_BASE_URL = "https://storage.googleapis.com/ashcolor-resource/lyric/";
+export const THUMBNAIL_BASE_URL = "/img/thumbnail/";
+export const LYRIC_BASE_URL = "/txt/lyric/";
 
 export const ALBUM_TITLES: { [key: string]: string } = {
     an_introduction_to_odds_and_ends: "ガラクタ概論",
