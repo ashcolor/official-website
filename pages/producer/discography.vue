@@ -19,7 +19,11 @@ useHead({
                 <div class="card lg:card-side bg-base-100 shadow-xl">
                     <div class="flex justify-center p-8">
                         <figure>
-                            <img :src="album.thumbnail" class="border" alt="Album" />
+                            <img
+                                :src="`${THUMBNAIL_BASE_URL}/${album.thumbnail}`"
+                                class="border"
+                                alt="Album"
+                            />
                         </figure>
                     </div>
                     <div class="card-body">

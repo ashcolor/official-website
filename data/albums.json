@@ -6,7 +6,7 @@
         "name": "はじまりの歌",
         "name_english": "song of the beginning",
         "published": "2018-10-30T15:00:00.000Z",
-        "thumbnail": "https://storage.googleapis.com/ashcolor-resource/thumbnail/song_of_the_beginning.jpg",
+        "thumbnail": "song_of_the_beginning.jpg",
         "songs": [
             "last words",
             "at liberty",
@@ -25,7 +25,7 @@
         "name": "ガラクタ概論",
         "name_english": "an introduction to odds and ends",
         "published": "2013-07-06T15:00:00.000Z",
-        "thumbnail": "https://storage.googleapis.com/ashcolor-resource/thumbnail/an_introduction_to_odds_and_ends.jpg",
+        "thumbnail": "an_introduction_to_odds_and_ends.jpg",
         "songs": [
             "ガラクタ概論",
             "アルクガラクタ",
