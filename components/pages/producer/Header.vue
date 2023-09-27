@@ -27,7 +27,7 @@ const route = useRoute();
             </div>
             <a class="btn btn-ghost normal-case text-xl px-2 sm:px-4">
                 <span>ashcolor</span>
-                <span class="hidden sm:inline">&nbsp;official website</span>
+                <span class="hidden sm:inline">official website</span>
             </a>
         </div>
         <div class="navbar-center hidden lg:flex">
