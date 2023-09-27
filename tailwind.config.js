@@ -1,3 +1,6 @@
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
     content: [
@@ -9,10 +12,15 @@ module.exports = {
     ],
     plugins: [require("@tailwindcss/typography"), require("daisyui")],
     theme: {
+        fontFamily: {
+            sans: ["Comfortaa", "Noto Sans JP", ...defaultTheme.fontFamily.sans],
+        },
         extend: {
             colors: {
-                miku: "#86cecb",
-                luka: "#c89697",
+                ashcolor: "#acacac",
+                // @https://piapro.net/pages/character
+                miku: "#39C5BB",
+                luka: "#ffc0cb",
             },
         },
     },

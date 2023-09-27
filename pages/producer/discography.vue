@@ -5,6 +5,10 @@ import albums from "~/data/albums.json";
 useHead({
     title: "Discography",
 });
+
+const sortedAlbums = computed(() => {
+    return JSON.parse(JSON.stringify(albums)).reverse();
+});
 </script>
 
 <template>
@@ -12,14 +16,18 @@ useHead({
         <CommonH1>Discography</CommonH1>
         <CommonH2>Streaming & Download</CommonH2>
         <ProducerDiscographyDownloadList />
-        <p class="text-sm pt-4">その他の配信サイトでも配信中</p>
+        <p class="pt-4 text-sm">その他の配信サイトでも配信中</p>
         <CommonH2>Album</CommonH2>
         <div class="flex flex-col gap-8">
-            <div v-for="album in albums">
-                <div class="card lg:card-side bg-base-100 shadow-xl">
+            <div v-for="album in sortedAlbums" :key="album.name">
+                <div class="card bg-base-100 shadow-xl lg:card-side">
                     <div class="flex justify-center p-8">
                         <figure>
-                            <img :src="album.thumbnail" class="border" alt="Album" />
+                            <img
+                                :src="`${THUMBNAIL_BASE_URL}${album.thumbnail}`"
+                                class="border"
+                                alt="Album"
+                            />
                         </figure>
                     </div>
                     <div class="card-body">
@@ -30,13 +38,13 @@ useHead({
                         <p class="card-title text-2xl">{{ album.name }}</p>
                         <CommonH3>Track List</CommonH3>
                         <div class="flex flex-col gap-2">
-                            <ol v-for="(song, index) in album.songs">
+                            <ol v-for="(song, index) in album.songs" :key="song">
                                 <li>{{ index + 1 }}. {{ song }}</li>
                             </ol>
                         </div>
                         <CommonH3>Cross Fade</CommonH3>
                         <div>
-                            <YouTubeIframe :video-id="album.crossfade" />
+                            <YouTubeIframe :video-id="album.crossFadeYouTubeId" />
                         </div>
                         <CommonH3>Downloads</CommonH3>
                         <div class="flex flex-wrap justify-center gap-4">

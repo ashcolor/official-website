@@ -27,7 +27,13 @@ const downloads = [
 
 <template>
     <div class="flex flex-wrap gap-6">
-        <a v-for="download in downloads" :href="download.url" target="_blank" class="flex gap-1">
+        <a
+            v-for="download in downloads"
+            :key="download.name"
+            :href="download.url"
+            target="_blank"
+            class="flex gap-1"
+        >
             <Icon :icon="download.icon" width="24" class="inline" />
             <span>{{ download.name }}</span>
         </a>

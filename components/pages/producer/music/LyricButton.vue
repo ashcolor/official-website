@@ -32,7 +32,7 @@ const getFileFromStorage = async () => {
     const response = await axios.get(props.fileUrl);
     if (response.status !== 200) return;
     content.value = Util.nl2br(response.data);
-    return;
+    
 };
 </script>
 
@@ -43,19 +43,19 @@ const getFileFromStorage = async () => {
     <Teleport to="body">
         <div class="modal" :class="{ 'modal-open': isShow }">
             <div
-                class="modal-box h-full overflow-hidden flex flex-col gap-2"
                 v-on-click-outside="closeModal"
+                class="modal-box flex h-full flex-col gap-2 overflow-hidden"
             >
-                <div class="bg-primary text-primary-content p-4 flex justify-between">
+                <div class="flex justify-between bg-primary p-4 text-primary-content">
                     <h3 class="text-lg font-bold">
                         {{ title }}
                     </h3>
-                    <button class="btn btn-primary btn-sm btn-square" @click="closeModal()">
+                    <button class="btn btn-square btn-primary btn-sm" @click="closeModal()">
                         <Icon icon="carbon:close" width="32" />
                     </button>
                 </div>
-                <div class="p-2 overflow-y-auto">
-                    <p v-html="content" class="py-4"></p>
+                <div class="overflow-y-auto p-2">
+                    <p class="py-4" v-html="content"></p>
                 </div>
             </div>
         </div>

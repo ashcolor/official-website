@@ -23,15 +23,20 @@ useHead({
             </div>
         </div>
         <CommonH2>History</CommonH2>
-        <ul class="divide-y bg-base-100 w-100 border">
+        <ul class="w-full divide-y border bg-base-100">
             <ul class="steps steps-vertical">
-                <li v-for="history in histories" class="step p-2" ta-content="">
-                    <div class="flex flex-row gap-4 items-center">
+                <li
+                    v-for="history in histories"
+                    :key="history.content"
+                    class="step p-2"
+                    ta-content=""
+                >
+                    <div class="flex flex-row items-center gap-4">
                         <div class="align-middle text-sm text-slate-500">
                             {{ history.date }}
                         </div>
                         <span class="text-left">
-                            <span v-html="history.content" class="text-left"></span>
+                            <span class="text-left" v-html="history.content"></span>
                         </span>
                     </div>
                 </li>
@@ -40,27 +45,27 @@ useHead({
         <CommonH2>Equipments</CommonH2>
         <CommonH3>Hardware</CommonH3>
         <div class="flex flex-col gap-4 px-2">
-            <div v-for="hardware in hardwares">
+            <div v-for="hardware in hardwares" :key="hardware.type">
                 <div>
-                    <p class="text-sm py-1">
+                    <p class="py-1 text-sm">
                         <Icon :icon="hardware.icon" width="16" class="inline" />
                         {{ hardware.type }}
                     </p>
                     <div class="flex flex-col gap-1">
-                        <p v-for="item in hardware.items" class="text-sm">{{ item }}</p>
+                        <p v-for="item in hardware.items" :key="item" class="text-sm">{{ item }}</p>
                     </div>
                 </div>
             </div>
         </div>
         <CommonH3>Software</CommonH3>
         <div class="flex flex-col gap-4 px-2">
-            <div v-for="software in softwares">
-                <p class="text-sm py-1">
+            <div v-for="software in softwares" :key="software.type">
+                <p class="py-1 text-sm">
                     <Icon :icon="software.icon" width="16" class="inline" />
                     {{ software.type }}
                 </p>
                 <div class="flex flex-col gap-1">
-                    <p v-for="item in software.items" class="text-sm">
+                    <p v-for="item in software.items" :key="item" class="text-sm">
                         {{ item }}
                     </p>
                 </div>
