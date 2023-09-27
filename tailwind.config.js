@@ -11,8 +11,10 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                miku: "#86cecb",
-                luka: "#c89697",
+                ashcolor: "#acacac",
+                // @https://piapro.net/pages/character
+                miku: "#39C5BB",
+                luka: "#ffc0cb",
             },
         },
     },
