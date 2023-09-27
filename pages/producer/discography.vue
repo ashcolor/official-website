@@ -44,7 +44,7 @@ const sortedAlbums = computed(() => {
                         </div>
                         <CommonH3>Cross Fade</CommonH3>
                         <div>
-                            <YouTubeIframe :video-id="album.crossfade" />
+                            <YouTubeIframe :video-id="album.crossFadeYouTubeId" />
                         </div>
                         <CommonH3>Downloads</CommonH3>
                         <div class="flex flex-wrap justify-center gap-4">

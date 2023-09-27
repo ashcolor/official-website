@@ -10,7 +10,7 @@ const newestSongYoutubeId = computed(() => {
 
 const newestAlbumYoutubeId = computed(() => {
     const newestAlbum = ALBUMS[ALBUMS.length - 1];
-    return newestAlbum?.crossfade;
+    return newestAlbum?.crossFadeYouTubeId;
 });
 
 useHead({

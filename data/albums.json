@@ -4,7 +4,7 @@
         "key": "an_introduction_to_odds_and_ends",
         "description": "1st album",
         "name": "ガラクタ概論",
-        "name_english": "an introduction to odds and ends",
+        "nameEnglish": "an introduction to odds and ends",
         "published": "2013-07-06T15:00:00.000Z",
         "thumbnail": "an_introduction_to_odds_and_ends.jpg",
         "songs": [
@@ -18,7 +18,7 @@
             "僕が僕であるために",
             "セツナダクト(Bonus Track)"
         ],
-        "crossfade": "bAigyv-eU_c",
+        "crossFadeYouTubeId": "bAigyv-eU_c",
         "lyric": "https://storage.googleapis.com/ashcolor-resource/zip/an_introduction_to_odds_and_ends/lyric.zip",
         "inst": "https://storage.googleapis.com/ashcolor-resource/zip/an_introduction_to_odds_and_ends/inst.zip"
     },
@@ -27,7 +27,7 @@
         "key": "song_of_the_beginning",
         "description": "配信限定 mini album",
         "name": "はじまりの歌",
-        "name_english": "song of the beginning",
+        "nameEnglish": "song of the beginning",
         "published": "2018-10-30T15:00:00.000Z",
         "thumbnail": "song_of_the_beginning.jpg",
         "songs": [
@@ -37,7 +37,7 @@
             "小さなはじまりの歌",
             "thanksgiving song"
         ],
-        "crossfade": "2O-Vrpsu8RA",
+        "crossFadeYouTubeId": "2O-Vrpsu8RA",
         "lyric": "",
         "inst": ""
     }
