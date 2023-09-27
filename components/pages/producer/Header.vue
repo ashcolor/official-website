@@ -29,7 +29,7 @@ const route = useRoute();
                     </li>
                 </ul>
             </div>
-            <a class="btn btn-ghost px-2 text-xl normal-case sm:px-4">
+            <a class="btn btn-ghost px-2 text-xl font-light normal-case sm:px-4">
                 <span>ashcolor</span>
                 <span class="hidden sm:inline">official website</span>
             </a>

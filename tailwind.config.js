@@ -1,3 +1,6 @@
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
     content: [
@@ -9,6 +12,9 @@ module.exports = {
     ],
     plugins: [require("@tailwindcss/typography"), require("daisyui")],
     theme: {
+        fontFamily: {
+            sans: ["Comfortaa", "Noto Sans JP", ...defaultTheme.fontFamily.sans],
+        },
         extend: {
             colors: {
                 ashcolor: "#acacac",
