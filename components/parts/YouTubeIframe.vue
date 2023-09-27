@@ -9,7 +9,7 @@ const props = withDefaults(defineProps<Props>(), {
 
 <template>
     <iframe
-        :src="`https://www.youtube.com/embed/${videoId}?controls=0`"
+        :src="`https://www.youtube.com/embed/${props.videoId}?controls=0`"
         frameborder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen

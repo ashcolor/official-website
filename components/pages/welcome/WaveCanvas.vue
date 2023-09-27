@@ -13,9 +13,9 @@ const waveColor = computed(() => Color(props.waveColorString));
 </script>
 
 <template>
-    <div class="h-full flex flex-col justify-end">
+    <div class="flex h-full flex-col justify-end">
         <svg
-            class="w-full h-[40%]"
+            class="h-[40%] w-full"
             xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink"
             viewBox="0 24 150 28"

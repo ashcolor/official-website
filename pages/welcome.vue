@@ -5,12 +5,12 @@ useHead({
 </script>
 
 <template>
-    <div class="w-screen flex flex-col h-[100dvh]">
-        <div class="grid w-full h-full">
+    <div class="flex h-[100dvh] w-screen flex-col">
+        <div class="grid h-full w-full">
             <div class="col-start-1 col-end-2 row-start-1 row-end-2">
-                <div class="h-full flex flex-col justify-center place-items-center">
-                    <h1 class="text-4xl font-thin text-center">ashcolor official website</h1>
-                    <h2 class="text-md text-primary text-center font-thin">
+                <div class="flex h-full flex-col place-items-center justify-center">
+                    <h1 class="text-center text-4xl font-thin">ashcolor official website</h1>
+                    <h2 class="text-center text-base font-thin text-primary">
                         <NuxtLink to="https://ashcolor.github.io" target="_blank">
                             Engineer
                         </NuxtLink>
@@ -19,9 +19,9 @@ useHead({
                     </h2>
                 </div>
             </div>
-            <div class="col-start-1 col-end-2 row-start-1 row-end-2 z-[-1]">
+            <div class="z-[-1] col-start-1 col-end-2 row-start-1 row-end-2">
                 <div class="h-full">
-                    <WelcomeWaveCanvas waveColorString="#9e9e9e" />
+                    <WelcomeWaveCanvas wave-color-string="#9e9e9e" />
                 </div>
             </div>
         </div>

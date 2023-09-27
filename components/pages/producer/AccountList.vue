@@ -32,7 +32,7 @@ const accounts = [
 
 <template>
     <div class="flex flex-row gap-2 sm:gap-4">
-        <NuxtLink v-for="account in accounts" :to="account.url" target="_blank">
+        <NuxtLink v-for="account in accounts" :key="account.name" :to="account.url" target="_blank">
             <template v-if="account.icon">
                 <Icon :icon="account.icon" width="24" />
             </template>

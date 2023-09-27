@@ -1,5 +1,5 @@
 <template>
-    <footer class="footer footer-center p-10 bg-primary text-primary-content">
+    <footer class="footer footer-center bg-primary p-10 text-primary-content">
         <div>
             <p class="font-bold">
                 ashcolor official website

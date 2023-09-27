@@ -34,7 +34,7 @@ const classObject = computed(() => {
 
 <template>
     <button class="btn relative" :class="classObject">
-        <div class="absolute z-1 bg-black opacity-0 hover:opacity-10 w-full h-full z-0"></div>
+        <div class="absolute z-0 h-full w-full bg-black opacity-0 hover:opacity-10"></div>
         <p class="pointer-events-none z-10"><slot /></p>
     </button>
 </template>

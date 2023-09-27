@@ -12,14 +12,14 @@ const songs = computed(() => {
     let tmpSong = JSON.parse(JSON.stringify(srcSongs));
 
     activeSingers.value.forEach((singer) => {
-        tmpSong = tmpSong.filter((song) => song["singers"].indexOf(singer) >= 0);
+        tmpSong = tmpSong.filter((song) => song.singers.includes(singer));
     });
 
     activeAlbums.value.forEach((album) => {
-        tmpSong = tmpSong.filter((song) => song["albums"].indexOf(album) >= 0);
+        tmpSong = tmpSong.filter((song) => song.albums.includes(album));
     });
 
-    return tmpSong.sort((a, b) => b["id"] - a["id"]);
+    return tmpSong.sort((a, b) => b.id - a.id);
 });
 
 const onSingerToggleButtonClick = (value: string) => {
@@ -47,32 +47,32 @@ const toggle = (arr, item, getValue = (item) => item) => {
     <NuxtLayout name="producer">
         <CommonH1>Music</CommonH1>
         <CommonH2>Songs</CommonH2>
-        <div class="flex flex-wrap gap-2 my-8">
+        <div class="my-8 flex flex-wrap gap-2">
             <!-- just in time 対策 -->
             <div
-                class="hidden bg-miku text-miku border-miku hover:bg-miku hover:text-miku hover:border-miku"
+                class="hidden border-miku bg-miku text-miku hover:border-miku hover:bg-miku hover:text-miku"
             ></div>
             <div
-                class="hidden bg-luka text-luka border-luka hover:bg-luka hover:text-luka hover:border-luka"
+                class="hidden border-luka bg-luka text-luka hover:border-luka hover:bg-luka hover:text-luka"
             ></div>
             <CustomButton
                 class="btn-sm"
-                baseColor="miku"
-                :isActive="activeSingers.includes('miku')"
+                base-color="miku"
+                :is-active="activeSingers.includes('miku')"
                 @click="onSingerToggleButtonClick('miku')"
             >
                 初音ミク
             </CustomButton>
             <CustomButton
                 class="btn-sm"
-                baseColor="luka"
-                :isActive="activeSingers.includes('luka')"
+                base-color="luka"
+                :is-active="activeSingers.includes('luka')"
                 @click="onSingerToggleButtonClick('luka')"
             >
                 巡音ルカ
             </CustomButton>
             <button
-                class="btn btn-sm btn-primary"
+                class="btn btn-primary btn-sm"
                 :class="{
                     'btn-outline': !activeAlbums.includes('an_introduction_to_odds_and_ends'),
                 }"
@@ -81,7 +81,7 @@ const toggle = (arr, item, getValue = (item) => item) => {
                 ガラクタ概論
             </button>
             <button
-                class="btn btn-sm btn-primary"
+                class="btn btn-primary btn-sm"
                 :class="{
                     'btn-outline': !activeAlbums.includes('song_of_the_beginning'),
                 }"
@@ -90,8 +90,12 @@ const toggle = (arr, item, getValue = (item) => item) => {
                 はじまりの歌
             </button>
         </div>
-        <div class="flex flex-wrap justify-around gap-12 mt-8">
-            <ProducerMusicSongCard v-for="song in songs" :song="song"></ProducerMusicSongCard>
+        <div class="mt-8 flex flex-wrap justify-around gap-12">
+            <ProducerMusicSongCard
+                v-for="song in songs"
+                :key="song.id"
+                :song="song"
+            ></ProducerMusicSongCard>
         </div>
     </NuxtLayout>
 </template>

@@ -1,5 +1,5 @@
 <template>
-    <label tabindex="0" class="btn btn-ghost lg:hidden px-2 sm:px-4">
+    <label tabindex="0" class="btn btn-ghost px-2 sm:px-4 lg:hidden">
         <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-5 w-5"
