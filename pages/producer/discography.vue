@@ -24,7 +24,7 @@ const sortedAlbums = computed(() => {
                     <div class="flex justify-center p-8">
                         <figure>
                             <img
-                                :src="`${THUMBNAIL_BASE_URL}/${album.thumbnail}`"
+                                :src="`${THUMBNAIL_BASE_URL}${album.thumbnail}`"
                                 class="border"
                                 alt="Album"
                             />
