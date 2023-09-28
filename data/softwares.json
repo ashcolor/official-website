@@ -3,39 +3,95 @@
         "type": "VOCALOID",
         "icon": "bi:mic-fill",
         "items": [
-            "CRYPTON 初音ミク(V2･append･V3)",
-            "CRYPTON 巡音ルカ",
-            "1stPLACE IA ROCKS",
-            "YAMAHA ken"
+            {
+                "company": "CRYPTON",
+                "name": "初音ミク(V2･append･V3)"
+            },
+            {
+                "company": "CRYPTON",
+                "name": "巡音ルカ"
+            },
+            {
+                "company": "Dreamtonics",
+                "name": "Synthesizer V Ryo"
+            },
+            {
+                "company": "1stPLACE",
+                "name": "IA ROCKS"
+            },
+            {
+                "company": "YAMAHA",
+                "name": "VOCALOID5 ken"
+            }
         ]
     },
     {
         "type": "ギター",
         "icon": "fa-solid:guitar",
-        "items": ["MUSIC LAB Real Guitar4", "Ample Sound Ample Guitar LP III"]
+        "items": [
+            {
+                "company": "Ample Sound",
+                "name": "Ample Guitar T"
+            },
+            {
+                "company": "Ample Sound",
+                "name": "Ample Guitar LP III"
+            },
+            {
+                "company": "MUSIC LAB",
+                "name": "Real Guitar4"
+            }
+        ]
     },
     {
         "type": "ベース",
         "icon": "fa-solid:guitar",
-        "items": ["SPECTRASONICS Trillian", "IK Multimedia MODO BASS"]
+        "items": [
+            {
+                "company": "IK Multimedia",
+                "name": "MODO BASS"
+            },
+            {
+                "company": "SPECTRASONICS",
+                "name": "Trillian"
+            }
+        ]
     },
     {
         "type": "ドラム",
         "icon": "fa-solid:drum",
-
         "items": [
-            "XLN Audio Addictive Drums(Retro･Indie･Black velvet)",
-            "FXpansion BFD3",
-            "Native Instruments Battery 4"
+            {
+                "company": "FXpansion",
+                "name": "BFD3"
+            },
+            {
+                "company": "XLN Audio",
+                "name": "Addictive Drums(Retro･Indie･Black velvet)"
+            },
+
+            {
+                "company": "Native Instruments",
+                "name": "Battery 4"
+            }
         ]
     },
     {
         "type": "その他",
         "icon": "fa6-solid:wave-square",
         "items": [
-            "Native Instruments KOMPLETE7 ELEMENTS",
-            "XLN Audio Addictive Keys",
-            "A.O.M. Factory Invisible Limiter"
+            {
+                "company": "Native Instruments",
+                "name": "KOMPLETE7 ELEMENTS"
+            },
+            {
+                "company": "XLN Audio",
+                "name": "Addictive Keys"
+            },
+            {
+                "company": "A.O.M. Factory",
+                "name": "Invisible Limiter"
+            }
         ]
     }
 ]

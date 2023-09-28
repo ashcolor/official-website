@@ -10,7 +10,7 @@ const route = useRoute();
 </script>
 
 <template>
-    <div class="navbar min-w-[320px] bg-primary text-primary-content">
+    <div class="navbar min-w-[320px] bg-neutral text-neutral-content">
         <div class="navbar-start">
             <div class="dropdown">
                 <MenuButton />
@@ -31,7 +31,7 @@ const route = useRoute();
             </div>
             <a class="btn btn-ghost px-2 text-xl font-light normal-case sm:px-4">
                 <span>ashcolor</span>
-                <span class="hidden sm:inline">official website</span>
+                <span class="hidden sm:inline"><NuxtLink to="/">official website</NuxtLink></span>
             </a>
         </div>
         <div class="navbar-center hidden lg:flex">
