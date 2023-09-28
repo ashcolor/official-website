@@ -14,7 +14,7 @@ const sortedAlbums = computed(() => {
 <template>
     <NuxtLayout name="producer">
         <CommonH1>Discography</CommonH1>
-        <div class="flex flex-col gap-16">
+        <div class="flex flex-col gap-32">
             <div v-for="album in sortedAlbums" :key="album.name" class="flex flex-col gap-6">
                 <div class="flex flex-col gap-2 text-center">
                     <p class="text-sm text-primary">
