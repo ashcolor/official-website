@@ -31,11 +31,6 @@ const accounts = [
         icon: "",
         url: "https://piapro.jp/ss0627",
     },
-    {
-        name: "KARENT（配信サイト一覧）",
-        icon: "",
-        url: "https://karent.jp/artist/pp000655",
-    },
 ];
 
 const accountWithIcon = computed(() => accounts.filter((account) => account.icon));

@@ -56,7 +56,7 @@ useHead({
                     </CommonH4>
                     <div class="flex flex-col gap-1">
                         <div v-for="item in hardware.items" :key="item">
-                            <p class="text-sm text-mute">{{ item.company }}</p>
+                            <p class="text-xs text-mute">{{ item.company }}</p>
                             <p>{{ item.name }}</p>
                         </div>
                     </div>
@@ -73,7 +73,7 @@ useHead({
                     </CommonH4>
                     <div class="flex flex-col gap-2">
                         <div v-for="item in software.items" :key="item">
-                            <p class="text-sm text-mute">{{ item.company }}</p>
+                            <p class="text-xs">{{ item.company }}</p>
                             <p>{{ item.name }}</p>
                         </div>
                     </div>

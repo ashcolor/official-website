@@ -17,7 +17,6 @@ module.exports = {
         },
         extend: {
             colors: {
-                mute: "#888888",
                 // @https://piapro.net/pages/character
                 miku: "#39C5BB",
                 luka: "#ffc0cb",
