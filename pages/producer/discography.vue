@@ -14,15 +14,15 @@ const sortedAlbums = computed(() => {
 <template>
     <NuxtLayout name="producer">
         <CommonH1>Discography</CommonH1>
-        <div class="flex flex-col gap-32">
+        <div class="my-16 flex flex-col gap-32">
             <div v-for="album in sortedAlbums" :key="album.name" class="flex flex-col gap-6">
                 <div class="flex flex-col gap-2 text-center">
                     <p class="text-sm text-primary">
                         {{ Util.dateStringFormat(album.published, "yyyy/MM/dd") }}&nbsp;RELEASE
                     </p>
-                    <h2>
-                        <span>{{ album.description }}</span>
-                        <span class="text-2xl">「{{ album.name }}」</span>
+                    <h2 class="m-auto inline-block w-fit border-b-2 border-neutral px-8">
+                        <span class="inline-block">{{ album.description }}</span>
+                        <span class="inline-block text-2xl">「{{ album.name }}」</span>
                     </h2>
                 </div>
                 <div class="flex flex-col items-center justify-center gap-16 lg:flex-row">
