@@ -63,12 +63,12 @@ useSeoMeta({
             <div v-for="hardware in hardwares" :key="hardware.type" class="card shadow">
                 <div class="card-body">
                     <CommonH4 class="flex flex-row items-center gap-1">
-                        <Icon :icon="hardware.icon" height="20" class="inline text-mute" />
+                        <Icon :icon="hardware.icon" height="20" class="inline" />
                         {{ hardware.type }}
                     </CommonH4>
                     <div class="flex flex-col gap-1">
                         <div v-for="item in hardware.items" :key="item">
-                            <p class="text-xs text-mute">{{ item.company }}</p>
+                            <p class="text-xs">{{ item.company }}</p>
                             <p>{{ item.name }}</p>
                         </div>
                     </div>
@@ -80,7 +80,7 @@ useSeoMeta({
             <div v-for="software in softwares" :key="software.type" class="card shadow">
                 <div class="card-body">
                     <CommonH4 class="flex flex-row items-center gap-1">
-                        <Icon :icon="software.icon" height="20" class="inline text-mute" />
+                        <Icon :icon="software.icon" height="20" class="inline" />
                         {{ software.type }}
                     </CommonH4>
                     <div class="flex flex-col gap-2">

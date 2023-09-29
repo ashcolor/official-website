@@ -1,8 +1,6 @@
 <script setup lang="ts">
 const route = useRoute();
 
-console.log(import.meta.env.VITE_NUXT_PUBLIC_SITE_URL);
-
 const url = `${import.meta.env.VITE_NUXT_PUBLIC_SITE_URL}${route.path}`;
 
 useSeoMeta({
