@@ -2,8 +2,20 @@
 import { Icon } from "@iconify/vue";
 import albums from "~/data/albums.json";
 
+const title = "Discography";
+const description = "ディスコグラフィー";
+
 useHead({
-    title: "Discography",
+    title,
+});
+
+const pageTitle = computed(() => `${title} | ${SITE_TITLE}`);
+
+useSeoMeta({
+    title: pageTitle.value,
+    ogTitle: pageTitle.value,
+    description,
+    ogDescription: description,
 });
 
 const sortedAlbums = computed(() => {

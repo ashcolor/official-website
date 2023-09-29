@@ -1,8 +1,20 @@
 <script setup lang="ts">
 import srcSongs from "~/data/songs.json";
 
+const title = "Music";
+const description = "楽曲一覧";
+
 useHead({
-    title: "Music",
+    title,
+});
+
+const pageTitle = computed(() => `${title} | ${SITE_TITLE}`);
+
+useSeoMeta({
+    title: pageTitle.value,
+    ogTitle: pageTitle.value,
+    description,
+    ogDescription: description,
 });
 
 const activeSingers = ref([]);

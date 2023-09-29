@@ -4,8 +4,20 @@ import histories from "~/data/histories.json";
 import hardwares from "~/data/hardwares.json";
 import softwares from "~/data/softwares.json";
 
+const title = "Biography";
+const description = "経歴";
+
 useHead({
-    title: "Biography",
+    title,
+});
+
+const pageTitle = computed(() => `${title} | ${SITE_TITLE}`);
+
+useSeoMeta({
+    title: pageTitle.value,
+    ogTitle: pageTitle.value,
+    description,
+    ogDescription: description,
 });
 </script>
 

@@ -1,3 +1,4 @@
+export const SITE_TITLE = "ashcolor official website";
 export const THUMBNAIL_BASE_URL = "/img/thumbnail/";
 export const LYRIC_BASE_URL = "/txt/lyric/";
 

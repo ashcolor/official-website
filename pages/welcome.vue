@@ -1,7 +1,25 @@
 <script setup lang="ts">
-useHead({
-    title: "",
+const route = useRoute();
+
+const description = "Welcome";
+
+const pageTitle = computed(() => `${SITE_TITLE}`);
+
+const url = `${import.meta.env.VITE_NUXT_PUBLIC_SITE_URL}${route.path}`;
+
+useSeoMeta({
+    title: pageTitle.value,
+    ogTitle: pageTitle.value,
+    description,
+    ogDescription: description,
+    ogImage: "/img/artist.png",
+    ogUrl: url,
+    ogType: "article",
+    ogSiteName: SITE_TITLE,
+    twitterCard: "summary_large_image",
 });
+
+useSeoMeta({});
 </script>
 
 <template>
