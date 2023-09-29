@@ -1,6 +1,5 @@
 [
     {
-        "id": 1,
         "key": "last_words",
         "lyric": "last_words.txt",
         "thumbnail": "last_words.jpg",
@@ -13,7 +12,6 @@
         "youtube": "https://youtu.be/3Anl7faMsf8"
     },
     {
-        "id": 2,
         "key": "between_the_lines",
         "lyric": "between_the_lines.txt",
         "thumbnail": "between_the_lines.jpg",
@@ -26,7 +24,6 @@
         "youtube": "https://youtu.be/buddiaHNnEc"
     },
     {
-        "id": 3,
         "key": "little_dreamer",
         "lyric": "little_dreamer.txt",
         "thumbnail": "little_dreamer.jpg",
@@ -39,7 +36,6 @@
         "youtube": "https://youtu.be/zw59_rvUHTk"
     },
     {
-        "id": 4,
         "key": "melted_message",
         "lyric": "melted_message.txt",
         "thumbnail": "melted_message.jpg",
@@ -52,7 +48,6 @@
         "youtube": ""
     },
     {
-        "id": 5,
         "key": "birthday",
         "lyric": "birthday.txt",
         "thumbnail": "birthday.jpg",
@@ -64,21 +59,8 @@
         "niconico": "https://www.nicovideo.jp/watch/sm13972297",
         "youtube": ""
     },
+
     {
-        "id": 6,
-        "key": "setsuna_duct",
-        "lyric": "setsuna_duct.txt",
-        "thumbnail": "noimage.jpg",
-        "name": "セツナダクト",
-        "nameEnglish": "Setsuna duct",
-        "published": "2011-04-02T15:00:00.000Z",
-        "singers": ["miku"],
-        "albums": ["an_introduction_to_odds_and_ends"],
-        "niconico": "https://www.nicovideo.jp/watch/sm14056194",
-        "youtube": ""
-    },
-    {
-        "id": 7,
         "key": "amnesia",
         "lyric": "amnesia.txt",
         "thumbnail": "amnesia.jpg",
@@ -91,20 +73,6 @@
         "youtube": ""
     },
     {
-        "id": 8,
-        "key": "last_words_remix",
-        "lyric": "last_words.txt",
-        "thumbnail": "last_words.jpg",
-        "name": "last words(remix)",
-        "nameEnglish": "last words(remix)",
-        "published": "2011-11-02T15:00:00.000Z",
-        "singers": ["miku"],
-        "albums": ["song_of_the_beginning"],
-        "niconico": "https://www.nicovideo.jp/watch/sm16065772",
-        "youtube": ""
-    },
-    {
-        "id": 9,
         "key": "lz",
         "lyric": "lz.txt",
         "thumbnail": "lz.jpg",
@@ -117,7 +85,6 @@
         "youtube": ""
     },
     {
-        "id": 10,
         "key": "a_walking_junk",
         "lyric": "a_walking_junk.txt",
         "thumbnail": "a_walking_junk.jpg",
@@ -130,7 +97,6 @@
         "youtube": "https://youtu.be/4tM1o2_CRTM"
     },
     {
-        "id": 11,
         "key": "re_re",
         "lyric": "re_re.txt",
         "thumbnail": "re_re.jpg",
@@ -143,7 +109,6 @@
         "youtube": "https://youtu.be/0TvZfxBh1dU"
     },
     {
-        "id": 12,
         "key": "live_on",
         "lyric": "live_on.txt",
         "thumbnail": "live_on.jpg",
@@ -156,7 +121,6 @@
         "youtube": "https://youtu.be/PsdXvo6wLsU"
     },
     {
-        "id": 13,
         "key": "lovin_music",
         "lyric": "lovin_music.txt",
         "thumbnail": "lovin_music.jpg",
@@ -168,21 +132,8 @@
         "niconico": "https://www.nicovideo.jp/watch/sm18925671",
         "youtube": ""
     },
+
     {
-        "id": 14,
-        "key": "setsuna_duct_remix",
-        "lyric": "setsuna_duct.txt",
-        "thumbnail": "noimage.jpg",
-        "name": "セツナダクト(remix)",
-        "nameEnglish": "Setsuna duct(remix)",
-        "published": "2012-12-14T15:00:00.000Z",
-        "singers": ["miku"],
-        "albums": ["an_introduction_to_odds_and_ends"],
-        "niconico": "https://www.nicovideo.jp/watch/sm19586454",
-        "youtube": ""
-    },
-    {
-        "id": 15,
         "key": "voice_by_voice",
         "lyric": "voice_by_voice.txt",
         "thumbnail": "voice_by_voice.jpg",
@@ -195,7 +146,6 @@
         "youtube": "https://youtu.be/D1y67cx5Sh4"
     },
     {
-        "id": 16,
         "key": "lost_and_found",
         "lyric": "lost_and_found.txt",
         "thumbnail": "lost_and_found.jpg",
@@ -208,7 +158,6 @@
         "youtube": ""
     },
     {
-        "id": 17,
         "key": "to_be_what_I_am",
         "lyric": "to_be_what_I_am.txt",
         "thumbnail": "to_be_what_I_am.jpg",
@@ -221,7 +170,6 @@
         "youtube": ""
     },
     {
-        "id": 18,
         "key": "half_sleep",
         "lyric": "half_sleep.txt",
         "thumbnail": "half_sleep.jpg",
@@ -234,7 +182,6 @@
         "youtube": "https://youtu.be/apxHKFfwUkM"
     },
     {
-        "id": 19,
         "key": "worlds_beginning",
         "lyric": "worlds_beginning.txt",
         "thumbnail": "worlds_beginning.jpg",
@@ -247,7 +194,6 @@
         "youtube": ""
     },
     {
-        "id": 20,
         "key": "thanksgiving_song",
         "lyric": "thanksgiving_song.txt",
         "thumbnail": "thanksgiving_song.jpg",
@@ -260,7 +206,6 @@
         "youtube": "https://youtu.be/tHlgW6uDhQk"
     },
     {
-        "id": 21,
         "key": "song_of_the_tiny_beginning",
         "lyric": "song_of_the_tiny_beginning.txt",
         "thumbnail": "song_of_the_tiny_beginning.jpg",
@@ -273,7 +218,6 @@
         "youtube": "https://youtu.be/QMZIVfZZcrs"
     },
     {
-        "id": 22,
         "key": "more",
         "lyric": "more.txt",
         "thumbnail": "more.jpg",
@@ -286,7 +230,6 @@
         "youtube": "https://youtu.be/pCqN81a7e-Y"
     },
     {
-        "id": 23,
         "key": "you_were_just_walking",
         "lyric": "you_were_just_walking.txt",
         "thumbnail": "you_were_just_walking.jpg",
@@ -299,7 +242,6 @@
         "youtube": "https://youtu.be/XpdqmE7bs2s"
     },
     {
-        "id": 24,
         "key": "deprecated",
         "lyric": "deprecated.txt",
         "thumbnail": "deprecated.jpg",
@@ -312,7 +254,6 @@
         "youtube": "https://youtu.be/dxICvB8WqKo"
     },
     {
-        "id": 25,
         "key": "at_liberty",
         "lyric": "at_liberty.txt",
         "thumbnail": "at_liberty.jpg",
