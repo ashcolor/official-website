@@ -21,7 +21,7 @@ const activeSingers = ref([]);
 const activeAlbums = ref([]);
 
 const songs = computed(() => {
-    let tmpSong = JSON.parse(JSON.stringify(srcSongs.reverse()));
+    let tmpSong = JSON.parse(JSON.stringify(srcSongs)).reverse();
 
     activeSingers.value.forEach((singer) => {
         tmpSong = tmpSong.filter((song) => song.singers.includes(singer));
