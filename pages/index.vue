@@ -13,8 +13,7 @@ useSeoMeta({
 
 const newestSongYoutubeId = computed(() => {
     const newestSong = SONGS[SONGS.length - 1];
-    const newestSongYoutubeURL = new URL(newestSong?.youtube || "");
-    return newestSongYoutubeURL.pathname;
+    return newestSong?.youtube;
 });
 
 const newestAlbumYoutubeId = computed(() => {

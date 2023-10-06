@@ -11,3 +11,7 @@ export const VOCALOID_SINGERS: { [key: string]: string } = {
     miku: "初音ミク",
     luka: "巡音ルカ",
 };
+
+export const NICONICO_URL_PREFIX = "https://www.nicovideo.jp/watch/";
+
+export const YOUTUBE_URL_PREFIX = "https://youtu.be/";

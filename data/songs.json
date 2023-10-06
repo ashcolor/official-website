@@ -5,11 +5,11 @@
         "thumbnail": "last_words.jpg",
         "name": "last words",
         "nameEnglish": "last words",
-        "published": "2010-01-10T15:00:00.000Z",
+        "published": "2010-01-11",
         "singers": ["miku"],
         "albums": ["song_of_the_beginning"],
-        "niconico": "https://www.nicovideo.jp/watch/sm9351593",
-        "youtube": "https://youtu.be/3Anl7faMsf8"
+        "niconico": "sm9351593",
+        "youtube": "3Anl7faMsf8"
     },
     {
         "key": "between_the_lines",
@@ -17,11 +17,11 @@
         "thumbnail": "between_the_lines.jpg",
         "name": "between the lines",
         "nameEnglish": "between the lines",
-        "published": "2010-03-14T15:00:00.000Z",
+        "published": "2010-03-15",
         "singers": ["miku"],
         "albums": ["an_introduction_to_odds_and_ends"],
-        "niconico": "https://www.nicovideo.jp/watch/sm10038507",
-        "youtube": "https://youtu.be/buddiaHNnEc"
+        "niconico": "sm10038507",
+        "youtube": "buddiaHNnEc"
     },
     {
         "key": "little_dreamer",
@@ -29,11 +29,11 @@
         "thumbnail": "little_dreamer.jpg",
         "name": "little dreamer",
         "nameEnglish": "little dreamer",
-        "published": "2010-04-16T15:00:00.000Z",
+        "published": "2010-04-17",
         "singers": ["miku"],
         "albums": ["an_introduction_to_odds_and_ends"],
-        "niconico": "https://www.nicovideo.jp/watch/sm10413792",
-        "youtube": "https://youtu.be/zw59_rvUHTk"
+        "niconico": "sm10413792",
+        "youtube": "zw59_rvUHTk"
     },
     {
         "key": "melted_message",
@@ -41,10 +41,10 @@
         "thumbnail": "melted_message.jpg",
         "name": "melted message",
         "nameEnglish": "melted message",
-        "published": "2010-11-03T15:00:00.000Z",
+        "published": "2010-11-04",
         "singers": ["miku"],
         "albums": [],
-        "niconico": "https://www.nicovideo.jp/watch/sm12639672",
+        "niconico": "sm12639672",
         "youtube": ""
     },
     {
@@ -53,23 +53,22 @@
         "thumbnail": "birthday.jpg",
         "name": "birthday",
         "nameEnglish": "birthday",
-        "published": "2011-03-26T15:00:00.000Z",
+        "published": "2011-03-27",
         "singers": ["miku"],
         "albums": [],
-        "niconico": "https://www.nicovideo.jp/watch/sm13972297",
+        "niconico": "sm13972297",
         "youtube": ""
     },
-
     {
         "key": "amnesia",
         "lyric": "amnesia.txt",
         "thumbnail": "amnesia.jpg",
         "name": "amnesia",
         "nameEnglish": "amnesia",
-        "published": "2011-06-17T15:00:00.000Z",
+        "published": "2011-06-18",
         "singers": ["miku"],
         "albums": [],
-        "niconico": "https://www.nicovideo.jp/watch/sm14777476",
+        "niconico": "sm14777476",
         "youtube": ""
     },
     {
@@ -78,10 +77,10 @@
         "thumbnail": "lz.jpg",
         "name": "Lz",
         "nameEnglish": "Lz",
-        "published": "2011-12-12T15:00:00.000Z",
+        "published": "2011-12-13",
         "singers": ["miku"],
         "albums": [],
-        "niconico": "https://www.nicovideo.jp/watch/sm16418506",
+        "niconico": "sm16418506",
         "youtube": ""
     },
     {
@@ -90,11 +89,11 @@
         "thumbnail": "a_walking_junk.jpg",
         "name": "アルクガラクタ",
         "nameEnglish": "a walking junk",
-        "published": "2012-02-28T15:00:00.000Z",
+        "published": "2012-02-29",
         "singers": ["miku"],
         "albums": ["an_introduction_to_odds_and_ends"],
-        "niconico": "https://www.nicovideo.jp/watch/sm17115864",
-        "youtube": "https://youtu.be/4tM1o2_CRTM"
+        "niconico": "sm17115864",
+        "youtube": "4tM1o2_CRTM"
     },
     {
         "key": "re_re",
@@ -102,11 +101,11 @@
         "thumbnail": "re_re.jpg",
         "name": "Re:Re:",
         "nameEnglish": "Re:Re:",
-        "published": "2012-04-11T15:00:00.000Z",
+        "published": "2012-04-12",
         "singers": ["miku", "luka"],
         "albums": ["an_introduction_to_odds_and_ends"],
-        "niconico": "https://www.nicovideo.jp/watch/sm17530530",
-        "youtube": "https://youtu.be/0TvZfxBh1dU"
+        "niconico": "sm17530530",
+        "youtube": "0TvZfxBh1dU"
     },
     {
         "key": "live_on",
@@ -114,11 +113,11 @@
         "thumbnail": "live_on.jpg",
         "name": "live on",
         "nameEnglish": "live on",
-        "published": "2012-09-12T15:00:00.000Z",
+        "published": "2012-09-13",
         "singers": ["miku"],
         "albums": ["an_introduction_to_odds_and_ends"],
-        "niconico": "https://www.nicovideo.jp/watch/sm18872715",
-        "youtube": "https://youtu.be/PsdXvo6wLsU"
+        "niconico": "sm18872715",
+        "youtube": "PsdXvo6wLsU"
     },
     {
         "key": "lovin_music",
@@ -126,24 +125,23 @@
         "thumbnail": "lovin_music.jpg",
         "name": "lovin' music",
         "nameEnglish": "lovin' music",
-        "published": "2012-09-18T15:00:00.000Z",
+        "published": "2012-09-19",
         "singers": ["luka"],
         "albums": [],
-        "niconico": "https://www.nicovideo.jp/watch/sm18925671",
+        "niconico": "sm18925671",
         "youtube": ""
     },
-
     {
         "key": "voice_by_voice",
         "lyric": "voice_by_voice.txt",
         "thumbnail": "voice_by_voice.jpg",
         "name": "voice by voice",
         "nameEnglish": "voice by voice",
-        "published": "2013-03-17T15:00:00.000Z",
+        "published": "2013-03-18",
         "singers": ["miku"],
         "albums": ["an_introduction_to_odds_and_ends"],
-        "niconico": "https://www.nicovideo.jp/watch/sm20369353",
-        "youtube": "https://youtu.be/D1y67cx5Sh4"
+        "niconico": "sm20369353",
+        "youtube": "D1y67cx5Sh4"
     },
     {
         "key": "lost_and_found",
@@ -151,10 +149,10 @@
         "thumbnail": "lost_and_found.jpg",
         "name": "lost and found",
         "nameEnglish": "lost and found",
-        "published": "2013-10-24T15:00:00.000Z",
+        "published": "2013-10-25",
         "singers": ["luka"],
         "albums": [],
-        "niconico": "https://www.nicovideo.jp/watch/sm22109355",
+        "niconico": "sm22109355",
         "youtube": ""
     },
     {
@@ -163,10 +161,10 @@
         "thumbnail": "to_be_what_I_am.jpg",
         "name": "僕が僕であるために",
         "nameEnglish": "to be what I am",
-        "published": "2013-12-20T15:00:00.000Z",
+        "published": "2013-12-21",
         "singers": ["luka"],
         "albums": ["an_introduction_to_odds_and_ends"],
-        "niconico": "https://www.nicovideo.jp/watch/sm22495741",
+        "niconico": "sm22495741",
         "youtube": ""
     },
     {
@@ -175,11 +173,11 @@
         "thumbnail": "half_sleep.jpg",
         "name": "half sleep",
         "nameEnglish": "half sleep",
-        "published": "2014-10-11T15:00:00.000Z",
+        "published": "2014-10-12",
         "singers": ["miku"],
         "albums": [],
-        "niconico": "https://www.nicovideo.jp/watch/sm24672183",
-        "youtube": "https://youtu.be/apxHKFfwUkM"
+        "niconico": "sm24672183",
+        "youtube": "apxHKFfwUkM"
     },
     {
         "key": "worlds_beginning",
@@ -187,10 +185,10 @@
         "thumbnail": "worlds_beginning.jpg",
         "name": "world's beginning",
         "nameEnglish": "world's beginning",
-        "published": "2016-08-07T15:00:00.000Z",
+        "published": "2016-08-08",
         "singers": ["miku"],
         "albums": ["song_of_the_beginning"],
-        "niconico": "https://www.nicovideo.jp/watch/sm29403657",
+        "niconico": "sm29403657",
         "youtube": ""
     },
     {
@@ -199,11 +197,11 @@
         "thumbnail": "thanksgiving_song.jpg",
         "name": "thanksgiving song",
         "nameEnglish": "thanksgiving song",
-        "published": "2017-09-18T15:00:00.000Z",
+        "published": "2017-09-19",
         "singers": ["miku"],
         "albums": ["song_of_the_beginning"],
-        "niconico": "https://www.nicovideo.jp/watch/sm31956921",
-        "youtube": "https://youtu.be/tHlgW6uDhQk"
+        "niconico": "sm31956921",
+        "youtube": "tHlgW6uDhQk"
     },
     {
         "key": "song_of_the_tiny_beginning",
@@ -211,11 +209,11 @@
         "thumbnail": "song_of_the_tiny_beginning.jpg",
         "name": "小さなはじまりの歌",
         "nameEnglish": "song of the tiny beginning",
-        "published": "2018-10-21T15:00:00.000Z",
+        "published": "2018-10-22",
         "singers": ["miku"],
         "albums": ["song_of_the_beginning"],
-        "niconico": "https://www.nicovideo.jp/watch/sm34060704",
-        "youtube": "https://youtu.be/QMZIVfZZcrs"
+        "niconico": "sm34060704",
+        "youtube": "QMZIVfZZcrs"
     },
     {
         "key": "more",
@@ -223,11 +221,11 @@
         "thumbnail": "more.jpg",
         "name": "more",
         "nameEnglish": "more",
-        "published": "2019-02-28T15:00:00.000Z",
+        "published": "2019-02-29",
         "singers": ["miku", "luka"],
         "albums": [],
-        "niconico": "https://www.nicovideo.jp/watch/sm34711325",
-        "youtube": "https://youtu.be/pCqN81a7e-Y"
+        "niconico": "sm34711325",
+        "youtube": "pCqN81a7e-Y"
     },
     {
         "key": "you_were_just_walking",
@@ -235,11 +233,11 @@
         "thumbnail": "you_were_just_walking.jpg",
         "name": "君は歩いていた",
         "nameEnglish": "you were just walking",
-        "published": "2020-08-20T15:00:00.000Z",
+        "published": "2020-08-21",
         "singers": ["miku"],
         "albums": [],
-        "niconico": "https://www.nicovideo.jp/watch/sm37394222",
-        "youtube": "https://youtu.be/XpdqmE7bs2s"
+        "niconico": "sm37394222",
+        "youtube": "XpdqmE7bs2s"
     },
     {
         "key": "deprecated",
@@ -247,11 +245,11 @@
         "thumbnail": "deprecated.jpg",
         "name": "deprecated",
         "nameEnglish": "deprecated",
-        "published": "2021-07-13T15:00:00.000Z",
+        "published": "2021-07-14",
         "singers": ["miku"],
         "albums": [],
-        "niconico": "https://www.nicovideo.jp/watch/sm39025831",
-        "youtube": "https://youtu.be/dxICvB8WqKo"
+        "niconico": "sm39025831",
+        "youtube": "dxICvB8WqKo"
     },
     {
         "key": "at_liberty",
@@ -259,10 +257,22 @@
         "thumbnail": "at_liberty.jpg",
         "name": "at liberty",
         "nameEnglish": "at liberty",
-        "published": "2023-08-16T15:00:00.000Z",
+        "published": "2023-08-17",
         "singers": ["miku"],
         "albums": ["song_of_the_beginning"],
-        "niconico": "https://www.nicovideo.jp/watch/sm42636462",
-        "youtube": "https://youtu.be/GH810kHil-o"
+        "niconico": "sm42636462",
+        "youtube": "GH810kHil-o"
+    },
+    {
+        "key": "daydream",
+        "lyric": "daydream.txt",
+        "thumbnail": "daydream.jpg",
+        "name": "空想",
+        "nameEnglish": "daydream",
+        "published": "2023-10-09",
+        "singers": ["luka"],
+        "albums": [],
+        "niconico": "sm42849718",
+        "youtube": "Hk8phZKoHrI"
     }
 ]
