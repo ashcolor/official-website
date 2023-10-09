@@ -17,7 +17,6 @@ module.exports = {
         },
         extend: {
             colors: {
-                ashcolor: "#acacac",
                 // @https://piapro.net/pages/character
                 miku: "#39C5BB",
                 luka: "#ffc0cb",
@@ -28,11 +27,12 @@ module.exports = {
         themes: [
             {
                 mytheme: {
-                    primary: "#9e9e9e",
+                    primary: "#666666",
                     "primary-content": "#ffffff",
                     secondary: "#f6d860",
                     accent: "#37cdbe",
-                    neutral: "#666666",
+                    neutral: "#acacac",
+                    "neutral-content": "#ffffff",
                     "base-100": "#ffffff",
 
                     "--rounded-box": "0", // border radius rounded-box utility class, used in card and other large boxes

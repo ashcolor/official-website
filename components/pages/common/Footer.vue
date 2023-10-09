@@ -1,9 +1,7 @@
 <template>
-    <footer class="footer footer-center bg-primary p-10 text-primary-content">
+    <footer class="footer footer-center bg-neutral p-10 text-neutral-content">
         <div>
-            <p class="font-bold">
-                ashcolor official website
-            </p>
+            <p class="font-bold">ashcolor official website</p>
             <p>Copyright © 2022 ashcolor - All right reserved</p>
         </div>
     </footer>

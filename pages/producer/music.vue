@@ -1,15 +1,27 @@
 <script setup lang="ts">
 import srcSongs from "~/data/songs.json";
 
+const title = "Music";
+const description = "楽曲一覧";
+
 useHead({
-    title: "Music",
+    title,
+});
+
+const pageTitle = computed(() => `${title} | ${SITE_TITLE}`);
+
+useSeoMeta({
+    title: pageTitle.value,
+    ogTitle: pageTitle.value,
+    description,
+    ogDescription: description,
 });
 
 const activeSingers = ref([]);
 const activeAlbums = ref([]);
 
 const songs = computed(() => {
-    let tmpSong = JSON.parse(JSON.stringify(srcSongs));
+    let tmpSong = JSON.parse(JSON.stringify(srcSongs)).reverse();
 
     activeSingers.value.forEach((singer) => {
         tmpSong = tmpSong.filter((song) => song.singers.includes(singer));
@@ -19,7 +31,7 @@ const songs = computed(() => {
         tmpSong = tmpSong.filter((song) => song.albums.includes(album));
     });
 
-    return tmpSong.sort((a, b) => b.id - a.id);
+    return tmpSong;
 });
 
 const onSingerToggleButtonClick = (value: string) => {
@@ -90,10 +102,10 @@ const toggle = (arr, item, getValue = (item) => item) => {
                 はじまりの歌
             </button>
         </div>
-        <div class="mt-8 flex flex-wrap justify-around gap-12">
+        <div class="mt-8 flex flex-wrap justify-center gap-16">
             <ProducerMusicSongCard
                 v-for="song in songs"
-                :key="song.id"
+                :key="song.name"
                 :song="song"
             ></ProducerMusicSongCard>
         </div>

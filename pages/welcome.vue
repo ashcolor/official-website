@@ -1,7 +1,25 @@
 <script setup lang="ts">
-useHead({
-    title: "",
+const route = useRoute();
+
+const description = "Welcome";
+
+const pageTitle = computed(() => `${SITE_TITLE}`);
+
+const url = `${import.meta.env.VITE_NUXT_PUBLIC_SITE_URL}${route.path}`;
+
+useSeoMeta({
+    title: pageTitle.value,
+    ogTitle: pageTitle.value,
+    description,
+    ogDescription: description,
+    ogImage: "/img/artist.png",
+    ogUrl: url,
+    ogType: "article",
+    ogSiteName: SITE_TITLE,
+    twitterCard: "summary_large_image",
 });
+
+useSeoMeta({});
 </script>
 
 <template>
@@ -21,7 +39,7 @@ useHead({
             </div>
             <div class="z-[-1] col-start-1 col-end-2 row-start-1 row-end-2">
                 <div class="h-full">
-                    <WelcomeWaveCanvas wave-color-string="#9e9e9e" />
+                    <WelcomeWaveCanvas wave-color-string="#acacac" />
                 </div>
             </div>
         </div>

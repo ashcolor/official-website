@@ -2,8 +2,20 @@
 import { Icon } from "@iconify/vue";
 import albums from "~/data/albums.json";
 
+const title = "Discography";
+const description = "ディスコグラフィー";
+
 useHead({
-    title: "Discography",
+    title,
+});
+
+const pageTitle = computed(() => `${title} | ${SITE_TITLE}`);
+
+useSeoMeta({
+    title: pageTitle.value,
+    ogTitle: pageTitle.value,
+    description,
+    ogDescription: description,
 });
 
 const sortedAlbums = computed(() => {
@@ -14,52 +26,81 @@ const sortedAlbums = computed(() => {
 <template>
     <NuxtLayout name="producer">
         <CommonH1>Discography</CommonH1>
-        <CommonH2>Streaming & Download</CommonH2>
-        <ProducerDiscographyDownloadList />
-        <p class="pt-4 text-sm">その他の配信サイトでも配信中</p>
-        <CommonH2>Album</CommonH2>
-        <div class="flex flex-col gap-8">
-            <div v-for="album in sortedAlbums" :key="album.name">
-                <div class="card bg-base-100 shadow-xl lg:card-side">
-                    <div class="flex justify-center p-8">
-                        <figure>
-                            <img
-                                :src="`${THUMBNAIL_BASE_URL}${album.thumbnail}`"
-                                class="border"
-                                alt="Album"
-                            />
-                        </figure>
-                    </div>
-                    <div class="card-body">
-                        <p class="text-sm text-primary">
-                            {{ Util.dateStringFormat(album.published, "yyyy/MM/dd") }}
-                        </p>
-                        <p>{{ album.description }}</p>
-                        <p class="card-title text-2xl">{{ album.name }}</p>
-                        <CommonH3>Track List</CommonH3>
-                        <div class="flex flex-col gap-2">
-                            <ol v-for="(song, index) in album.songs" :key="song">
-                                <li>{{ index + 1 }}. {{ song }}</li>
-                            </ol>
+        <div class="my-16 flex flex-col gap-32">
+            <div v-for="album in sortedAlbums" :key="album.name" class="flex flex-col gap-6">
+                <div class="flex flex-col gap-2 text-center">
+                    <p class="text-sm text-primary">
+                        {{ Util.dateStringFormat(album.published, "yyyy/MM/dd") }}&nbsp;RELEASE
+                    </p>
+                    <h2 class="m-auto inline-block w-fit border-b-2 border-neutral px-8">
+                        <span class="inline-block">{{ album.description }}</span>
+                        <span class="inline-block text-2xl">「{{ album.name }}」</span>
+                    </h2>
+                </div>
+                <div class="flex flex-col items-center justify-center gap-16 lg:flex-row">
+                    <figure class="aspect-square max-w-lg p-4">
+                        <img
+                            :src="`${THUMBNAIL_BASE_URL}${album.thumbnail}`"
+                            class="border"
+                            alt="Album"
+                        />
+                    </figure>
+                    <div class="flex flex-col gap-8">
+                        <div class="flex flex-col gap-4">
+                            <p>Track List</p>
+                            <div class="flex flex-col gap-2">
+                                <ol v-for="(song, index) in album.songs" :key="song">
+                                    <li>{{ index + 1 }}. {{ song }}</li>
+                                </ol>
+                            </div>
                         </div>
-                        <CommonH3>Cross Fade</CommonH3>
-                        <div>
-                            <YouTubeIframe :video-id="album.crossFadeYouTubeId" />
+                        <div v-if="album.crossFadeYouTubeId" class="flex flex-col gap-4">
+                            <p>Cross Fade</p>
+                            <div>
+                                <YouTubeIframe :video-id="album.crossFadeYouTubeId" />
+                            </div>
                         </div>
-                        <CommonH3>Downloads</CommonH3>
-                        <div class="flex flex-wrap justify-center gap-4">
-                            <a v-if="album.inst" :href="album.inst" class="inline">
-                                <button class="btn gap-2">
+
+                        <div v-if="album.inst || album.lyric" class="flex flex-col gap-4">
+                            <p>Downloads</p>
+                            <div class="flex flex-wrap gap-4">
+                                <a v-if="album.inst" :href="album.inst" class="btn btn-sm gap-2">
                                     Inst Download
                                     <Icon icon="fa-solid:download" />
-                                </button>
-                            </a>
-                            <a v-if="album.lyric" :href="album.lyric" class="inline">
-                                <button class="btn gap-2">
+                                </a>
+                                <a v-if="album.lyric" :href="album.lyric" class="btn btn-sm gap-2">
                                     Lyric Download
                                     <Icon icon="fa-solid:download" />
-                                </button>
-                            </a>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center gap-8 text-center lg:flex-row">
+                    <div class="flex flex-col gap-2">
+                        <p>Subscription</p>
+                        <div class="flex flex-wrap justify-center gap-4">
+                            <NuxtLink
+                                v-for="distribution in album.distribution.subscription"
+                                :key="distribution.name"
+                                :to="album.inst"
+                                class="btn btn-neutral"
+                            >
+                                {{ distribution.name }}
+                            </NuxtLink>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <p>Buy</p>
+                        <div class="flex flex-wrap justify-center gap-4">
+                            <NuxtLink
+                                v-for="distribution in album.distribution.download"
+                                :key="distribution.name"
+                                :to="album.inst"
+                                class="btn btn-neutral"
+                            >
+                                {{ distribution.name }}
+                            </NuxtLink>
                         </div>
                     </div>
                 </div>

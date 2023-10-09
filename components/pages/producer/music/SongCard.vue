@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { Icon } from "@iconify/vue";
+import { NICONICO_URL_PREFIX, YOUTUBE_URL_PREFIX } from "~/utils/const";
 
 interface Props {
     song: Object;
@@ -7,6 +8,8 @@ interface Props {
 const props = withDefaults(defineProps<Props>(), {
     song: () => {},
 });
+
+const isShowDetail = ref(false);
 </script>
 
 <template>
@@ -41,19 +44,38 @@ const props = withDefaults(defineProps<Props>(), {
             </p>
             <p class="">{{ props.song.name }}</p>
             <div class="card-actions mt-2 text-primary">
-                <a v-if="props.song.youtube" :href="props.song.youtube" target="_blank">
+                <a
+                    v-if="props.song.youtube"
+                    :href="`${YOUTUBE_URL_PREFIX}${props.song.youtube}`"
+                    target="_blank"
+                >
                     <Icon icon="mdi:youtube" width="28" />
                 </a>
-                <a v-if="props.song.niconico" :href="props.song.niconico" target="_blank">
+                <a
+                    v-if="props.song.niconico"
+                    :href="`${NICONICO_URL_PREFIX}${props.song.niconico}`"
+                    target="_blank"
+                >
                     <Icon icon="simple-icons:niconico" width="24" />
                 </a>
-                <ProducerMusicLyricButton
-                    v-if="props.song.lyric"
-                    :title="props.song.name"
-                    :file-url="LYRIC_BASE_URL + props.song.lyric"
-                >
+                <div @click="isShowDetail = true">
                     <Icon icon="ep:notebook" width="24" class="cursor-pointer" />
-                </ProducerMusicLyricButton>
+                </div>
+                <Teleport to="body">
+                    <div class="modal" :class="{ 'modal-open': isShowDetail }">
+                        <ProducerMusicSongDetail
+                            :title="props.song.name"
+                            :singers="props.song.singers"
+                            :thumbnail="props.song.thumbnail"
+                            :youtube="props.song.youtube"
+                            :niconico="props.song.niconico"
+                            :published="props.song.published"
+                            :file-url="LYRIC_BASE_URL + props.song.lyric"
+                            @close="isShowDetail = false"
+                        >
+                        </ProducerMusicSongDetail>
+                    </div>
+                </Teleport>
             </div>
         </div>
     </div>

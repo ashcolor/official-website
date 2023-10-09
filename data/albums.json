@@ -1,6 +1,5 @@
 [
     {
-        "id": 1,
         "key": "an_introduction_to_odds_and_ends",
         "description": "1st album",
         "name": "ガラクタ概論",
@@ -19,11 +18,64 @@
             "セツナダクト(Bonus Track)"
         ],
         "crossFadeYouTubeId": "bAigyv-eU_c",
+        "distribution": {
+            "subscription": [
+                {
+                    "name": "Spotify",
+                    "URL": "https://open.spotify.com/album/0ExuonetsNe6lQ1UdrrLqU"
+                },
+                {
+                    "name": "LINE MUSIC",
+                    "URL": "https://music.line.me/webapp/album/mb0000000000012279"
+                }
+            ],
+            "download": [
+                {
+                    "name": "iTunes Store",
+                    "URL": "https://music.apple.com/jp/album/an-introduction-to-odds-and-ends/956723913"
+                },
+                {
+                    "name": "Amazon Music",
+                    "URL": "https://www.amazon.co.jp/dp/B00S1Z1XDY"
+                }
+            ]
+        },
         "lyric": "https://storage.googleapis.com/ashcolor-resource/zip/an_introduction_to_odds_and_ends/lyric.zip",
         "inst": "https://storage.googleapis.com/ashcolor-resource/zip/an_introduction_to_odds_and_ends/inst.zip"
     },
     {
-        "id": 2,
+        "key": "lost_and_found",
+        "description": "Single",
+        "name": "lost and found",
+        "nameEnglish": "lost and found",
+        "published": "2014-01-30T15:00:00.000Z",
+        "thumbnail": "lost_and_found.jpg",
+        "songs": ["lost and found"],
+        "crossFadeYouTubeId": "",
+        "distribution": {
+            "subscription": [
+                {
+                    "name": "Spotify",
+                    "URL": "https://open.spotify.com/intl-ja/album/4dyyWK8RjMwg1O1gGnZKgj"
+                },
+                {
+                    "name": "LINE MUSIC",
+                    "URL": "https://music.line.me/webapp/album/mb0000000000011f25"
+                }
+            ],
+            "download": [
+                {
+                    "name": "iTunes Store",
+                    "URL": "https://music.apple.com/jp/album/lost-and-found-single/807046370"
+                },
+                {
+                    "name": "Amazon Music",
+                    "URL": "https://www.amazon.co.jp/lost-found-ashcolor/dp/B00I9GES82"
+                }
+            ]
+        }
+    },
+    {
         "key": "song_of_the_beginning",
         "description": "配信限定 mini album",
         "name": "はじまりの歌",
@@ -39,6 +91,28 @@
         ],
         "crossFadeYouTubeId": "2O-Vrpsu8RA",
         "lyric": "",
-        "inst": ""
+        "inst": "",
+        "distribution": {
+            "subscription": [
+                {
+                    "name": "Spotify",
+                    "URL": "https://open.spotify.com/album/3VyDyLzenBJtW2cB5UYXHA"
+                },
+                {
+                    "name": "LINE MUSIC",
+                    "URL": "https://music.line.me/webapp/album/mb0000000001736a57"
+                }
+            ],
+            "download": [
+                {
+                    "name": "iTunes Store",
+                    "URL": "https://itunes.apple.com/jp/album/song-of-the-beginning-ep/1439748666"
+                },
+                {
+                    "name": "Amazon Music",
+                    "URL": "https://www.amazon.co.jp/dp/B07JLLWKLT"
+                }
+            ]
+        }
     }
 ]

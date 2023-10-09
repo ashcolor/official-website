@@ -2,10 +2,18 @@
 import SONGS from "~/data/songs.json";
 import ALBUMS from "~/data/albums.json";
 
+const description = SITE_TITLE;
+
+useSeoMeta({
+    title: SITE_TITLE,
+    ogTitle: SITE_TITLE,
+    description,
+    ogDescription: description,
+});
+
 const newestSongYoutubeId = computed(() => {
     const newestSong = SONGS[SONGS.length - 1];
-    const newestSongYoutubeURL = new URL(newestSong?.youtube || "");
-    return newestSongYoutubeURL.pathname;
+    return newestSong?.youtube;
 });
 
 const newestAlbumYoutubeId = computed(() => {
