@@ -18,7 +18,7 @@ const accounts = [
         name: "YouTube",
         icon: "mdi:youtube",
         iconWidth: 24,
-        url: "https://www.youtube.com/channel/UC-bRr8lE7AEuXQ_L6sQTaLg",
+        url: "https://www.youtube.com/@ashcolor",
     },
     {
         name: "niconico",
