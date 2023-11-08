@@ -168,16 +168,16 @@
         "youtube": ""
     },
     {
-        "key": "half_sleep",
-        "lyric": "half_sleep.txt",
-        "thumbnail": "half_sleep.jpg",
-        "name": "half sleep",
-        "nameEnglish": "half sleep",
+        "key": "half_asleep",
+        "lyric": "half_asleep.txt",
+        "thumbnail": "half_asleep.jpg",
+        "name": "half asleep",
+        "nameEnglish": "half asleep",
         "published": "2014-10-12",
         "singers": ["miku"],
         "albums": [],
         "niconico": "sm24672183",
-        "youtube": "apxHKFfwUkM"
+        "youtube": "qj8gouBwC1I"
     },
     {
         "key": "worlds_beginning",
