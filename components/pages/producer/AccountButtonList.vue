@@ -3,12 +3,6 @@ import { Icon } from "@iconify/vue";
 
 const accounts = [
     {
-        name: "メール",
-        icon: "fluent:mail-16-filled",
-        iconWidth: 24,
-        url: "mailto:ashcolor27@gmail.com",
-    },
-    {
         name: "Twitter",
         icon: "simple-icons:x",
         iconWidth: 18,
@@ -27,7 +21,13 @@ const accounts = [
         url: "https://www.nicovideo.jp/mylist/15513536",
     },
     {
-        name: "Piapro（inst音源）",
+        name: "メール",
+        icon: "fluent:mail-16-filled",
+        iconWidth: 24,
+        url: "mailto:ashcolor27@gmail.com",
+    },
+    {
+        name: "Piapro",
         icon: "",
         url: "https://piapro.jp/ss0627",
     },
