@@ -53,6 +53,9 @@ useSeoMeta({
                         <span class="text-left">
                             <span class="text-left" v-html="history.content"></span>
                         </span>
+                        <a :href="history.url" target="_blank">
+                            <Icon icon="mdi:open-in-new" width="20" />
+                        </a>
                     </div>
                 </li>
             </ul>

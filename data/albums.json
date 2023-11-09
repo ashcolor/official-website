@@ -4,7 +4,7 @@
         "description": "1st album",
         "name": "ガラクタ概論",
         "nameEnglish": "an introduction to odds and ends",
-        "published": "2013-07-06T15:00:00.000Z",
+        "published": "2013-07-06T00:00:00.000Z",
         "thumbnail": "an_introduction_to_odds_and_ends.jpg",
         "songs": [
             "ガラクタ概論",
@@ -48,7 +48,7 @@
         "description": "Single",
         "name": "lost and found",
         "nameEnglish": "lost and found",
-        "published": "2014-01-30T15:00:00.000Z",
+        "published": "2014-01-30T00:00:00.000Z",
         "thumbnail": "lost_and_found.jpg",
         "songs": ["lost and found"],
         "crossFadeYouTubeId": "",
@@ -80,7 +80,7 @@
         "description": "配信限定 mini album",
         "name": "はじまりの歌",
         "nameEnglish": "song of the beginning",
-        "published": "2018-10-30T15:00:00.000Z",
+        "published": "2018-10-30T00:00:00.000Z",
         "thumbnail": "song_of_the_beginning.jpg",
         "songs": [
             "last words",
@@ -113,6 +113,22 @@
                     "URL": "https://www.amazon.co.jp/dp/B07JLLWKLT"
                 }
             ]
+        }
+    },
+    {
+        "key": "after_the_dream",
+        "description": "配信限定 mini album",
+        "name": "ゆめのあと",
+        "nameEnglish": "after the dream",
+        "published": "2023-11-22T00:00:00.000Z",
+        "thumbnail": "after_the_dream.jpg",
+        "songs": ["more", "half asleep", "君は歩いていた", "deprecated", "空想"],
+        "crossFadeYouTubeId": "Of0NslpmMVU",
+        "lyric": "",
+        "inst": "",
+        "distribution": {
+            "subscription": [],
+            "download": []
         }
     }
 ]
