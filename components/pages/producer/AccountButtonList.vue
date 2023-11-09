@@ -10,8 +10,8 @@ const accounts = [
     },
     {
         name: "Twitter",
-        icon: "mdi:twitter",
-        iconWidth: 24,
+        icon: "simple-icons:x",
+        iconWidth: 18,
         url: "https://twitter.com/ashcolor",
     },
     {
@@ -30,6 +30,11 @@ const accounts = [
         name: "Piapro（inst音源）",
         icon: "",
         url: "https://piapro.jp/ss0627",
+    },
+    {
+        name: "FANBOX",
+        icon: "",
+        url: "https://ashcolor.fanbox.cc/",
     },
 ];
 

@@ -10,8 +10,8 @@ const accounts = [
     },
     {
         name: "Twitter",
-        icon: "mdi:twitter",
-        iconWidth: 24,
+        icon: "simple-icons:x",
+        iconWidth: 18,
         url: "https://twitter.com/ashcolor",
     },
     {
