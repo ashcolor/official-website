@@ -38,6 +38,7 @@ export default defineNuxtConfig({
     googleFonts: {
         families: {
             "Noto+Sans+JP": true,
+            "Noto+Sans+Mono+CJK+JP": true,
             Comfortaa: true,
         },
     },
