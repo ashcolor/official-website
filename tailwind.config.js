@@ -15,7 +15,7 @@ module.exports = {
         fontFamily: {
             sans: ["Comfortaa", "Noto Sans JP", ...defaultTheme.fontFamily.sans],
             serif: [...defaultTheme.fontFamily.serif],
-            mono: ["Noto Sans Mono CJK JP", ...defaultTheme.fontFamily.mono],
+            mono: ["Noto Sans Mono", ...defaultTheme.fontFamily.mono],
         },
         extend: {
             colors: {
