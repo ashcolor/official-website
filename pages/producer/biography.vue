@@ -38,27 +38,25 @@ useSeoMeta({
             </div>
         </div>
         <CommonH2>History</CommonH2>
-        <ul class="w-full divide-y bg-base-100">
-            <ul class="steps steps-vertical">
-                <li
-                    v-for="history in histories"
-                    :key="history.content"
-                    class="step p-2 before:!h-[150%] before:!w-1 after:!h-4 after:!w-4"
-                    ta-content=""
-                >
-                    <div class="flex flex-row items-center gap-4">
-                        <div class="align-middle text-sm text-slate-500">
-                            {{ history.date }}
-                        </div>
-                        <span class="text-left">
-                            <span class="text-left" v-html="history.content"></span>
-                        </span>
-                        <a :href="history.url" target="_blank">
-                            <Icon icon="mdi:open-in-new" width="20" />
-                        </a>
-                    </div>
-                </li>
-            </ul>
+        <ul class="timeline timeline-vertical">
+            <li
+                v-for="(history, index) in histories"
+                :key="history.content"
+                class="grid-cols-[7rem_auto_minmax(0,_1fr)]"
+            >
+                <hr v-if="index !== 0" />
+                <div class="timeline-start mx-4 font-mono">{{ history.date }}</div>
+                <div class="timeline-middle text-neutral">
+                    <Icon icon="mdi:circle"></Icon>
+                </div>
+                <div class="timeline-end mx-4 flex flex-row items-center gap-2 py-8">
+                    <span v-html="history.content"></span>
+                    <a :href="history.url" target="_blank">
+                        <Icon icon="mdi:open-in-new" width="20" />
+                    </a>
+                </div>
+                <hr v-if="index !== histories.length - 1" />
+            </li>
         </ul>
         <CommonH2>Equipments</CommonH2>
         <CommonH3>Hardware</CommonH3>
