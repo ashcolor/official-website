@@ -18,7 +18,7 @@ const accounts = [
         name: "niconico",
         icon: "simple-icons:niconico",
         iconWidth: 18,
-        url: "https://www.nicovideo.jp/mylist/15513536",
+        url: "https://www.nicovideo.jp/series/130347",
     },
     {
         name: "メール",
