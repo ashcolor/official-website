@@ -127,8 +127,26 @@
         "lyric": "",
         "inst": "",
         "distribution": {
-            "subscription": [],
-            "download": []
+            "subscription": [
+                {
+                    "name": "Spotify",
+                    "URL": "https://open.spotify.com/album/0JsQymRWmNI6iGtGvz3zch"
+                },
+                {
+                    "name": "LINE MUSIC",
+                    "URL": "https://music.line.me/webapp/album/mb00000000033369b7"
+                }
+            ],
+            "download": [
+                {
+                    "name": "iTunes Store",
+                    "URL": "https://music.apple.com/jp/album/after-the-dream-ep/1715792565"
+                },
+                {
+                    "name": "Amazon Music",
+                    "URL": "https://www.amazon.co.jp/dp/B0CN125TGH"
+                }
+            ]
         }
     }
 ]
