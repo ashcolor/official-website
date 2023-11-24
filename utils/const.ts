@@ -5,6 +5,7 @@ export const LYRIC_BASE_URL = "/txt/lyric/";
 export const ALBUM_TITLES: { [key: string]: string } = {
     an_introduction_to_odds_and_ends: "ガラクタ概論",
     song_of_the_beginning: "はじまりの歌",
+    after_the_dream: "ゆめのあと",
 };
 
 export const VOCALOID_SINGERS: { [key: string]: string } = {

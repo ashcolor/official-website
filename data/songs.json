@@ -175,7 +175,7 @@
         "nameEnglish": "half asleep",
         "published": "2014-10-12",
         "singers": ["miku"],
-        "albums": [],
+        "albums": ["after_the_dream"],
         "niconico": "sm24672183",
         "youtube": "qj8gouBwC1I"
     },
@@ -223,7 +223,7 @@
         "nameEnglish": "more",
         "published": "2019-02-29",
         "singers": ["miku", "luka"],
-        "albums": [],
+        "albums": ["after_the_dream"],
         "niconico": "sm34711325",
         "youtube": "pCqN81a7e-Y"
     },
@@ -235,7 +235,7 @@
         "nameEnglish": "you were just walking",
         "published": "2020-08-21",
         "singers": ["miku"],
-        "albums": [],
+        "albums": ["after_the_dream"],
         "niconico": "sm37394222",
         "youtube": "XpdqmE7bs2s"
     },
@@ -247,7 +247,7 @@
         "nameEnglish": "deprecated",
         "published": "2021-07-14",
         "singers": ["miku"],
-        "albums": [],
+        "albums": ["after_the_dream"],
         "niconico": "sm39025831",
         "youtube": "dxICvB8WqKo"
     },
@@ -271,7 +271,7 @@
         "nameEnglish": "daydream",
         "published": "2023-10-09",
         "singers": ["luka"],
-        "albums": [],
+        "albums": ["after_the_dream"],
         "niconico": "sm42849718",
         "youtube": "Hk8phZKoHrI"
     }
