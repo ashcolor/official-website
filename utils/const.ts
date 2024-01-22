@@ -8,9 +8,23 @@ export const ALBUM_TITLES: { [key: string]: string } = {
     after_the_dream: "ゆめのあと",
 };
 
-export const VOCALOID_SINGERS: { [key: string]: string } = {
-    miku: "初音ミク",
-    luka: "巡音ルカ",
+interface SINGER {
+    name: string;
+    color: string;
+}
+export const SINGERS: { [key: string]: SINGER } = {
+    miku: {
+        name: "初音ミク",
+        color: "#39C5BB",
+    },
+    luka: {
+        name: "巡音ルカ",
+        color: "#ffc0cb",
+    },
+    ryo: {
+        name: "Ryo",
+        color: "#e7613e",
+    },
 };
 
 export const NICONICO_URL_PREFIX = "https://www.nicovideo.jp/watch/";

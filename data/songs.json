@@ -274,5 +274,17 @@
         "albums": ["after_the_dream"],
         "niconico": "sm42849718",
         "youtube": "Hk8phZKoHrI"
+    },
+    {
+        "key": "replace",
+        "lyric": "replace.txt",
+        "thumbnail": "replace.png",
+        "name": "Replace",
+        "nameEnglish": "replace",
+        "published": "2024-01-25",
+        "singers": ["ryo"],
+        "albums": [],
+        "niconico": "sm43301484",
+        "youtube": "r_Myceb5EH0"
     }
 ]

@@ -59,50 +59,40 @@ const toggle = (arr, item, getValue = (item) => item) => {
     <NuxtLayout name="producer">
         <CommonH1>Music</CommonH1>
         <CommonH2>Songs</CommonH2>
-        <div class="my-8 flex flex-wrap gap-2">
-            <!-- just in time 対策 -->
-            <div
-                class="hidden border-miku bg-miku text-miku hover:border-miku hover:bg-miku hover:text-miku"
-            ></div>
-            <div
-                class="hidden border-luka bg-luka text-luka hover:border-luka hover:bg-luka hover:text-luka"
-            ></div>
-            <CustomButton
-                class="btn-sm"
-                base-color="miku"
-                :is-active="activeSingers.includes('miku')"
-                @click="onSingerToggleButtonClick('miku')"
-            >
-                初音ミク
-            </CustomButton>
-            <CustomButton
-                class="btn-sm"
-                base-color="luka"
-                :is-active="activeSingers.includes('luka')"
-                @click="onSingerToggleButtonClick('luka')"
-            >
-                巡音ルカ
-            </CustomButton>
-            <button
-                class="btn btn-primary btn-sm"
-                :class="{
-                    'btn-outline': !activeAlbums.includes('an_introduction_to_odds_and_ends'),
-                }"
-                @click="onAlbumToggleButtonClick('an_introduction_to_odds_and_ends')"
-            >
-                ガラクタ概論
-            </button>
-            <button
-                class="btn btn-primary btn-sm"
-                :class="{
-                    'btn-outline': !activeAlbums.includes('song_of_the_beginning'),
-                }"
-                @click="onAlbumToggleButtonClick('song_of_the_beginning')"
-            >
-                はじまりの歌
-            </button>
+        <div class="my-16 flex flex-col justify-center gap-8 md:flex-row">
+            <div class="flex flex-row place-items-center gap-2">
+                <div>Singer</div>
+                <div class="flex flex-wrap gap-1">
+                    <CustomButton
+                        v-for="(singer, key) in SINGERS"
+                        :key="key"
+                        class="btn-sm"
+                        :color="singer.color"
+                        :is-active="activeSingers.includes(key)"
+                        @click="onSingerToggleButtonClick(key)"
+                    >
+                        {{ singer.name }}
+                    </CustomButton>
+                </div>
+            </div>
+            <div class="flex flex-row place-items-center gap-2">
+                <div>Album</div>
+                <div class="flex flex-wrap gap-1">
+                    <button
+                        v-for="(albumTitle, key) in ALBUM_TITLES"
+                        :key="key"
+                        class="btn btn-primary btn-sm"
+                        :class="{
+                            'btn-outline': !activeAlbums.includes(key),
+                        }"
+                        @click="onAlbumToggleButtonClick(key)"
+                    >
+                        {{ albumTitle }}
+                    </button>
+                </div>
+            </div>
         </div>
-        <div class="mt-8 flex flex-wrap justify-center gap-16">
+        <div class="my-16 flex flex-wrap justify-center gap-32">
             <ProducerMusicSongCard
                 v-for="song in songs"
                 :key="song.name"

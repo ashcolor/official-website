@@ -17,19 +17,12 @@ module.exports = {
             serif: [...defaultTheme.fontFamily.serif],
             mono: ["Noto Sans Mono", ...defaultTheme.fontFamily.mono],
         },
-        extend: {
-            colors: {
-                // @https://piapro.net/pages/character
-                miku: "#39C5BB",
-                luka: "#ffc0cb",
-            },
-        },
     },
     daisyui: {
         themes: [
             {
                 mytheme: {
-                    primary: "#666666",
+                    primary: "#535353",
                     "primary-content": "#ffffff",
                     secondary: "#f6d860",
                     accent: "#37cdbe",
