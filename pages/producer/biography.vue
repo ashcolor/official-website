@@ -61,7 +61,11 @@ useSeoMeta({
         <CommonH2>Equipments</CommonH2>
         <CommonH3>Hardware</CommonH3>
         <div class="flex flex-row flex-wrap gap-4">
-            <div v-for="hardware in hardwares" :key="hardware.type" class="card shadow">
+            <div
+                v-for="hardware in hardwares"
+                :key="hardware.type"
+                class="card shadow sm:min-w-[16rem]"
+            >
                 <div class="card-body">
                     <CommonH4 class="flex flex-row items-center gap-1">
                         <Icon :icon="hardware.icon" height="20" class="inline" />
@@ -78,7 +82,11 @@ useSeoMeta({
         </div>
         <CommonH3>Software</CommonH3>
         <div class="flex flex-row flex-wrap gap-4">
-            <div v-for="software in softwares" :key="software.type" class="card shadow">
+            <div
+                v-for="software in softwares"
+                :key="software.type"
+                class="card shadow sm:min-w-[16rem]"
+            >
                 <div class="card-body">
                     <CommonH4 class="flex flex-row items-center gap-1">
                         <Icon :icon="software.icon" height="20" class="inline" />

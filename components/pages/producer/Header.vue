@@ -16,7 +16,7 @@ const route = useRoute();
                 <MenuButton />
                 <ul
                     tabindex="0"
-                    class="menu-compact menu dropdown-content rounded-box mt-3 w-52 bg-base-100 p-2 text-base-content shadow"
+                    class="menu-compact menu dropdown-content mt-3 w-52 rounded-box bg-base-100 p-2 text-base-content shadow"
                 >
                     <li
                         v-for="menu in menus"
@@ -41,7 +41,7 @@ const route = useRoute();
                     :key="menu.title"
                     :class="{ 'font-bold': menu.to === route.path }"
                 >
-                    <NuxtLink :to="menu.to">
+                    <NuxtLink :to="menu.to" class="!text-neutral-content">
                         {{ menu.title }}
                     </NuxtLink>
                 </li>

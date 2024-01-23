@@ -52,11 +52,11 @@ const getFileFromStorage = async () => {
         v-on-click-outside="closeModal"
         class="modal-box flex h-full flex-col gap-2 overflow-hidden"
     >
-        <div class="flex justify-between bg-primary p-4 text-primary-content">
+        <div class="flex justify-between bg-neutral p-4 text-neutral-content">
             <h3 class="text-lg font-bold">
                 {{ title }}
             </h3>
-            <button class="btn btn-square btn-primary btn-sm" @click="closeModal()">
+            <button class="btn btn-square btn-neutral btn-sm" @click="closeModal()">
                 <Icon icon="carbon:close" width="32" />
             </button>
         </div>
