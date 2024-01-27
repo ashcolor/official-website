@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { Icon } from "@iconify/vue";
-
 const accounts = [
     {
         name: "Twitter",
@@ -39,7 +37,7 @@ const accounts = [
                 target="_blank"
             >
                 <template v-if="account.icon">
-                    <Icon :icon="account.icon" :width="account.iconWidth" />
+                    <Icon :name="account.icon" :size="account.iconWidth" />
                 </template>
                 <template v-else>
                     <p>

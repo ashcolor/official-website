@@ -10,7 +10,6 @@
     "lint:fix": "eslint --ext .ts,.js,.vue . --fix"
   },
   "devDependencies": {
-    "@iconify/vue": "^4.1.1",
     "@nuxt/devtools": "^0.8.5",
     "@nuxtjs/eslint-config-typescript": "^12.1.0",
     "@nuxtjs/eslint-module": "^4.1.0",
@@ -22,6 +21,7 @@
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-tailwindcss": "^3.13.0",
     "nuxt": "^3.7.4",
+    "nuxt-icon": "^0.6.8",
     "sass": "^1.68.0",
     "tailwindcss": "^3.3.3",
     "typescript": "^5.2.2"

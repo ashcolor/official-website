@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { Icon } from "@iconify/vue";
 import albums from "~/data/albums.json";
 
 const title = "Discography";
@@ -66,11 +65,11 @@ const sortedAlbums = computed(() => {
                             <div class="flex flex-wrap gap-4">
                                 <a v-if="album.inst" :href="album.inst" class="btn btn-sm gap-2">
                                     Inst Download
-                                    <Icon icon="fa-solid:download" />
+                                    <Icon name="fa-solid:download" />
                                 </a>
                                 <a v-if="album.lyric" :href="album.lyric" class="btn btn-sm gap-2">
                                     Lyric Download
-                                    <Icon icon="fa-solid:download" />
+                                    <Icon name="fa-solid:download" />
                                 </a>
                             </div>
                         </div>

@@ -24,6 +24,7 @@ export default defineNuxtConfig({
         "nuxt-simple-robots",
         "nuxt-simple-sitemap",
         "nuxt-gtag",
+        "nuxt-icon",
         "@nuxtjs/google-fonts",
     ],
     components: {

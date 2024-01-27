@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { Icon } from "@iconify/vue";
-
 const accounts = [
     {
         name: "Twitter",
@@ -52,7 +50,7 @@ const accountWithoutIcon = computed(() => accounts.filter((account) => !account.
                 class="btn btn-square btn-circle btn-neutral btn-sm"
                 target="_blank"
             >
-                <Icon :icon="account.icon" :width="account.iconWidth" />
+                <Icon :name="account.icon" :size="account.iconWidth" />
             </NuxtLink>
         </div>
         <div class="flex flex-col items-start gap-2 sm:gap-4">

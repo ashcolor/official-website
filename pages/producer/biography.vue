@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { Icon } from "@iconify/vue";
 import histories from "~/data/histories.json";
 import hardwares from "~/data/hardwares.json";
 import softwares from "~/data/softwares.json";
@@ -47,12 +46,12 @@ useSeoMeta({
                 <hr v-if="index !== 0" />
                 <div class="timeline-start mx-4 font-mono">{{ history.date }}</div>
                 <div class="timeline-middle text-neutral">
-                    <Icon icon="mdi:circle"></Icon>
+                    <Icon name="mdi:circle"></Icon>
                 </div>
                 <div class="timeline-end mx-4 flex flex-row items-center gap-2 py-8">
                     <span v-html="history.content"></span>
                     <a :href="history.url" target="_blank">
-                        <Icon icon="mdi:open-in-new" width="20" />
+                        <Icon name="mdi:open-in-new" />
                     </a>
                 </div>
                 <hr v-if="index !== histories.length - 1" />
@@ -68,7 +67,7 @@ useSeoMeta({
             >
                 <div class="card-body">
                     <CommonH4 class="flex flex-row items-center gap-1">
-                        <Icon :icon="hardware.icon" height="20" class="inline" />
+                        <Icon :name="hardware.icon" class="inline" />
                         {{ hardware.type }}
                     </CommonH4>
                     <div class="flex flex-col gap-1">
@@ -89,7 +88,7 @@ useSeoMeta({
             >
                 <div class="card-body">
                     <CommonH4 class="flex flex-row items-center gap-1">
-                        <Icon :icon="software.icon" height="20" class="inline" />
+                        <Icon :name="software.icon" class="inline" />
                         {{ software.type }}
                     </CommonH4>
                     <div class="flex flex-col gap-2">
