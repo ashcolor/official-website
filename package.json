@@ -38,5 +38,6 @@
     "nuxt-simple-robots": "^3.1.5",
     "nuxt-simple-sitemap": "^3.3.5",
     "pinia": "^2.1.6"
-  }
+  },
+  "packageManager": "pnpm@8.15.3+sha256.fc4a49bd609550a41e14d20efbce802a4b892aa4cac877322de2f0924f122991"
 }
