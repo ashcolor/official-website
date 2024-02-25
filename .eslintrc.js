@@ -17,7 +17,7 @@ module.exports = {
         {
             files: ["*.vue"],
             rules: {
-                "tailwindcss/no-custom-classname": false,
+                "tailwindcss/no-custom-classname": 0,
             },
         },
     ],
