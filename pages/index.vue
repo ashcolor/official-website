@@ -25,12 +25,12 @@ const newestAlbumYoutubeId = computed(() => {
     <NuxtLayout>
         <CommonH1>ashcolor official website</CommonH1>
         <CommonH2>New Song</CommonH2>
-        <div class="flex flex-col place-items-center gap-2">
+        <div class="flex flex-col place-items-center gap-4 py-8">
             <YouTubeIframe :video-id="newestSongYoutubeId" class="aspect-video w-full max-w-4xl" />
             <NuxtLink to="/producer/music" class="link">and more</NuxtLink>
         </div>
         <CommonH2>New Album</CommonH2>
-        <div class="flex flex-col place-items-center gap-2">
+        <div class="flex flex-col place-items-center gap-4 py-8">
             <YouTubeIframe :video-id="newestAlbumYoutubeId" class="aspect-video w-full max-w-4xl" />
             <NuxtLink to="/producer/discography" class="link">and more</NuxtLink>
         </div>
