@@ -1,4 +1,5 @@
 export const SITE_TITLE = "ashcolor official website";
+
 export const THUMBNAIL_BASE_URL = "/img/thumbnail/";
 export const LYRIC_BASE_URL = "/txt/lyric/";
 
@@ -30,3 +31,7 @@ export const SINGERS: { [key: string]: SINGER } = {
 export const NICONICO_URL_PREFIX = "https://www.nicovideo.jp/watch/";
 
 export const YOUTUBE_URL_PREFIX = "https://youtu.be/";
+
+export const pageTitle = (title?: string): string => {
+    return title ? `${title} - ${SITE_TITLE}` : `${SITE_TITLE}`;
+};

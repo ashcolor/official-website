@@ -6,11 +6,9 @@ import softwares from "~/data/softwares.json";
 const title = "Biography";
 const description = "経歴";
 
-const pageTitle = computed(() => `${title} | ${SITE_TITLE}`);
-
 useSeoMeta({
     title: title,
-    ogTitle: pageTitle.value,
+    ogTitle: pageTitle(title),
     description,
     ogDescription: description,
 });

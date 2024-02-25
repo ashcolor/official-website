@@ -4,11 +4,9 @@ import albums from "~/data/albums.json";
 const title = "Discography";
 const description = "ディスコグラフィー";
 
-const pageTitle = computed(() => `${title} | ${SITE_TITLE}`);
-
 useSeoMeta({
     title: title,
-    ogTitle: pageTitle.value,
+    ogTitle: pageTitle(title),
     description,
     ogDescription: description,
 });

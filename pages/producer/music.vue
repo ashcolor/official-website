@@ -4,11 +4,9 @@ import srcSongs from "~/data/songs.json";
 const title = "Music";
 const description = "楽曲一覧";
 
-const pageTitle = computed(() => `${title} | ${SITE_TITLE}`);
-
 useSeoMeta({
     title: title,
-    ogTitle: pageTitle.value,
+    ogTitle: pageTitle(title),
     description,
     ogDescription: description,
 });
