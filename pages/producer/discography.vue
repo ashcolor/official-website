@@ -57,11 +57,19 @@ const sortedAlbums = computed(() => {
                         <div v-if="album.inst || album.lyric" class="flex flex-col gap-4">
                             <p>Downloads</p>
                             <div class="flex flex-wrap gap-4">
-                                <a v-if="album.inst" :href="album.inst" class="btn btn-sm gap-2">
+                                <a
+                                    v-if="album.inst"
+                                    :href="album.inst"
+                                    class="btn btn-primary btn-sm gap-2"
+                                >
                                     Inst Download
                                     <Icon name="fa-solid:download" />
                                 </a>
-                                <a v-if="album.lyric" :href="album.lyric" class="btn btn-sm gap-2">
+                                <a
+                                    v-if="album.lyric"
+                                    :href="album.lyric"
+                                    class="btn btn-primary btn-sm gap-2"
+                                >
                                     Lyric Download
                                     <Icon name="fa-solid:download" />
                                 </a>
@@ -77,7 +85,7 @@ const sortedAlbums = computed(() => {
                                 v-for="distribution in album.distribution.subscription"
                                 :key="distribution.name"
                                 :to="album.inst"
-                                class="btn btn-neutral"
+                                class="btn btn-primary"
                             >
                                 {{ distribution.name }}
                             </NuxtLink>
@@ -90,7 +98,7 @@ const sortedAlbums = computed(() => {
                                 v-for="distribution in album.distribution.download"
                                 :key="distribution.name"
                                 :to="album.inst"
-                                class="btn btn-neutral"
+                                class="btn btn-primary"
                             >
                                 {{ distribution.name }}
                             </NuxtLink>
