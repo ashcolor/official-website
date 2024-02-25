@@ -6,14 +6,10 @@ import softwares from "~/data/softwares.json";
 const title = "Biography";
 const description = "経歴";
 
-useHead({
-    title,
-});
-
 const pageTitle = computed(() => `${title} | ${SITE_TITLE}`);
 
 useSeoMeta({
-    title: pageTitle.value,
+    title: title,
     ogTitle: pageTitle.value,
     description,
     ogDescription: description,

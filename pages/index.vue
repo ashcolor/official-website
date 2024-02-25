@@ -5,7 +5,6 @@ import ALBUMS from "~/data/albums.json";
 const description = SITE_TITLE;
 
 useSeoMeta({
-    title: SITE_TITLE,
     ogTitle: SITE_TITLE,
     description,
     ogDescription: description,
@@ -19,10 +18,6 @@ const newestSongYoutubeId = computed(() => {
 const newestAlbumYoutubeId = computed(() => {
     const newestAlbum = ALBUMS[ALBUMS.length - 1];
     return newestAlbum?.crossFadeYouTubeId;
-});
-
-useHead({
-    title: "Home",
 });
 </script>
 

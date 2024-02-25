@@ -4,14 +4,10 @@ import albums from "~/data/albums.json";
 const title = "Discography";
 const description = "ディスコグラフィー";
 
-useHead({
-    title,
-});
-
 const pageTitle = computed(() => `${title} | ${SITE_TITLE}`);
 
 useSeoMeta({
-    title: pageTitle.value,
+    title: title,
     ogTitle: pageTitle.value,
     description,
     ogDescription: description,
