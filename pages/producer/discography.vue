@@ -5,7 +5,7 @@ const title = "Discography";
 const description = "ディスコグラフィー";
 
 useSeoMeta({
-    title: title,
+    title,
     ogTitle: pageTitle(title),
     description,
     ogDescription: description,

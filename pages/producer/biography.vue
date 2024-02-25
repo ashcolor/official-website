@@ -7,7 +7,7 @@ const title = "Biography";
 const description = "経歴";
 
 useSeoMeta({
-    title: title,
+    title,
     ogTitle: pageTitle(title),
     description,
     ogDescription: description,

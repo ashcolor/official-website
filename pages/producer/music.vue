@@ -5,7 +5,7 @@ const title = "Music";
 const description = "楽曲一覧";
 
 useSeoMeta({
-    title: title,
+    title,
     ogTitle: pageTitle(title),
     description,
     ogDescription: description,
