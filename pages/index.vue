@@ -27,7 +27,7 @@ useHead({
 </script>
 
 <template>
-    <NuxtLayout name="producer">
+    <NuxtLayout>
         <CommonH1>ashcolor official website</CommonH1>
         <CommonH2>New Song</CommonH2>
         <div class="flex flex-col place-items-center gap-2">
