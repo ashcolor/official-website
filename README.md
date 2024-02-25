@@ -1,7 +1,6 @@
 # ashcolor official website
 
--   [Welcome](https://ashcolor.work/welcome)
--   [Producer](https://ashcolor.work)
+-   https://ashcolor.work/
 
 ## ドキュメント
 
@@ -15,7 +14,7 @@
 Make sure to install the dependencies:
 
 ```bash
-yarn install
+pnpm install
 ```
 
 ## Development Server
@@ -23,7 +22,7 @@ yarn install
 Start the development server on http://localhost:3000
 
 ```bash
-yarn dev
+pnpm dev
 ```
 
 ## Production
@@ -31,11 +30,11 @@ yarn dev
 Build the application for production:
 
 ```bash
-yarn generate
+pnpm generate
 ```
 
 Locally preview production build:
 
 ```bash
-yarn preview
+pnpm preview
 ```
