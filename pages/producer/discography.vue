@@ -1,19 +1,12 @@
 <script setup lang="ts">
-import { Icon } from "@iconify/vue";
 import albums from "~/data/albums.json";
 
 const title = "Discography";
 const description = "ディスコグラフィー";
 
-useHead({
-    title,
-});
-
-const pageTitle = computed(() => `${title} | ${SITE_TITLE}`);
-
 useSeoMeta({
-    title: pageTitle.value,
-    ogTitle: pageTitle.value,
+    title,
+    ogTitle: pageTitle(title),
     description,
     ogDescription: description,
 });
@@ -24,7 +17,7 @@ const sortedAlbums = computed(() => {
 </script>
 
 <template>
-    <NuxtLayout name="producer">
+    <NuxtLayout>
         <CommonH1>Discography</CommonH1>
         <div class="my-32 flex flex-col gap-64">
             <div v-for="album in sortedAlbums" :key="album.name" class="flex flex-col gap-6">
@@ -64,13 +57,21 @@ const sortedAlbums = computed(() => {
                         <div v-if="album.inst || album.lyric" class="flex flex-col gap-4">
                             <p>Downloads</p>
                             <div class="flex flex-wrap gap-4">
-                                <a v-if="album.inst" :href="album.inst" class="btn btn-sm gap-2">
+                                <a
+                                    v-if="album.inst"
+                                    :href="album.inst"
+                                    class="btn btn-primary btn-sm gap-2"
+                                >
                                     Inst Download
-                                    <Icon icon="fa-solid:download" />
+                                    <Icon name="fa-solid:download" />
                                 </a>
-                                <a v-if="album.lyric" :href="album.lyric" class="btn btn-sm gap-2">
+                                <a
+                                    v-if="album.lyric"
+                                    :href="album.lyric"
+                                    class="btn btn-primary btn-sm gap-2"
+                                >
                                     Lyric Download
-                                    <Icon icon="fa-solid:download" />
+                                    <Icon name="fa-solid:download" />
                                 </a>
                             </div>
                         </div>
@@ -84,7 +85,7 @@ const sortedAlbums = computed(() => {
                                 v-for="distribution in album.distribution.subscription"
                                 :key="distribution.name"
                                 :to="album.inst"
-                                class="btn btn-neutral"
+                                class="btn btn-primary"
                             >
                                 {{ distribution.name }}
                             </NuxtLink>
@@ -97,7 +98,7 @@ const sortedAlbums = computed(() => {
                                 v-for="distribution in album.distribution.download"
                                 :key="distribution.name"
                                 :to="album.inst"
-                                class="btn btn-neutral"
+                                class="btn btn-primary"
                             >
                                 {{ distribution.name }}
                             </NuxtLink>

@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { vOnClickOutside } from "@vueuse/components";
-import { Icon } from "@iconify/vue";
 
 interface Props {
     title: string;
@@ -25,15 +24,6 @@ const emit = defineEmits(["close"]);
 
 const content = ref("");
 
-watch(props.fileUrl, (val) => {
-    if (!val) return;
-    getFileFromStorage();
-});
-
-onMounted(async () => {
-    await getFileFromStorage();
-});
-
 const closeModal = () => {
     emit("close");
 };
@@ -45,6 +35,10 @@ const getFileFromStorage = async () => {
     if (response.status !== 200) return;
     content.value = Util.nl2br(text);
 };
+
+onMounted(async () => {
+    await getFileFromStorage();
+});
 </script>
 
 <template>
@@ -57,7 +51,7 @@ const getFileFromStorage = async () => {
                 {{ title }}
             </h3>
             <button class="btn btn-square btn-neutral btn-sm" @click="closeModal()">
-                <Icon icon="carbon:close" width="32" />
+                <Icon name="carbon:close" size="32" />
             </button>
         </div>
         <div class="overflow-y-auto p-2">

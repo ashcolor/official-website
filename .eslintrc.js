@@ -14,6 +14,12 @@ module.exports = {
                 "vue/no-multiple-template-root": 0,
             },
         },
+        {
+            files: ["*.vue"],
+            rules: {
+                "tailwindcss/no-custom-classname": 0,
+            },
+        },
     ],
     plugins: ["tailwindcss"],
     rules: {},

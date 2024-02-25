@@ -4,15 +4,9 @@ import srcSongs from "~/data/songs.json";
 const title = "Music";
 const description = "楽曲一覧";
 
-useHead({
-    title,
-});
-
-const pageTitle = computed(() => `${title} | ${SITE_TITLE}`);
-
 useSeoMeta({
-    title: pageTitle.value,
-    ogTitle: pageTitle.value,
+    title,
+    ogTitle: pageTitle(title),
     description,
     ogDescription: description,
 });
@@ -56,7 +50,7 @@ const toggle = (arr, item, getValue = (item) => item) => {
 </script>
 
 <template>
-    <NuxtLayout name="producer">
+    <NuxtLayout>
         <CommonH1>Music</CommonH1>
         <CommonH2>Songs</CommonH2>
         <div class="my-16 flex flex-col justify-center gap-8 md:flex-row">

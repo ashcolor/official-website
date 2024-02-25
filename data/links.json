@@ -1,0 +1,120 @@
+[
+    {
+        "type": "information",
+        "name": "official website",
+        "icon": "",
+        "url": "https://ashcolor.work/",
+        "description": ""
+    },
+    {
+        "type": "information",
+        "name": "メール",
+        "icon": "fluent:mail-16-filled",
+        "iconWidth": "24",
+        "url": "mailto:ashcolor27@gmail.com",
+        "description": ""
+    },
+    {
+        "type": "information",
+        "name": "Piapro",
+        "icon": "simple-icons:piapro",
+        "url": "https://piapro.jp/ss0627",
+        "description": "inst配布等"
+    },
+    {
+        "type": "information",
+        "name": "FANBOX",
+        "icon": "",
+        "url": "https://ashcolor.fanbox.cc/",
+        "description": "アナザーボーカル音源等"
+    },
+    {
+        "type": "information",
+        "name": "KARENT",
+        "icon": "",
+        "iconWidth": "24",
+        "url": "https://karent.jp/artist/pp000655",
+        "description": "配信サイト一覧"
+    },
+    {
+        "type": "sns",
+        "name": "X",
+        "icon": "simple-icons:x",
+        "iconWidth": "18",
+        "url": "https://twitter.com/ashcolor",
+        "description": ""
+    },
+    {
+        "type": "sns",
+        "name": "Bluesky",
+        "icon": "simple-icons:bluesky",
+        "iconWidth": "18",
+        "url": "https://bsky.app/profile/ashcolor.bsky.social",
+        "description": ""
+    },
+    {
+        "type": "movie",
+        "name": "niconico",
+        "icon": "simple-icons:niconico",
+        "iconWidth": "18",
+        "url": "https://www.nicovideo.jp/series/130347",
+        "description": ""
+    },
+    {
+        "type": "movie",
+        "name": "YouTube",
+        "icon": "mdi:youtube",
+        "iconWidth": "24",
+        "url": "https://www.youtube.com/@ashcolor",
+        "description": ""
+    },
+
+    {
+        "type": "movie",
+        "name": "Tiktok",
+        "icon": "fa6-brands:tiktok",
+        "iconWidth": "18",
+        "url": "https://www.tiktok.com/@ashcolor__",
+        "description": ""
+    },
+    {
+        "type": "subscription",
+        "name": "Spotify",
+        "icon": "mdi:spotify",
+        "iconWidth": "24",
+        "url": "https://open.spotify.com/intl-ja/artist/530ZxZmJuJ7sAcI84QJwJA",
+        "description": ""
+    },
+    {
+        "type": "subscription",
+        "name": "LINE MUSIC",
+        "icon": "fa-brands:line",
+        "iconWidth": "24",
+        "url": "https://music.line.me/webapp/artist/mi000000000014298c",
+        "description": ""
+    },
+    {
+        "type": "subscription",
+        "name": "YouTube Music",
+        "icon": "mdi:youtube",
+        "iconWidth": "24",
+        "url": "https://music.youtube.com/channel/UCVMwaBSjhP3DdrWo9um47RA",
+        "description": ""
+    },
+    {
+        "type": "subscription",
+        "name": "Amazon Music Unlimited",
+        "icon": "simple-icons:amazonmusic",
+        "iconWidth": "24",
+        "url": "https://www.amazon.co.jp/music/player/artists/B00I9GFM1O/ashcolor",
+        "description": ""
+    },
+    {
+        "type": "download",
+        "name": "iTunes Store",
+        "icon": "fa-brands:itunes",
+        "iconWidth": "24",
+        "url": "https://music.apple.com/jp/artist/ashcolor/807046372",
+        "description": ""
+    }
+]

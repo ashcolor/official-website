@@ -1,70 +1,31 @@
 <script setup lang="ts">
-import { Icon } from "@iconify/vue";
-
-const accounts = [
-    {
-        name: "Twitter",
-        icon: "simple-icons:x",
-        iconWidth: 18,
-        url: "https://twitter.com/ashcolor",
-    },
-    {
-        name: "YouTube",
-        icon: "mdi:youtube",
-        iconWidth: 24,
-        url: "https://www.youtube.com/@ashcolor",
-    },
-    {
-        name: "niconico",
-        icon: "simple-icons:niconico",
-        iconWidth: 18,
-        url: "https://www.nicovideo.jp/series/130347",
-    },
-    {
-        name: "メール",
-        icon: "fluent:mail-16-filled",
-        iconWidth: 24,
-        url: "mailto:ashcolor27@gmail.com",
-    },
-    {
-        name: "Piapro",
-        icon: "",
-        url: "https://piapro.jp/ss0627",
-    },
-    {
-        name: "FANBOX",
-        icon: "",
-        url: "https://ashcolor.fanbox.cc/",
-    },
-];
-
-const accountWithIcon = computed(() => accounts.filter((account) => account.icon));
-const accountWithoutIcon = computed(() => accounts.filter((account) => !account.icon));
+import LINKS from "~/data/links.json";
 </script>
 
 <template>
     <div class="flex flex-col gap-4">
-        <div class="flex flex-row items-center gap-2 sm:gap-4">
-            <NuxtLink
-                v-for="account in accountWithIcon"
-                :key="account.name"
-                :to="account.url"
-                class="btn btn-square btn-circle btn-neutral btn-sm"
-                target="_blank"
-            >
-                <Icon :icon="account.icon" :width="account.iconWidth" />
-            </NuxtLink>
-        </div>
-        <div class="flex flex-col items-start gap-2 sm:gap-4">
-            <NuxtLink
-                v-for="account in accountWithoutIcon"
-                :key="account.name"
-                :to="account.url"
-                class="btn btn-neutral btn-sm normal-case"
-                target="_blank"
-            >
-                {{ account.name }}
-            </NuxtLink>
+        <div
+            v-for="type in ['information', 'sns', 'movie']"
+            :key="type"
+            class="flex w-full flex-col gap-2"
+        >
+            <h2 class="uppercase">{{ type }}</h2>
+            <div class="flex flex-row gap-2">
+                <template
+                    v-for="link in LINKS.filter((link) => link.type === type)"
+                    :key="link.name"
+                >
+                    <NuxtLink
+                        v-if="link.name !== 'official website'"
+                        :to="link.url"
+                        class="btn btn-primary btn-sm normal-case"
+                        target="_blank"
+                    >
+                        <Icon v-if="link.icon" :name="link.icon" :size="link.iconWidth" />
+                        {{ link.name }}
+                    </NuxtLink>
+                </template>
+            </div>
         </div>
     </div>
 </template>
