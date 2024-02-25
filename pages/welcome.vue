@@ -24,7 +24,7 @@ useSeoMeta({});
 
 <template>
     <div class="flex h-[100dvh] w-screen flex-col">
-        <div class="grid h-full w-full">
+        <div class="grid size-full">
             <div class="col-start-1 col-end-2 row-start-1 row-end-2">
                 <div class="flex h-full flex-col place-items-center justify-center">
                     <h1 class="text-center text-4xl font-thin">ashcolor official website</h1>

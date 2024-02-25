@@ -24,15 +24,6 @@ const emit = defineEmits(["close"]);
 
 const content = ref("");
 
-watch(props.fileUrl, (val) => {
-    if (!val) return;
-    getFileFromStorage();
-});
-
-onMounted(async () => {
-    await getFileFromStorage();
-});
-
 const closeModal = () => {
     emit("close");
 };
@@ -44,6 +35,10 @@ const getFileFromStorage = async () => {
     if (response.status !== 200) return;
     content.value = Util.nl2br(text);
 };
+
+onMounted(async () => {
+    await getFileFromStorage();
+});
 </script>
 
 <template>
@@ -56,7 +51,7 @@ const getFileFromStorage = async () => {
                 {{ title }}
             </h3>
             <button class="btn btn-square btn-neutral btn-sm" @click="closeModal()">
-                <Icon name="carbon:close" size="32px" />
+                <Icon name="carbon:close" size="32" />
             </button>
         </div>
         <div class="overflow-y-auto p-2">

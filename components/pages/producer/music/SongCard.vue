@@ -46,9 +46,9 @@ const isShowDetail = ref(false);
             </div>
 
             <div
-                class="absolute left-0 top-0 h-full w-full opacity-0 transition hover:bg-black/30 hover:opacity-100"
+                class="absolute left-0 top-0 size-full opacity-0 transition hover:bg-black/30 hover:opacity-100"
             >
-                <div class="grid h-full w-full">
+                <div class="grid size-full">
                     <div class="flex flex-row place-items-center gap-2 place-self-center">
                         <div class="tooltip tooltip-primary" data-tip="YouTubeを開く">
                             <a
@@ -57,7 +57,7 @@ const isShowDetail = ref(false);
                                 :href="`${YOUTUBE_URL_PREFIX}${props.song.youtube}`"
                                 target="_blank"
                             >
-                                <Icon name="mdi:youtube" size="28px" />
+                                <Icon name="mdi:youtube" size="28" />
                             </a>
                         </div>
                         <div class="tooltip tooltip-primary" data-tip="niconicoを開く">
@@ -67,12 +67,12 @@ const isShowDetail = ref(false);
                                 :href="`${NICONICO_URL_PREFIX}${props.song.niconico}`"
                                 target="_blank"
                             >
-                                <Icon name="simple-icons:niconico" size="24px" />
+                                <Icon name="simple-icons:niconico" size="24" />
                             </a>
                         </div>
                         <div class="tooltip tooltip-primary" data-tip="歌詞を開く">
                             <button class="btn btn-circle" @click="isShowDetail = true">
-                                <Icon name="ep:notebook" size="24px" class="cursor-pointer" />
+                                <Icon name="ep:notebook" size="24" class="cursor-pointer" />
                             </button>
                         </div>
                     </div>
