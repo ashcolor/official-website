@@ -56,7 +56,7 @@ const toggle = (arr, item, getValue = (item) => item) => {
 </script>
 
 <template>
-    <NuxtLayout name="producer">
+    <NuxtLayout>
         <CommonH1>Music</CommonH1>
         <CommonH2>Songs</CommonH2>
         <div class="my-16 flex flex-col justify-center gap-8 md:flex-row">

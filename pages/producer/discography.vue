@@ -23,7 +23,7 @@ const sortedAlbums = computed(() => {
 </script>
 
 <template>
-    <NuxtLayout name="producer">
+    <NuxtLayout>
         <CommonH1>Discography</CommonH1>
         <div class="my-32 flex flex-col gap-64">
             <div v-for="album in sortedAlbums" :key="album.name" class="flex flex-col gap-6">

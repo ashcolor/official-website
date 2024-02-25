@@ -21,7 +21,7 @@ useSeoMeta({
 </script>
 
 <template>
-    <NuxtLayout name="producer">
+    <NuxtLayout>
         <CommonH1>Biography</CommonH1>
         <CommonH2>Profile</CommonH2>
         <div class="hero">
