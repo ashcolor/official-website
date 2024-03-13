@@ -9,32 +9,30 @@
 -   [daisyUI](https://daisyui.com/)
 -   [iconify](https://iconify.design/)
 
-## Setup
+> [!WARNING]
+>
+> -   Vueのバージョンを3.4.8に止めないと画面の遷移時にエラーになる
+>     see @https://github.com/nuxt/nuxt/issues/25214
 
-Make sure to install the dependencies:
+## 環境構築
+
+### インストール
 
 ```bash
 pnpm install
 ```
 
-## Development Server
-
-Start the development server on http://localhost:3000
+### ローカルサーバの起動
 
 ```bash
 pnpm dev
 ```
 
-## Production
+http://localhost:3000
 
-Build the application for production:
-
-```bash
-pnpm generate
-```
-
-Locally preview production build:
+## 本番ビルドの確認
 
 ```bash
+pnpm build
 pnpm preview
 ```
