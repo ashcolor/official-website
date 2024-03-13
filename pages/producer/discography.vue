@@ -47,10 +47,9 @@ const sortedAlbums = computed(() => {
                                 </ol>
                             </div>
                         </div>
-                        <div v-if="album.crossFadeYouTubeId" class="flex flex-col gap-4">
-                            <p>Cross Fade</p>
+                        <div v-if="album.sampleYouTubeId" class="flex flex-col gap-4">
                             <div>
-                                <YouTubeIframe :video-id="album.crossFadeYouTubeId" />
+                                <YouTubeIframe :video-id="album.sampleYouTubeId" />
                             </div>
                         </div>
 

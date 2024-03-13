@@ -17,7 +17,7 @@
             "僕が僕であるために",
             "セツナダクト(Bonus Track)"
         ],
-        "crossFadeYouTubeId": "bAigyv-eU_c",
+        "sampleYouTubeId": "bAigyv-eU_c",
         "distribution": {
             "subscription": [
                 {
@@ -51,7 +51,7 @@
         "published": "2014-01-30T00:00:00.000Z",
         "thumbnail": "lost_and_found.jpg",
         "songs": ["lost and found"],
-        "crossFadeYouTubeId": "",
+        "sampleYouTubeId": "gZMOkUU7kZ4",
         "distribution": {
             "subscription": [
                 {
@@ -89,7 +89,7 @@
             "小さなはじまりの歌",
             "thanksgiving song"
         ],
-        "crossFadeYouTubeId": "2O-Vrpsu8RA",
+        "sampleYouTubeId": "2O-Vrpsu8RA",
         "lyric": "",
         "inst": "",
         "distribution": {
@@ -123,7 +123,7 @@
         "published": "2023-11-22T00:00:00.000Z",
         "thumbnail": "after_the_dream.jpg",
         "songs": ["more", "half asleep", "君は歩いていた", "deprecated", "空想"],
-        "crossFadeYouTubeId": "Of0NslpmMVU",
+        "sampleYouTubeId": "Of0NslpmMVU",
         "lyric": "",
         "inst": "",
         "distribution": {

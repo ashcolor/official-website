@@ -6,8 +6,18 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
+    "format": "prettier --write ./**/*.{ts,js,vue}",
+    "format:check": "prettier --check ./**/*.{ts,js,vue}",
     "lint": "eslint --ext .ts,.js,.vue .",
-    "lint:fix": "eslint --ext .ts,.js,.vue . --fix"
+    "lint:fix": "eslint --ext .ts,.js,.vue . --fix",
+    "prepare": "husky install",
+    "lint-staged": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,ts,vue}": [
+      "eslint --ext .ts,.js,.vue . --fix",
+      "prettier --write ./**/*.{ts,js,vue}"
+    ]
   },
   "devDependencies": {
     "@nuxt/devtools": "^0.8.5",
@@ -20,8 +30,11 @@
     "eslint": "^8.50.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-tailwindcss": "^3.13.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^15.2.2",
     "nuxt": "^3.7.4",
     "nuxt-icon": "^0.6.8",
+    "prettier": "^3.2.5",
     "sass": "^1.68.0",
     "tailwindcss": "^3.3.3",
     "typescript": "^5.2.2"
@@ -38,6 +51,9 @@
     "nuxt-simple-robots": "^3.1.5",
     "nuxt-simple-sitemap": "^3.3.5",
     "pinia": "^2.1.6"
+  },
+  "resolutions": {
+    "vue": "npm:vue@3.4.8"
   },
   "packageManager": "pnpm@8.15.3+sha256.fc4a49bd609550a41e14d20efbce802a4b892aa4cac877322de2f0924f122991"
 }
