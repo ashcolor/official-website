@@ -17,27 +17,21 @@ export default defineNuxtConfig({
             ],
         },
     },
-    ssr: false,
     css: ["@/assets/css/tailwind.css"],
     build: {},
     modules: [
         "@nuxtjs/tailwindcss",
-        "@pinia/nuxt",
-        "@vueuse/nuxt",
         "@nuxtjs/eslint-module",
-        "nuxt-simple-robots",
-        "nuxt-simple-sitemap",
+        "@nuxtjs/google-fonts",
+        "@nuxtjs/sitemap",
+        "nuxt-schema-org",
         "nuxt-gtag",
         "nuxt-icon",
-        "@nuxtjs/google-fonts",
+        "@pinia/nuxt",
+        "@vueuse/nuxt",
     ],
     components: {
         dirs: ["~/components/pages", "~/components/parts"],
-    },
-
-    eslint: {
-        // yarn dev開始にlintを実行するか
-        lintOnStart: false,
     },
 
     googleFonts: {
@@ -50,5 +44,18 @@ export default defineNuxtConfig({
 
     gtag: {
         id: "G-NX7FP5N7LL",
+    },
+
+    site: {
+        url: "https://ashcolor.work",
+        name: "ashcolor オフィシャルサイト",
+    },
+
+    schemaOrg: {
+        identity: "Person",
+    },
+
+    eslint: {
+        lintOnStart: false,
     },
 });
