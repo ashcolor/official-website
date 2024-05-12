@@ -39,9 +39,7 @@
                     "URL": "https://www.amazon.co.jp/dp/B00S1Z1XDY"
                 }
             ]
-        },
-        "lyric": "https://storage.googleapis.com/ashcolor-resource/zip/an_introduction_to_odds_and_ends/lyric.zip",
-        "inst": "https://storage.googleapis.com/ashcolor-resource/zip/an_introduction_to_odds_and_ends/inst.zip"
+        }
     },
     {
         "key": "lost_and_found",
@@ -90,8 +88,6 @@
             "thanksgiving song"
         ],
         "sampleYouTubeId": "2O-Vrpsu8RA",
-        "lyric": "",
-        "inst": "",
         "distribution": {
             "subscription": [
                 {
@@ -124,8 +120,6 @@
         "thumbnail": "after_the_dream.jpg",
         "songs": ["more", "half asleep", "君は歩いていた", "deprecated", "空想"],
         "sampleYouTubeId": "Of0NslpmMVU",
-        "lyric": "",
-        "inst": "",
         "distribution": {
             "subscription": [
                 {
