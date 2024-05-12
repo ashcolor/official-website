@@ -52,28 +52,6 @@ const sortedAlbums = computed(() => {
                                 <YouTubeIframe :video-id="album.sampleYouTubeId" />
                             </div>
                         </div>
-
-                        <div v-if="album.inst || album.lyric" class="flex flex-col gap-4">
-                            <p>Downloads</p>
-                            <div class="flex flex-wrap gap-4">
-                                <a
-                                    v-if="album.inst"
-                                    :href="album.inst"
-                                    class="btn btn-primary btn-sm gap-2"
-                                >
-                                    Inst Download
-                                    <Icon name="fa-solid:download" />
-                                </a>
-                                <a
-                                    v-if="album.lyric"
-                                    :href="album.lyric"
-                                    class="btn btn-primary btn-sm gap-2"
-                                >
-                                    Lyric Download
-                                    <Icon name="fa-solid:download" />
-                                </a>
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <div class="flex flex-col justify-center gap-8 text-center lg:flex-row">
