@@ -44,8 +44,8 @@ useSeoMeta({
                 </div>
                 <div class="timeline-end mx-4 flex flex-row items-center gap-2 py-8">
                     <span v-html="history.content"></span>
-                    <a :href="history.url" target="_blank">
-                        <Icon name="mdi:open-in-new" />
+                    <a :href="history.url" target="_blank" class="btn btn-ghost btn-sm">
+                        <Icon name="mdi:open-in-new" size="20" />
                     </a>
                 </div>
                 <hr v-if="index !== histories.length - 1" />
