@@ -286,5 +286,17 @@
         "albums": [],
         "niconico": "sm43301484",
         "youtube": "r_Myceb5EH0"
+    },
+    {
+        "key": "continue",
+        "lyric": "continue.txt",
+        "thumbnail": "continue.png",
+        "name": "Continue?",
+        "nameEnglish": "replace",
+        "published": "2024-09-04",
+        "singers": ["luka"],
+        "albums": [],
+        "niconico": "sm44053345",
+        "youtube": "CCb5hzQmmso"
     }
 ]
