@@ -5,15 +5,40 @@
         "items": [
             {
                 "company": "CRYPTON",
-                "name": "初音ミク(V2･append･V3)"
+                "name": "ピアプロキャラクターズ・スーパーパック"
             },
             {
                 "company": "CRYPTON",
-                "name": "巡音ルカ"
+                "name": "初音ミク（V2･append･V3・NT）"
+            },
+            {
+                "company": "CRYPTON",
+                "name": "巡音ルカ（V2）"
+            },
+            {
+                "company": "CRYPTON",
+                "name": "KAITO（V3）"
             },
             {
                 "company": "Dreamtonics",
-                "name": "Synthesizer V Ryo"
+                "name": "Synthesizer V GUMI"
+            },
+            {
+                "company": "Dreamtonics",
+                "name": "Synthesizer V 花隈千冬"
+            },
+
+            {
+                "company": "Dreamtonics",
+                "name": "Synthesizer V Ryo AI"
+            },
+            {
+                "company": "Dreamtonics",
+                "name": "Synthesizer V Saki AI"
+            },
+            {
+                "company": "Dreamtonics",
+                "name": "Synthesizer V Mai"
             },
             {
                 "company": "1stPLACE",
@@ -32,6 +57,10 @@
             {
                 "company": "Ample Sound",
                 "name": "Ample Guitar T"
+            },
+            {
+                "company": "Ample Sound",
+                "name": "Ample Guitar SC III"
             },
             {
                 "company": "Ample Sound",
@@ -67,7 +96,7 @@
             },
             {
                 "company": "XLN Audio",
-                "name": "Addictive Drums(Retro･Indie･Black velvet)"
+                "name": "Addictive Drums 2"
             },
 
             {
@@ -82,11 +111,15 @@
         "items": [
             {
                 "company": "Native Instruments",
-                "name": "KOMPLETE7 ELEMENTS"
+                "name": "KOMPLETE 14 STANDARD"
             },
             {
                 "company": "XLN Audio",
                 "name": "Addictive Keys"
+            },
+            {
+                "company": "iZotope",
+                "name": "Ozone 11 Standard:"
             },
             {
                 "company": "A.O.M. Factory",
