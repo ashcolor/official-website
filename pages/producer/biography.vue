@@ -31,34 +31,32 @@ useSeoMeta({
             </div>
         </div>
         <CommonH2>History</CommonH2>
-        <ul class="timeline timeline-vertical">
-            <li
-                v-for="(history, index) in histories"
-                :key="history.content"
-                class="grid-cols-[7rem_auto_minmax(0,_1fr)]"
-            >
-                <hr v-if="index !== 0" />
-                <div class="timeline-start mx-4 font-mono">{{ history.date }}</div>
-                <div class="timeline-middle text-neutral">
-                    <Icon name="mdi:circle"></Icon>
-                </div>
-                <div class="timeline-end mx-4 flex flex-row items-center gap-2 py-8">
-                    <span v-html="history.content"></span>
-                    <a :href="history.url" target="_blank" class="btn btn-ghost btn-sm">
-                        <Icon name="mdi:open-in-new" size="20" />
-                    </a>
-                </div>
-                <hr v-if="index !== histories.length - 1" />
-            </li>
-        </ul>
+        <div class="flex justify-center">
+            <ul class="timeline timeline-vertical">
+                <li
+                    v-for="(history, index) in histories"
+                    :key="history.content"
+                    class="grid-cols-[7rem_auto_minmax(0,_1fr)]"
+                >
+                    <hr v-if="index !== 0" />
+                    <div class="timeline-start mx-4 font-mono">{{ history.date }}</div>
+                    <div class="timeline-middle text-neutral">
+                        <Icon name="mdi:circle"></Icon>
+                    </div>
+                    <div class="timeline-end mx-4 flex flex-row items-center gap-2 py-8">
+                        <span v-html="history.content"></span>
+                        <a :href="history.url" target="_blank" class="btn btn-ghost btn-sm">
+                            <Icon name="mdi:open-in-new" size="20" />
+                        </a>
+                    </div>
+                    <hr v-if="index !== histories.length - 1" />
+                </li>
+            </ul>
+        </div>
         <CommonH2>Equipments</CommonH2>
         <CommonH3>Hardware</CommonH3>
-        <div class="flex flex-row flex-wrap gap-4">
-            <div
-                v-for="hardware in hardwares"
-                :key="hardware.type"
-                class="card shadow sm:min-w-[16rem]"
-            >
+        <div class="flex flex-row flex-wrap items-baseline justify-center gap-4">
+            <div v-for="hardware in hardwares" :key="hardware.type" class="card border">
                 <div class="card-body">
                     <CommonH4 class="flex flex-row items-center gap-1">
                         <Icon :name="hardware.icon" class="inline" />
@@ -74,12 +72,8 @@ useSeoMeta({
             </div>
         </div>
         <CommonH3>Software</CommonH3>
-        <div class="flex flex-row flex-wrap gap-4">
-            <div
-                v-for="software in softwares"
-                :key="software.type"
-                class="card shadow sm:min-w-[16rem]"
-            >
+        <div class="flex flex-row flex-wrap items-baseline justify-center gap-4">
+            <div v-for="software in softwares" :key="software.type" class="card border">
                 <div class="card-body">
                     <CommonH4 class="flex flex-row items-center gap-1">
                         <Icon :name="software.icon" class="inline" />
