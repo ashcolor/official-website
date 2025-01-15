@@ -298,5 +298,17 @@
         "albums": [],
         "niconico": "sm44053345",
         "youtube": "CCb5hzQmmso"
+    },
+    {
+        "key": "labile",
+        "lyric": "labile.txt",
+        "thumbnail": "labile.png",
+        "name": "LabilE",
+        "nameEnglish": "LabilE",
+        "published": "2025-09-04",
+        "singers": ["len"],
+        "albums": [],
+        "niconico": "sm44542538",
+        "youtube": "mKQIRAD1n3o"
     }
 ]
