@@ -22,10 +22,10 @@ export const SINGERS: { [key: string]: SINGER } = {
         name: "巡音ルカ",
         color: "#ffc0cb",
     },
-    // rin: {
-    //     name: "鏡音リン",
-    //     color: "#ffa500",
-    // },
+    rin: {
+        name: "鏡音リン",
+        color: "#ffa500",
+    },
     len: {
         name: "鏡音レン",
         color: "#ffe211",
