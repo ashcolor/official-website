@@ -305,10 +305,22 @@
         "thumbnail": "labile.png",
         "name": "LabilE",
         "nameEnglish": "LabilE",
-        "published": "2025-09-04",
+        "published": "2025-01-20",
         "singers": ["len"],
         "albums": [],
         "niconico": "sm44542538",
         "youtube": "mKQIRAD1n3o"
+    },
+    {
+        "key": "inert",
+        "lyric": "inert.txt",
+        "thumbnail": "inert.png",
+        "name": "IneRt",
+        "nameEnglish": "IneRt",
+        "published": "2025-07-02",
+        "singers": ["rin"],
+        "albums": [],
+        "niconico": "sm45142030",
+        "youtube": "cmAtTfEzcA0"
     }
 ]
